@@ -1,6 +1,14 @@
 MIT License
 
-Copyright (c) 2025 Ash1421
+Copyright (c) 2024 Ash1421
+
+This project incorporates code from multiple MIT-licensed Discord themes:
+- Midnight Discord Theme by refact0r
+- AMOLED-Cord by LuckFire  
+- Settings Modal by DevilBro
+- Radial Status by Gibbu/DiscordStyles
+- Horizontal Server List by Gibbu/DiscordStyles
+- Emoji Replace by DevilBro
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,0 +1,176 @@
+/**
+ * @name Midnight-Ash
+ * @description Midnight-AMOLED with Settings Modal, Radial Status, Horizontal Server List, and Apple Emojis
+ * @author Ash1421, LuckFire, DevilBro, Gibbu (Combined)
+ * @version 3.0.0
+ * @website https://ash1421.github.io/Midnight-Ash
+ * @source https://github.com/Ash1421/Midnight-Ash
+ * @authorId 616485235982467085
+ * 
+ * @var range settingswidth_s "Settings Width: [default] = 960px" [960, 540, 3840, 20]
+ * @var range settingsheight_s "Settings Height: [default] = 80vh" [80, 20, 100, 5]
+ * @var text settingsbackground_s "Settings Background [default] = transparent" transparent
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+@import url("https://luckfire.github.io/amoled-cord/src/amoled-cord.css");
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
+@import url('https://discordstyles.github.io/RadialStatus/RadialStatus.css');
+@import url('https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css');
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
+
+body {
+    --font: 'figtree';
+    --code-font: '';
+    font-weight: 400;
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 1px;
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+    --border-hover-transition: 0.2s ease;
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: off;
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
+    --background-image: off;
+    --background-image-url: url('');
+    --transparency-tweaks: off;
+    --remove-bg-layer: off;
+    --panel-blur: off;
+    --blur-amount: 12px;
+    --bg-floating: var(--bg-3);
+    --custom-chatbar: aligned;
+    --chatbar-height: 47px;
+    --chatbar-padding: 8px;
+    --small-user-panel: on;
+}
+
+:root {
+    --colors: on;
+    --text-0: var(--bg-4);
+    --text-1: hsl(220, 45%, 95%);
+    --text-2: hsl(220, 25%, 70%);
+    --text-3: hsl(220, 20%, 60%);
+    --text-4: hsl(220, 15%, 40%);
+    --text-5: hsl(220, 15%, 25%);
+    --bg-1: hsl(0, 0%, 8%);
+    --bg-2: hsl(0, 0%, 5%);
+    --bg-3: hsl(0, 0%, 2%);
+    --bg-4: hsl(0, 0%, 0%);
+    --hover: hsla(221, 19%, 40%, 0.1);
+    --active: hsla(220, 19%, 40%, 0.2);
+    --active-2: hsla(220, 19%, 40%, 0.3);
+    --message-hover: hsla(220, 0%, 100%, 0.02);
+    --background-primary: hsl(0, 0%, 0%);
+    --background-secondary: hsl(0, 0%, 2%);
+    --background-secondary-alt: hsl(0, 0%, 1%);
+    --background-tertiary: hsl(0, 0%, 3%);
+    --background-accent: hsl(0, 0%, 1%);
+    --background-floating: hsl(0, 0%, 2%);
+    --background-mobile-primary: hsl(0, 0%, 0%);
+    --background-mobile-secondary: hsl(0, 0%, 2%);
+    --background-modifier-hover: hsla(0, 0%, 100%, 0.02);
+    --background-modifier-active: hsla(0, 0%, 100%, 0.04);
+    --background-modifier-selected: hsla(0, 0%, 100%, 0.06);
+    --background-modifier-accent: hsla(0, 0%, 100%, 0.06);
+    --accent-1: var(--purple-1);
+    --accent-2: var(--purple-2);
+    --accent-3: var(--purple-3);
+    --accent-4: var(--purple-4);
+    --accent-5: var(--purple-5);
+    --accent-new: var(--accent-2);
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
+    --online: var(--green-2);
+    --dnd: var(--red-2);
+    --idle: var(--yellow-2);
+    --streaming: var(--purple-2);
+    --offline: var(--text-4);
+    --border-light: hsla(0, 0%, 100%, 0.08);
+    --border: hsla(0, 0%, 100%, 0.12);
+    --border-hover: hsla(0, 0%, 100%, 0.16);
+    --button-border: hsla(0, 0%, 100%, 0.1);
+    --red-1: oklch(75% 0.12 0);
+    --red-2: oklch(70% 0.12 0);
+    --red-3: oklch(65% 0.12 0);
+    --red-4: oklch(60% 0.12 0);
+    --red-5: oklch(55% 0.12 0);
+    --green-1: oklch(75% 0.11 170);
+    --green-2: oklch(70% 0.11 170);
+    --green-3: oklch(65% 0.11 170);
+    --green-4: oklch(60% 0.11 170);
+    --green-5: oklch(55% 0.11 160);
+    --blue-1: oklch(75% 0.1 215);
+    --blue-2: oklch(70% 0.1 215);
+    --blue-3: oklch(65% 0.1 215);
+    --blue-4: oklch(60% 0.1 215);
+    --blue-5: oklch(55% 0.1 215);
+    --yellow-1: oklch(80% 0.11 90);
+    --yellow-2: oklch(75% 0.11 90);
+    --yellow-3: oklch(70% 0.11 90);
+    --yellow-4: oklch(65% 0.11 90);
+    --yellow-5: oklch(60% 0.11 90);
+    --purple-1: oklch(75% 0.11 310);
+    --purple-2: oklch(70% 0.11 310);
+    --purple-3: oklch(65% 0.11 310);
+    --purple-4: oklch(60% 0.11 310);
+    --purple-5: oklch(55% 0.11 310);
+
+    --settingswidth: 960;
+    --settingsheight: 80;
+    --settingsbackground: transparent;
+
+    --rs-small-spacing: 2px;
+    --rs-medium-spacing: 3px;
+    --rs-large-spacing: 4px;
+    --rs-small-width: 2px;
+    --rs-medium-width: 3px;
+    --rs-large-width: 4px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: var(--green-2);
+    --rs-idle-color: var(--yellow-2);
+    --rs-dnd-color: var(--red-2);
+    --rs-offline-color: var(--text-4);
+    --rs-streaming-color: var(--purple-2);
+    --rs-invisible-color: #747f8d;
+    --rs-self-speaking-color: var(--purple-3);
+    --rs-phone-color: var(--rs-online-color);
+    --rs-phone-visible: block;
+
+    --HSL-server-direction: column;
+    --HSL-server-alignment: flex-start;
+}
+
+.theme-midnight {
+    --background-message-hover: hsla(0, 0%, 100%, 0.02) !important;
+    --background-mod-faint: hsla(0, 0%, 100%, 0.02) !important;
+    --background-mod-normal: hsla(0, 0%, 100%, 0.04) !important;
+    --background-mod-strong: hsla(0, 0%, 100%, 0.06) !important;
+    --background-mod-subtle: hsla(0, 0%, 100%, 0.03) !important;
+    --background-modifier-active: hsla(0, 0%, 100%, 0.04) !important;
+    --background-modifier-hover: hsla(0, 0%, 100%, 0.02) !important;
+    --background-modifier-selected: hsla(0, 0%, 100%, 0.06) !important;
+    --background-secondary-alt: hsl(0, 0%, 1%) !important;
+    --card-primary-bg: hsl(0, 0%, 2%) !important;
+    --modal-background: hsl(0, 0%, 0%) !important;
+    --modal-footer-background: hsl(0, 0%, 0%) !important;
+    --scrollbar-auto-scrollbar-color-thumb: hsl(0, 0%, 20%) !important;
+    --scrollbar-auto-thumb: hsl(0, 0%, 20%) !important;
+    --scrollbar-thin-thumb: hsl(0, 0%, 18%) !important;
+    --custom-channel-members-bg: hsl(0, 0%, 0%) !important;
+}
