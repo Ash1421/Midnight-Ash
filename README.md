@@ -126,6 +126,10 @@ Compatible with BetterDiscord or Vencord installation methods
 
 ## 📝 Changelog
 
+### V3.0.4
+
+- ✅️ Added Star History to Readme.
+
 ### V3.0.3
 
 - ✅️ Versioning fixes.
@@ -168,7 +172,21 @@ This theme is licensed under [MIT License](LICENSE). Feel free to modify and red
 
 ---
 
+<h2 align="center">
+💫 Star History 
+</h2>
+
+<a href="https://www.star-history.com/#Ash1421/Midnight-Ash&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Ash1421/Midnight-Ash&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Ash1421/Midnight-Ash&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Ash1421/Midnight-Ash&type=Date" />
+ </picture>
+</a>
+
 <div align="center">
+
+---
 
 **Made with 💜 for the Discord community**
 
