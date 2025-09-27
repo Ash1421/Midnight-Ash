@@ -5,13 +5,17 @@
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/xc4D33wBmA)
 [![GitHub Stars](https://img.shields.io/github/stars/Ash1421/Midnight-Ash?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash)
 
+##
+
 [![Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Version&color=blue)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
 [![GitHub Issues](https://img.shields.io/github/issues/Ash1421/Midnight-Ash?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues)
-[![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+## ❤️ Made With love using
+
+[![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://daringfireball.net/projects/markdown/)
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
-
-
+[![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 ## ✨ What's Included
 
@@ -121,6 +125,10 @@ Compatible with BetterDiscord or Vencord installation methods
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V3.0.3
+
+- ✅️ Versioning fixes.
 
 ### V3.0.2
 
