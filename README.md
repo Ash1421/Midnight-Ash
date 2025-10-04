@@ -27,13 +27,25 @@
 
 ## 🚀 Installation
 
-### Copy this URL into your Discord client:
+### 🔗 Copy this URL into your Discord client:
 
 ```
 https://ash1421.github.io/Midnight-Ash/midnight-ash.css
 ```
 
-### 📱 Client-Specific Instructions
+#### 👋 Help Guide
+
+To download and install for most modern clients copy the url above and paste or type into the requred field then Load, Toggle, Reload, or Restart to refresh theme, for more help please view the client specific instructions.
+
+For file based installs please download the CSS file and move it to the required path.
+
+### ✋ For more help please use a browser or tutorial to find what you need.
+
+#### ⬇️ To download the CSS file click the version badge, go to the latest release or click on this link: [Latest Release](https://github.com/Ash1421/Midnight-Ash/releases/latest)
+
+
+
+## 📱 Client-Specific Instructions
 
 #### 🎯 **Vencord**
 
@@ -125,6 +137,10 @@ Compatible with BetterDiscord or Vencord installation methods
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V3.0.5
+
+- ✅️ Added More Help to Readme File.
 
 ### V3.0.4
 
