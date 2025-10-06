@@ -167,17 +167,6 @@ Compatible with BetterDiscord or Vencord installation methods
 - `--custom-dms-icon`: Custom DM'S icon (default: custom)
 - `--dms-icon-svg-url`: SVG URL for custom DM'S icon (default: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"))
 
-<style>
-  .custom-icon {
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    vertical-align: middle;
-  }
-</style>
-
-<img class="custom-icon" src="https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg" alt="Custom DM'S Icon Preview SVG"> Custom DM'S Icon Preview SVG
-
 ### Fonts
 
 - `--font`: Font family (default: "figtree")
@@ -215,6 +204,10 @@ Compatible with BetterDiscord or Vencord installation methods
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V3.1.6
+
+- ✅️ Readme file fix.
 
 ### V3.0.6
 
