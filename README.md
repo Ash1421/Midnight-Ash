@@ -39,11 +39,11 @@ To download and install for most modern clients copy the url above and paste or 
 
 For file based installs please download the CSS file and move it to the required path.
 
+Using the latest version could help with optimizations and other features to be added or that have been added and or documented
+
 ### ✋ For more help please use a browser or tutorial to find what you need.
 
 #### ⬇️ To download the CSS file click the version badge, go to the latest release or click on this link: [Latest Release](https://github.com/Ash1421/Midnight-Ash/releases/latest)
-
-
 
 ## 📱 Client-Specific Instructions
 
@@ -83,32 +83,110 @@ For file based installs please download the CSS file and move it to the required
 
 Compatible with BetterDiscord or Vencord installation methods
 
-## ⚙️ Customization Options
+## ⚙️ Customization Documentation
 
-### 🪟 Settings Modal
+### 🔓 Editing The Theme yourself ⚠️
 
-```css
---settingswidth: 960; /* Width in pixels */
---settingsheight: 80; /* Height in vh */
-```
+#### To change the accent color, also known as the main color, please use the following information below for assistance in changing it to your favorite color or adding your own if you know what you are doing.
 
-### 🔘 Status Rings
+#### To change anything listed below please open the css file you have downloaded in a text or code editor and edit the according options to the values you like or want.
 
-```css
---rs-small-width: 2px; /* Status ring thickness */
---rs-avatar-shape: 50%; /* 50% = round, 0% = square */
---rs-online-color: #43b581; /* Custom status colors */
-```
+### ⚠️ To change any options below is at your own risk and could cause the theme to break if not done correctly, please report issues if found and use documentation. You have been warned.
 
-### 🎨 Theme Colors
+---
 
-```css
---purple-1: oklch(75% 0.11 310); /* Lightest purple */
---purple-2: oklch(70% 0.11 310); /* Light purple */
---purple-3: oklch(65% 0.11 310); /* Medium purple (speaking) */
---purple-4: oklch(60% 0.11 310); /* Dark purple */
---purple-5: oklch(55% 0.11 310); /* Darkest purple */
-```
+### Settings Modal
+
+- `--settingswidth`: Width in pixels (default: 960px)
+- `--settingsheight`: Height in vh (default: 80vh)
+- `--settingsbackground`: Background color (default: transparent)
+
+### Radial Status rings
+
+- `--rs-small-width`: Status ring thickness (default: 2px)
+- `--rs-avatar-shape`: Avatar shape (default: 50% = round, 0% = square)
+- `--rs-phone-color`: Phone status ring color (default: var(--rs-online-color))
+- `--rs-phone-visible`: Visibility of phone status ring (default: block)
+
+### Horizontal Server List
+
+- `--HSL-server-direction`: Direction of server list (default: column)
+- `--HSL-server-alignment`: Alignment of server list (default: flex-start)
+
+### Theme Colors
+
+- `--purple-1`: Lightest purple (default: oklch(75% 0.11 310))
+- `--purple-2`: Light purple (default: oklch(70% 0.11 310))
+- `--purple-3`: Medium purple (default: oklch(65% 0.11 310))
+- `--purple-4`: Dark purple (default: oklch(60% 0.11 310))
+- `--purple-5`: Darkest purple (default: oklch(55% 0.11 310))
+
+---
+
+- `--green-1`: Lightest green (default: oklch(75% 0.11 170))
+- `--green-2`: Light green (default: oklch(70% 0.11 170))
+- `--green-3`: Medium green (default: oklch(65% 0.11 170))
+- `--green-4`: Dark green (default: oklch(60% 0.11 170))
+- `--green-5`: Darkest green (default: oklch(55% 0.11 160))
+
+---
+
+- `--blue-1`: Lightest blue (default: oklch(75% 0.1 215))
+- `--blue-2`: Light blue (default: oklch(70% 0.1 215))
+- `--blue-3`: Medium blue (default: oklch(65% 0.1 215))
+- `--blue-4`: Dark blue (default: oklch(60% 0.1 215))
+- `--blue-5`: Darkest blue (default: oklch(55% 0.1 215))
+
+---
+
+- `--yellow-1`: Lightest yellow (default: oklch(80% 0.11 90))
+- `--yellow-2`: Light yellow (default: oklch(75% 0.11 90))
+- `--yellow-3`: Medium yellow (default: oklch(70% 0.11 90))
+- `--yellow-4`: Dark yellow (default: oklch(65% 0.11 90))
+- `--yellow-5`: Darkest yellow (default: oklch(60% 0.11 90))
+
+---
+
+- `--red-1`: Lightest red (default: oklch(75% 0.11 0))
+- `--red-2`: Light red (default: oklch(70% 0.11 0))
+- `--red-3`: Medium red (default: oklch(65% 0.11 0))
+- `--red-4`: Dark red (default: oklch(60% 0.11 0))
+- `--red-5`: Darkest red (default: oklch(55% 0.11 0))
+
+### Accents
+
+- `--accent-1`: Accent 1 (default: var(--purple-1))
+- `--accent-2`: Accent 2 (default: var(--purple-2))
+- `--accent-3`: Accent 3 (default: var(--purple-3))
+- `--accent-4`: Accent 4 (default: var(--purple-4))
+- `--accent-5`: Accent 5 (default: var(--purple-5))
+- `--accent-new`: Accent new (default: var(--accent-2))
+
+### Custom DM'S Icon
+
+- `--custom-dms-icon`: Custom DM'S icon (default: custom)
+- `--dms-icon-svg-url`: SVG URL for custom DM'S icon (default: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"))
+
+<style>
+  .custom-icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+  }
+</style>
+
+<img class="custom-icon" src="https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg" alt="Custom DM'S Icon Preview SVG"> Custom DM'S Icon Preview SVG
+
+### Fonts
+
+- `--font`: Font family (default: "figtree")
+- `--code-font`: Code font family (default: "")
+- `--font-weight`: Font weight (default: 400)
+
+### Animations
+
+- `--animations`: Animations (default: on)
 
 ## 🎯 Features in Detail
 
@@ -137,6 +215,10 @@ Compatible with BetterDiscord or Vencord installation methods
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V3.0.6
+
+- ✅️ Added More Documentation and Help to Readme File.
 
 ### V3.0.5
 

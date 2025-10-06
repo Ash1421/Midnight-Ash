@@ -2,14 +2,11 @@
  * @name Midnight-Ash
  * @description Midnight-AMOLED with Settings Modal, Radial Status, Horizontal Server List, and Apple Emojis
  * @author Ash1421, LuckFire, DevilBro, Gibbu (Combined)
- * @version 3.0.5
+ * @version 3.0.6
  * @website https://ash1421.github.io/Midnight-Ash
  * @source https://github.com/Ash1421/Midnight-Ash
  * @authorId 616485235982467085
- * 
- * @var range settingswidth_s "Settings Width: [default] = 960px" [960, 540, 3840, 20]
- * @var range settingsheight_s "Settings Height: [default] = 80vh" [80, 20, 100, 5]
- * @var text settingsbackground_s "Settings Background [default] = transparent" transparent
+ * @authorLink https://discord.gg/xc4D33wBmA
 */
 
 @import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
