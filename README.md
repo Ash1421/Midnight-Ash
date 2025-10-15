@@ -32,6 +32,12 @@
 📱 **Horizontal Server List** - Servers displayed at the top for better screen usage  
 🍎 **Apple Emojis** - Clean, modern Apple emoji replacements
 
+## 📖 Infomation About this theme
+
+This theme has been made with **my prefrence in mind** and features the best of dark aesthetics and modern functionality, it offers customization, documentation, support and instructions for most modern clients. The theme is made with a purple favorited color palette with animations and the lovely features from the other themes such as radial status for better status of other users curent state, settings modal for a better and nicer look of the discord settings menu allowing a more modern look while giving the user a more transparent menu for better viewability, a horizontal server list for better screen usage, and emoji replace for cleaner and more modern emojis.
+
+I have tried to keep the theme reletively small simple and clean for speedy load times on laptops or low end pc's, maybe even phones as well, and have the easy use and modification of the theme and features via documentation, links, support, or issues.
+
 ## 🚀 Installation
 
 ### 🔗 Copy this URL into your Discord client
@@ -54,7 +60,25 @@ Using the latest version could help with optimizations and other features to be 
 
 ## 📱 Client-Specific Instructions
 
-#### 🎯 **Vencord**
+### Recommended Clients
+
+#### ⭐ Equicord - **Recommended Client**
+
+Website: https://equicord.org/
+GitHub: https://github.com/Equicord/Equicord
+
+1. Open Discord settings
+2. Go to `Equicord` → `Themes`
+3. Click `Online Themes`
+4. Paste the URL above and click `Add Theme`
+
+#### 🎯 **Vencord** **(Web Support)**
+
+Website: https://vencord.dev/
+GitHub: https://github.com/Vendicated/Vencord
+
+Vencord Web Chrome Extension: https://chromewebstore.google.com/detail/vencord-web/cbghhgpcnddeihccjmnadmkaejncjndb
+Vencord Web Userscript: https://raw.githubusercontent.com/Vencord/builds/main/Vencord.user.js
 
 1. Open Discord settings
 2. Go to `Vencord` → `Themes`
@@ -63,11 +87,21 @@ Using the latest version could help with optimizations and other features to be 
 
 #### 🔧 **BetterDiscord**
 
+Website: https://betterdiscord.app/
+GitHub: https://github.com/BetterDiscord/BetterDiscord
+
 1. Download the `.css` file from the repository
 2. Place it in your BetterDiscord themes folder
 3. Or use `Settings` → `Themes` → `Load from URL`
 
+---
+
+### Other Clients
+
 #### 🔌 **Replugged**
+
+Website: https://replugged.dev/
+GitHub: https://github.com/replugged-org/replugged
 
 1. Open Discord settings
 2. Go to `Replugged` → `Themes`
@@ -76,19 +110,27 @@ Using the latest version could help with optimizations and other features to be 
 
 #### 💻 **Legcord**
 
+Website: https://legcord.app/
+GitHub: https://github.com/Legcord/Legcord
+
 1. Go to `Settings` → `Themes`
 2. Click `Load Theme`
 3. Enter the URL or upload the `.css` file
 
 #### 🌐 **WebCord**
 
+GitHub: https://github.com/SpacingBat3/WebCord
+
 1. Navigate to your WebCord themes folder
 2. Download and place the `midnight-ash.css` file
 3. Restart WebCord and enable the theme
 
-#### 📦 **OpenAsar** (with BD/Vencord)
+#### 📦 **OpenAsar** (with Equicord/BD/Vencord)
 
-Compatible with BetterDiscord or Vencord installation methods
+Website: https://openasar.dev/
+GitHub: https://github.com/GooseMod/OpenAsar
+
+Compatible with BetterDiscord, Equicord or Vencord installation methods
 
 ## ⚙️ Customization Documentation
 
@@ -198,7 +240,7 @@ Compatible with BetterDiscord or Vencord installation methods
 - Clean, centered design
 - Better focus and organization
 
-### 💫 Enhanced Status Indicators
+### 🔘 Enhanced Status Indicators
 
 - Circular rings around avatars
 - Color-coded for different statuses
@@ -212,6 +254,9 @@ Compatible with BetterDiscord or Vencord installation methods
 
 ## 📝 Changelog
 
+### V3.1.8
+
+- ✅️ Readme help/documentation changes and additions, as well as Infomation about the theme.
 
 ### V3.1.7
 
