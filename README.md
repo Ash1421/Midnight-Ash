@@ -77,7 +77,10 @@ GitHub: https://github.com/Equicord/Equicord
 Website: https://vencord.dev/
 GitHub: https://github.com/Vendicated/Vencord
 
+**(Web Versions)**
+
 Vencord Web Chrome Extension: https://chromewebstore.google.com/detail/vencord-web/cbghhgpcnddeihccjmnadmkaejncjndb
+
 Vencord Web Userscript: https://raw.githubusercontent.com/Vencord/builds/main/Vencord.user.js
 
 1. Open Discord settings
@@ -253,6 +256,10 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V3.2.8
+
+- ✅️ Readme file fix.
 
 ### V3.1.8
 
