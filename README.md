@@ -52,7 +52,7 @@ To download and install for most modern clients copy the url above and paste or 
 
 For file based installs please download the CSS file and move it to the required path.
 
-Using the latest version could help with optimizations and other features to be added or that have been added and or documented
+Using the latest version could help with optimizations and other features to be added or that have been added and or documented.
 
 ### ✋ For more help please use a browser or tutorial to find what you need
 
@@ -133,17 +133,17 @@ GitHub: https://github.com/SpacingBat3/WebCord
 Website: https://openasar.dev/
 GitHub: https://github.com/GooseMod/OpenAsar
 
-Compatible with BetterDiscord, Equicord or Vencord installation methods
+Compatible with BetterDiscord, Equicord or Vencord installation methods.
 
 ## ⚙️ Customization Documentation
 
 ### 🔓 Editing The Theme yourself ⚠️
 
-#### To change the accent color, also known as the main color, please use the following information below for assistance in changing it to your favorite color or adding your own if you know what you are doing
+#### To change the accent color, also known as the main color, please use the following information below for assistance in changing it to your favorite color or adding your own if you know what you are doing.
 
-#### To change anything listed below please open the css file you have downloaded in a text or code editor and edit the according options to the values you like or want
+#### To change anything listed below please open the css file you have downloaded in a text or code editor and edit the according options to the values you like or want.
 
-### ⚠️ To change any options below is at your own risk and could cause the theme to break if not done correctly, please report issues if found and use documentation. You have been warned
+### ⚠️ To change any options below is at your own risk and could cause the theme to break if not done correctly, please report issues if found and use documentation. You have been warned.
 
 ---
 
@@ -247,7 +247,7 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods
 
 - Circular rings around avatars
 - Color-coded for different statuses
-- Speaking indicator with custom purple
+- Clean, modern, visible, and functional appearance
 
 ### 📊 Horizontal Layout
 
@@ -256,6 +256,10 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V3.2.9
+
+- ✅️ Readme changes.
 
 ### V3.2.8
 
