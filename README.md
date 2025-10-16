@@ -258,6 +258,11 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 
 ## 📝 Changelog
 
+
+### V3.3.11
+
+- ✅️ Readme infomation/credit additions.
+
 ### V3.3.10
 
 - ✅️ Readme file fix.
@@ -329,6 +334,10 @@ Found a bug? Have a suggestion?
 
 This theme is licensed under [MIT License](LICENSE). Feel free to modify and redistribute!
 
+## 📝 Acknowledgement
+
+**If you plan on using, editing, or redistributing this theme, please give credit to the original authors.**
+
 ## 🙏 Credits
 
 - **Midnight Theme** - [@refact0r](https://github.com/refact0r)
@@ -338,6 +347,7 @@ This theme is licensed under [MIT License](LICENSE). Feel free to modify and red
 - **Horizontal Server List** - [@Gibbu](https://github.com/DiscordStyles)
 - **Emoji Replace** - [@DevilBro](https://github.com/mwittrien)
 
+- **Thanks to all the contributors on [GitHub](https://github.com/Ash1421/Midnight-Ash/graphs/contributors)**
 ---
 
 <h2 align="center">
