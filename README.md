@@ -18,7 +18,8 @@
 
 [![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://daringfireball.net/projects/markdown/)
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
+[![Open Source](https://img.shields.io/badge/Open%20Source-%23302E6.svg?style=for-the-badge&logo=open-source-initiative&logoColor=white)](https://opensource.org/about)
 
 ## 📜 Liscensed under
 
@@ -256,6 +257,10 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V3.2.10
+
+- ✅️ Readme badge changes.
 
 ### V3.2.9
 
