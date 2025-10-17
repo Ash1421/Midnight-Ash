@@ -12,7 +12,7 @@
 [![Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Version&color=blue)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
 [![GitHub Issues](https://img.shields.io/github/issues/Ash1421/Midnight-Ash/open?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/Ash1421/Midnight-Ash/closed?style=for-the-badge&color=red)](https://github.com/Ash1421/Midnight-Ash/issues?q=is:closed)
-[![New Issue](https://img.shields.io/badge/Open%20A%20New%20%20Issue-yellow?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues/new)
+[![New Issue](https://img.shields.io/badge/Open%20A%20New%20%20Issue-orange?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues/new)
 
 ## ❤️ Made With love using
 
@@ -21,9 +21,9 @@
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
 [![Open Source](https://img.shields.io/badge/Open%20Source-%23302E6.svg?style=for-the-badge&logo=open-source-initiative&logoColor=black)](https://opensource.org/about)
 
-## 📜 Liscensed under
+## 📜 License
 
-[![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: GPL v3.0](https://img.shields.io/badge/License-GPL%20v3.0-gold.svg?style=for-the-badge)](./LICENSE)
 
 ## ✨ What's Included
 
@@ -258,6 +258,11 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 
 ## 📝 Changelog
 
+### V4.3.11
+
+- ✅️ Major rewrite of license files to clarify GPL v2 and MIT components and the new license for the theme.
+- ✅️ Major Update to README file with clearer license information for incorporated works.
+- ✅️ Badge changes and additions/changes to README file.
 
 ### V3.3.11
 
@@ -330,9 +335,22 @@ Found a bug? Have a suggestion?
 - 🐛 [Report Issues](https://github.com/Ash1421/Midnight-Ash/issues)
 - 💬 [Join Discord](https://discord.gg/xc4D33wBmA)
 
-## 📄 License
+## 📜 License
 
-This theme is licensed under [MIT License](LICENSE). Feel free to modify and redistribute!
+This project is licensed under the [GPL v3.0](./LICENSE).
+
+It also incorporates components from other open-source projects under MIT or GPLv2 licenses:
+
+| Component                              | Author                | License                                           |
+| -------------------------------------- | --------------------- | ------------------------------------------------- |
+| Midnight Discord Theme                 | refact0r              | [MIT](./ORIGINAL_LICENSES/LICENSE_refact0r.md)    |
+| AMOLED-Cord                            | LuckFire              | [MIT](./ORIGINAL_LICENSES/LICENSE_LuckFire.md)    |
+| Settings Modal / Emoji Replace         | DevilBro              | [GPL v2](./ORIGINAL_LICENSES/LICENSE_DevilBro.md) |
+| Radial Status / Horizontal Server List | Gibbu / DiscordStyles | [MIT](./ORIGINAL_LICENSES/LICENSE_Gibbu.md)       |
+
+See the [ORIGINAL_LICENSES/](./ORIGINAL_LICENSES) directory for full unmodified license texts.
+
+The only things that have been modified from the license files is the names of the files and file types for organization, other than that, the license texts are the same as the original authors.
 
 ## 📝 Acknowledgement
 
@@ -348,6 +366,7 @@ This theme is licensed under [MIT License](LICENSE). Feel free to modify and red
 - **Emoji Replace** - [@DevilBro](https://github.com/mwittrien)
 
 - **Thanks to all the contributors on [GitHub](https://github.com/Ash1421/Midnight-Ash/graphs/contributors)**
+
 ---
 
 <h2 align="center">
