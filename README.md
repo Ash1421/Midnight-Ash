@@ -5,13 +5,13 @@
 ## ✨ Socials & Stars
 
 [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/xc4D33wBmA)
-[![GitHub Stars](https://img.shields.io/github/stars/Ash1421/Midnight-Ash?style=for-the-badge&color=gold)](https://github.com/Ash1421/Midnight-Ash)
+[![GitHub Stars](https://img.shields.io/github/stars/Ash1421/Midnight-Ash?style=for-the-badge&color=gold)](https://github.com/Ash1421/Midnight-Ash/stargazers)
 
 ## Github Repository Infomation
 
 [![Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Version&color=blue)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
-![Downloads](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/total?style=for-the-badge&color=blueviolet)
-![Downloads at latest](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/latest/total?style=for-the-badge&color=blueviolet&label=Downloads%20@%20latest)
+[![Downloads](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/total?style=for-the-badge&color=blueviolet)](https://github.com/Ash1421/Midnight-Ash/releases)
+[![Downloads at latest](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/latest/total?style=for-the-badge&color=blueviolet&label=Downloads%20@%20latest)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
 [![GitHub Issues](https://img.shields.io/github/issues/Ash1421/Midnight-Ash/open?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/Ash1421/Midnight-Ash/closed?style=for-the-badge&color=red)](https://github.com/Ash1421/Midnight-Ash/issues?q=is:closed)
 [![New Issue](https://img.shields.io/badge/Open%20A%20New%20%20Issue-orange?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues/new)
@@ -259,6 +259,10 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V4.4.13
+
+- ✅️ Readme fix with changes/addition.
 
 ### V4.3.12
 
