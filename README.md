@@ -10,6 +10,8 @@
 ## Github Repository Infomation
 
 [![Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Version&color=blue)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
+![Downloads](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/total?style=for-the-badge&color=blueviolet)
+![Downloads at latest](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/latest/total?style=for-the-badge&color=blueviolet&label=Downloads%20@%20latest)
 [![GitHub Issues](https://img.shields.io/github/issues/Ash1421/Midnight-Ash/open?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/Ash1421/Midnight-Ash/closed?style=for-the-badge&color=red)](https://github.com/Ash1421/Midnight-Ash/issues?q=is:closed)
 [![New Issue](https://img.shields.io/badge/Open%20A%20New%20%20Issue-orange?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues/new)
@@ -21,7 +23,7 @@
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
 [![Open Source](https://img.shields.io/badge/Open%20Source-%23302E6.svg?style=for-the-badge&logo=open-source-initiative&logoColor=black)](https://opensource.org/about)
 
-## 📜 License
+## 📜 Licensed Under
 
 [![License: GPL v3.0](https://img.shields.io/badge/License-GPL%20v3.0-gold.svg?style=for-the-badge)](./LICENSE)
 
@@ -257,6 +259,10 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V4.3.12
+
+- ✅️ Readme and lisense fix/addition.
 
 ### V4.3.11
 
