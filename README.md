@@ -142,11 +142,11 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 
 ### 🔓 Editing The Theme yourself ⚠️
 
-#### To change the accent color, also known as the main color, please use the following information below for assistance in changing it to your favorite color or adding your own if you know what you are doing.
+To change the accent color, also known as the main color, please use the following information below for assistance in changing it to your favorite color or adding your own if you know what you are doing.
 
-#### To change anything listed below please open the css file you have downloaded in a text or code editor and edit the according options to the values you like or want.
+To change anything listed below please open the css file you have downloaded in a text or code editor and edit the according options to the values you like or want.
 
-### ⚠️ To change any options below is at your own risk and could cause the theme to break if not done correctly, please report issues if found and use documentation. You have been warned.
+****To change any options below is at your own risk and could cause the theme to break if not done correctly, please report issues if found and use documentation. You have been warned.****
 
 ---
 
@@ -260,6 +260,10 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 
 ## 📝 Changelog
 
+### V4.4.14
+
+- ✅️ Readme documentation, liscense, and software discalamer with changes/addition.
+
 ### V4.4.13
 
 - ✅️ Readme fix with changes/addition.
@@ -365,6 +369,12 @@ The only things that have been modified from the license files is the names of t
 ## 📝 Acknowledgement
 
 **If you plan on using, editing, or redistributing this theme, please give credit to the original authors.**
+
+## ⚠️ Disclaimer
+
+**By using, editing, or publishing this theme you are acknowledging that you have read and understand the license terms and conditions of using the provided files, and that you agree to be bound by the terms of the license.**
+
+****Using the provided Discord Clients is at your own risk, please use at your own discretion of your discord account and your computer.****
 
 ## 🙏 Credits
 
