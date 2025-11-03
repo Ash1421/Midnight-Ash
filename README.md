@@ -232,6 +232,10 @@ To change anything listed below please open the css file you have downloaded in 
 
 - `--animations`: Animations (default: on)
 
+### Custom Window Controls
+
+- `--custom-window-controls`: Custom window controls (default: on)
+
 ## 🎯 Features in Detail
 
 ### 🌑 AMOLED-Optimized
@@ -259,6 +263,10 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V4.4.15
+
+- ✅️ Readme documentation additions.
 
 ### V4.4.14
 
