@@ -10,7 +10,7 @@
 ## Github Repository Infomation
 
 [![Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Version&color=blue)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/total?style=for-the-badge&color=blueviolet)](https://github.com/Ash1421/Midnight-Ash/releases)
+[![Total Downloads](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/total?style=for-the-badge&color=blueviolet&label=Total%20Downloads)](https://github.com/Ash1421/Midnight-Ash/releases)
 [![Downloads at latest](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/latest/total?style=for-the-badge&color=blueviolet&label=Downloads%20@%20latest)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
 [![GitHub Issues](https://img.shields.io/github/issues/Ash1421/Midnight-Ash/open?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/Ash1421/Midnight-Ash/closed?style=for-the-badge&color=red)](https://github.com/Ash1421/Midnight-Ash/issues?q=is:closed)
@@ -263,6 +263,11 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+
+### V4.4.16
+
+- ✅️ Readme documentation/information additions.
 
 ### V4.4.15
 
