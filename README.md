@@ -236,6 +236,14 @@ To change anything listed below please open the css file you have downloaded in 
 
 - `--custom-window-controls`: Custom window controls (default: on)
 
+## 📸 Screenshots of the theme in action
+
+<div align="center">
+  <img width="450" src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme.png?raw=true" alt="Midnight Ash Theme">
+  <img width="450" src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme-Loaded.png?raw=true" alt="Midnight Ash Theme Loaded">
+  <img width="450" src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme-With-URL.png?raw=true" alt="Midnight Ash Theme With URL">
+</div>
+
 ## 🎯 Features in Detail
 
 ### 🌑 AMOLED-Optimized
@@ -263,6 +271,10 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V4.4.18
+
+- ✅️ Added Screenshots to the Documentation/Readme file.
 
 ### V4.4.17
 
