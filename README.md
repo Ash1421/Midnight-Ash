@@ -272,6 +272,10 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V4.5.20
+
+- ✅️ Changed license infomation to the default GPL v3 license, with important infomation moved to the liscense section in the readme.
+
 ### V4.4.19
 
 - ✅️ Changed Screenshots format and some documentation in the Documentation/Readme file.
@@ -395,6 +399,9 @@ It also incorporates components from other open-source projects under MIT or GPL
 | Radial Status / Horizontal Server List | Gibbu / DiscordStyles | [MIT](./ORIGINAL_LICENSES/LICENSE_Gibbu.md)       |
 
 See the [ORIGINAL_LICENSES/](./ORIGINAL_LICENSES) directory for full unmodified license texts.
+
+These incorporated works remain under their original licenses (MIT or GPLv2), compatible with the
+GNU General Public License v3.0 under which this combined project is released.
 
 The only things that have been modified from the license files is the names of the files and file types for organization, other than that, the license texts are the same as the original authors.
 
