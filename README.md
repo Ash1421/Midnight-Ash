@@ -4,24 +4,28 @@
 
 ## ✨ Socials & Stars
 
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/xc4D33wBmA)
+[![Discord Server Invite](https://img.shields.io/badge/Discord-Server%20Invite-7289DA?style=for-the-badge&logo=discord&logoColor=white&color=blueviolet)](https://discord.gg/xc4D33wBmA)
 [![GitHub Stars](https://img.shields.io/github/stars/Ash1421/Midnight-Ash?style=for-the-badge&color=gold)](https://github.com/Ash1421/Midnight-Ash/stargazers)
 
 ## Github Repository Infomation
 
 [![Latest Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Latest%20Version&color=blue)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/ash1421/midnight-ash?style=for-the-badge&color=blue)](https://www.codefactor.io/repository/github/ash1421/midnight-ash)
 [![Total Downloads](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/total?style=for-the-badge&color=blueviolet&label=Total%20Downloads)](https://github.com/Ash1421/Midnight-Ash/releases)
 [![Downloads at latest](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/latest/total?style=for-the-badge&color=blueviolet&label=Downloads%20@%20latest)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
 [![GitHub Issues](https://img.shields.io/github/issues/Ash1421/Midnight-Ash/open?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/Ash1421/Midnight-Ash/closed?style=for-the-badge&color=red)](https://github.com/Ash1421/Midnight-Ash/issues?q=is:closed)
-[![New Issue](https://img.shields.io/badge/Open%20A%20New%20%20Issue-orange?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues/new)
+[![New Issue](https://img.shields.io/badge/Open%20A%20New%20Issue-orange?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues/new)
 
 ## ❤️ Made With love using
 
 [![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://daringfireball.net/projects/markdown/)
-[![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
 [![Open Source](https://img.shields.io/badge/Open%20Source-%23302E6.svg?style=for-the-badge&logo=open-source-initiative&logoColor=black)](https://opensource.org/about)
+[![GNU](https://img.shields.io/badge/GNU-darkred.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/)
+[![Shields.io](https://img.shields.io/badge/Shields.io-darkgreen.svg?style=for-the-badge&logo=shields.io&logoColor=white)](https://shields.io/)
+[![CodeFactor](https://img.shields.io/badge/Code%20Factor-red?style=for-the-badge&logo=codefactor&logoColor=white)](https://www.codefactor.io/repository/github/Ash1421/Midnight-Ash)
 
 ## 📜 Licensed Under
 
@@ -271,6 +275,12 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V4.5.21
+
+- ✅️ Added multiple badges, including Codefactor, GNU, and Shields.
+- ✅️ Added Codefactor code quality badge.
+- ✅️ Changed Discord website theme link.
 
 ### V4.5.20
 
