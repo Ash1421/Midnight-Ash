@@ -25,7 +25,7 @@
 [![Open Source](https://img.shields.io/badge/Open%20Source-%23302E6.svg?style=for-the-badge&logo=open-source-initiative&logoColor=black)](https://opensource.org/about)
 [![GNU](https://img.shields.io/badge/GNU-darkred.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/)
 [![Shields.io](https://img.shields.io/badge/Shields.io-darkgreen.svg?style=for-the-badge&logo=shields.io&logoColor=white)](https://shields.io/)
-[![CodeFactor](https://img.shields.io/badge/Code%20Factor-red?style=for-the-badge&logo=codefactor&logoColor=white)](https://www.codefactor.io/repository/github/Ash1421/Midnight-Ash)
+[![CodeFactor](https://img.shields.io/badge/Code%20Factor-red?style=for-the-badge&logo=codefactor&logoColor=white)](https://www.codefactor.io/)
 
 ## 📜 Licensed Under
 
@@ -275,6 +275,10 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V4.6.21
+
+- ✅️ Codefactor badge link fix.
 
 ### V4.5.21
 
