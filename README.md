@@ -4,13 +4,13 @@
 
 ## ✨ Socials & Stars
 
-[![Discord Server Invite](https://img.shields.io/badge/Discord-Server%20Invite-7289DA?style=for-the-badge&logo=discord&logoColor=white&color=blueviolet)](https://discord.gg/xc4D33wBmA)
+[![Discord Server Invite](https://img.shields.io/badge/Discord-Server%20Invite-7289DA?style=for-the-badge&logo=discord&logoColor=white&color=blueviolet)](https://rb.ash1421.com/discord)
 [![GitHub Stars](https://img.shields.io/github/stars/Ash1421/Midnight-Ash?style=for-the-badge&color=gold)](https://github.com/Ash1421/Midnight-Ash/stargazers)
 
 ## Github Repository Infomation
 
-[![Latest Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Latest%20Version&color=blue)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/ash1421/midnight-ash?style=for-the-badge&color=blue)](https://www.codefactor.io/repository/github/ash1421/midnight-ash)
+[![Latest Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Latest%20Version&color=purple)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/ash1421/midnight-ash?style=for-the-badge&color=purple)](https://www.codefactor.io/repository/github/ash1421/midnight-ash)
 [![Total Downloads](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/total?style=for-the-badge&color=blueviolet&label=Total%20Downloads)](https://github.com/Ash1421/Midnight-Ash/releases)
 [![Downloads at latest](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/latest/total?style=for-the-badge&color=blueviolet&label=Downloads%20@%20latest)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
 [![GitHub Issues](https://img.shields.io/github/issues/Ash1421/Midnight-Ash/open?style=for-the-badge)](https://github.com/Ash1421/Midnight-Ash/issues)
@@ -275,6 +275,16 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V4.6.22
+
+- ✅️ Minor license change to add author and general infomation.
+- ✅️ Changed author link and discord server invite link.
+- ✅️ Changed website link.
+- ✅️ Changed author infomation.
+- ✅️ Added/changed discription.
+- ✅️ Changed codefactor badge.
+- ✅️ Changed version Badge.
 
 ### V4.6.21
 
