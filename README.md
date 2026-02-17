@@ -50,7 +50,7 @@ I have tried to keep the theme reletively small simple and clean for speedy load
 ### 🔗 Copy this URL into your Discord client
 
 ```
-https://ash1421.github.io/Midnight-Ash/midnight-ash.css
+https://theme.ash1421.com/midnight-ash.css
 ```
 
 #### 👋 Help Guide
@@ -276,6 +276,14 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.6.22
+
+- ✅️ Domain change for github pages.
+- ✅️ Changed documentation related to domain change.
+- ✅️ Changed readme discord link.
+- ✅️ Added github pages website with general infomation.
+
+
 ### V4.6.22
 
 - ✅️ Minor license change to add author and general infomation.
@@ -407,7 +415,7 @@ To change anything listed below please open the css file you have downloaded in 
 Found a bug? Have a suggestion?
 
 - 🐛 [Report Issues](https://github.com/Ash1421/Midnight-Ash/issues)
-- 💬 [Join Discord](https://discord.gg/xc4D33wBmA)
+- 💬 [Join Discord](https://rb.ash1421.com/discord)
 
 ## 📜 License
 

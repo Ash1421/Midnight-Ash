@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>🌙 Midnight-Ash — Discord Theme</title>
+		<meta
+			name="description"
+			content="A sleek, feature-rich Discord theme combining the best of dark aesthetics and modern functionality."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Fira+Code:wght@300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			:root {
+				--bg: #07060d;
+				--bg2: #0e0c1a;
+				--bg3: #131124;
+				--surface: #1a1730;
+				--border: #2a2545;
+				--p1: oklch(72% 0.14 305);
+				--p2: oklch(62% 0.14 305);
+				--p3: oklch(52% 0.14 305);
+				--dim: #6b6490;
+				--text: #d8d3f0;
+				--text2: #a09bc0;
+				--green: oklch(70% 0.13 165);
+				--yellow: oklch(78% 0.13 88);
+				--blue: oklch(70% 0.12 220);
+			}
+
+			html {
+				scroll-behavior: smooth;
+			}
+
+			body {
+				background: var(--bg);
+				color: var(--text);
+				font-family: "Syne", sans-serif;
+				min-height: 100vh;
+				overflow-x: hidden;
+			}
+
+			body::before {
+				content: "";
+				position: fixed;
+				inset: 0;
+				background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+				pointer-events: none;
+				z-index: 0;
+				opacity: 0.6;
+			}
+
+			.glow-orb {
+				position: fixed;
+				border-radius: 50%;
+				filter: blur(120px);
+				pointer-events: none;
+				z-index: 0;
+			}
+			.glow-orb.a {
+				width: 600px;
+				height: 600px;
+				background: oklch(55% 0.18 305 / 0.12);
+				top: -200px;
+				left: -100px;
+				animation: drift 14s ease-in-out infinite alternate;
+			}
+			.glow-orb.b {
+				width: 400px;
+				height: 400px;
+				background: oklch(50% 0.15 260 / 0.08);
+				bottom: 10%;
+				right: -100px;
+				animation: drift 18s ease-in-out infinite alternate-reverse;
+			}
+			@keyframes drift {
+				from {
+					transform: translate(0, 0);
+				}
+				to {
+					transform: translate(40px, 30px);
+				}
+			}
+
+			.wrap {
+				position: relative;
+				z-index: 1;
+				max-width: 900px;
+				margin: 0 auto;
+				padding: 0 24px 80px;
+			}
+
+			header {
+				padding: 64px 0 48px;
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+				animation: fadeUp 0.7s ease both;
+			}
+			.tag {
+				font-family: "Fira Code", monospace;
+				font-size: 11px;
+				letter-spacing: 0.12em;
+				color: var(--p1);
+				text-transform: uppercase;
+				opacity: 0.9;
+			}
+			h1 {
+				font-size: clamp(2.4rem, 6vw, 4rem);
+				font-weight: 800;
+				line-height: 1.05;
+				letter-spacing: -0.03em;
+				background: linear-gradient(135deg, #fff 30%, var(--p1) 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+			.subtitle {
+				color: var(--text2);
+				font-size: 1rem;
+				font-weight: 400;
+				max-width: 520px;
+				line-height: 1.6;
+			}
+
+			.badges {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				margin-top: 4px;
+				animation: fadeUp 0.7s 0.1s ease both;
+			}
+			.badges img {
+				height: 28px;
+				border-radius: 4px;
+			}
+
+			.install-box {
+				background: var(--bg2);
+				border: 1px solid var(--border);
+				border-radius: 16px;
+				padding: 28px 32px;
+				margin: 40px 0;
+				position: relative;
+				animation: fadeUp 0.7s 0.2s ease both;
+			}
+			.install-box::before {
+				content: "";
+				position: absolute;
+				inset: -1px;
+				border-radius: 16px;
+				background: linear-gradient(135deg, var(--p2) 0%, transparent 60%);
+				opacity: 0.25;
+				pointer-events: none;
+			}
+			.install-label {
+				font-family: "Fira Code", monospace;
+				font-size: 10px;
+				letter-spacing: 0.15em;
+				color: var(--p1);
+				text-transform: uppercase;
+				margin-bottom: 12px;
+			}
+			.install-url {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				background: var(--bg3);
+				border: 1px solid var(--border);
+				border-radius: 10px;
+				padding: 14px 18px;
+			}
+			.install-url code {
+				font-family: "Fira Code", monospace;
+				font-size: 0.82rem;
+				color: var(--p1);
+				flex: 1;
+				word-break: break-all;
+			}
+			.copy-btn {
+				background: var(--p3);
+				color: #fff;
+				border: none;
+				border-radius: 7px;
+				padding: 7px 16px;
+				font-family: "Syne", sans-serif;
+				font-size: 0.78rem;
+				font-weight: 600;
+				cursor: pointer;
+				transition:
+					background 0.2s,
+					transform 0.1s;
+				white-space: nowrap;
+			}
+			.copy-btn:hover {
+				background: var(--p2);
+				transform: translateY(-1px);
+			}
+			.copy-btn:active {
+				transform: translateY(0);
+			}
+			.copy-btn.copied {
+				background: var(--green);
+			}
+
+			.section-head {
+				font-size: 0.65rem;
+				font-family: "Fira Code", monospace;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				color: var(--dim);
+				margin: 48px 0 18px;
+				display: flex;
+				align-items: center;
+				gap: 12px;
+			}
+			.section-head::after {
+				content: "";
+				flex: 1;
+				height: 1px;
+				background: var(--border);
+			}
+
+			.filetree {
+				background: var(--bg2);
+				border: 1px solid var(--border);
+				border-radius: 14px;
+				overflow: hidden;
+				animation: fadeUp 0.7s 0.25s ease both;
+			}
+			.filetree-bar {
+				background: var(--bg3);
+				border-bottom: 1px solid var(--border);
+				padding: 12px 18px;
+				display: flex;
+				align-items: center;
+				gap: 8px;
+			}
+			.dot {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+			}
+			.dot.r {
+				background: #ff5f57;
+			}
+			.dot.y {
+				background: #ffbd2e;
+			}
+			.dot.g {
+				background: #28c840;
+			}
+			.filetree-title {
+				font-family: "Fira Code", monospace;
+				font-size: 0.75rem;
+				color: var(--dim);
+				margin-left: 6px;
+			}
+			.tree {
+				padding: 20px 24px;
+				font-family: "Fira Code", monospace;
+				font-size: 0.82rem;
+				line-height: 2;
+			}
+			.tree-root {
+				color: var(--p1);
+				font-weight: 500;
+				margin-bottom: 2px;
+			}
+			.tree-item {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				padding: 1px 0;
+				color: var(--text2);
+				transition: color 0.15s;
+			}
+			.tree-item:hover {
+				color: var(--text);
+			}
+			.tree-item .icon {
+				font-size: 0.9em;
+			}
+			.tree-item.file-main {
+				color: var(--p1);
+				font-weight: 500;
+			}
+			.tree-line {
+				color: var(--border);
+				user-select: none;
+			}
+			.tree-item a {
+				color: inherit;
+				text-decoration: none;
+			}
+			.tree-item a:hover {
+				text-decoration: underline;
+			}
+			.file-badge {
+				font-size: 0.65rem;
+				padding: 1px 7px;
+				border-radius: 20px;
+				margin-left: auto;
+				font-weight: 600;
+				letter-spacing: 0.05em;
+			}
+			.file-badge.css {
+				background: oklch(55% 0.15 215 / 0.2);
+				color: var(--blue);
+			}
+			.file-badge.md {
+				background: oklch(55% 0.13 165 / 0.2);
+				color: var(--green);
+			}
+			.file-badge.txt {
+				background: oklch(55% 0.1 88 / 0.2);
+				color: var(--yellow);
+			}
+			.file-badge.dir {
+				background: oklch(55% 0.14 305 / 0.15);
+				color: var(--p1);
+			}
+
+			.features {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+				gap: 14px;
+				animation: fadeUp 0.7s 0.3s ease both;
+			}
+			.feature-card {
+				background: var(--bg2);
+				border: 1px solid var(--border);
+				border-radius: 12px;
+				padding: 20px 22px;
+				transition:
+					border-color 0.2s,
+					transform 0.2s;
+			}
+			.feature-card:hover {
+				border-color: var(--p3);
+				transform: translateY(-2px);
+			}
+			.feature-icon {
+				font-size: 1.4rem;
+				margin-bottom: 10px;
+			}
+			.feature-name {
+				font-weight: 700;
+				font-size: 0.9rem;
+				margin-bottom: 5px;
+				color: var(--text);
+			}
+			.feature-desc {
+				font-size: 0.78rem;
+				color: var(--text2);
+				line-height: 1.5;
+				font-family: "Fira Code", monospace;
+			}
+
+			.clients {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+				gap: 10px;
+				animation: fadeUp 0.7s 0.35s ease both;
+			}
+			.client-card {
+				background: var(--bg2);
+				border: 1px solid var(--border);
+				border-radius: 10px;
+				padding: 14px 18px;
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				text-decoration: none;
+				color: var(--text);
+				transition:
+					border-color 0.2s,
+					background 0.2s;
+			}
+			.client-card:hover {
+				border-color: var(--p3);
+				background: var(--surface);
+			}
+			.client-icon {
+				font-size: 1.3rem;
+			}
+			.client-name {
+				font-size: 0.85rem;
+				font-weight: 600;
+			}
+			.client-rec {
+				font-family: "Fira Code", monospace;
+				font-size: 0.6rem;
+				color: var(--p1);
+				margin-top: 2px;
+			}
+
+			.links {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				margin-top: 40px;
+				animation: fadeUp 0.7s 0.4s ease both;
+			}
+			.btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+				padding: 10px 20px;
+				border-radius: 9px;
+				font-size: 0.85rem;
+				font-weight: 600;
+				text-decoration: none;
+				transition:
+					opacity 0.2s,
+					transform 0.15s;
+			}
+			.btn:hover {
+				opacity: 0.85;
+				transform: translateY(-1px);
+			}
+			.btn.primary {
+				background: var(--p2);
+				color: #fff;
+			}
+			.btn.ghost {
+				background: transparent;
+				border: 1px solid var(--border);
+				color: var(--text2);
+			}
+			.btn.ghost:hover {
+				border-color: var(--p3);
+				color: var(--text);
+			}
+
+			footer {
+				margin-top: 72px;
+				padding-top: 24px;
+				border-top: 1px solid var(--border);
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				gap: 12px;
+				font-size: 0.75rem;
+				color: var(--dim);
+				font-family: "Fira Code", monospace;
+				animation: fadeUp 0.7s 0.45s ease both;
+			}
+			footer a {
+				color: var(--p1);
+				text-decoration: none;
+			}
+			footer a:hover {
+				text-decoration: underline;
+			}
+
+			@keyframes fadeUp {
+				from {
+					opacity: 0;
+					transform: translateY(18px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			@media (max-width: 600px) {
+				.install-url {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+				.copy-btn {
+					align-self: flex-end;
+				}
+				footer {
+					flex-direction: column;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="glow-orb a"></div>
+		<div class="glow-orb b"></div>
+
+		<div class="wrap">
+			<header>
+				<span class="tag">🌙 Discord Theme</span>
+				<h1>Midnight-Ash</h1>
+				<p class="subtitle">
+					A sleek, feature-rich Discord theme combining the best of dark
+					aesthetics and modern functionality — AMOLED-ready, purple-accented,
+					and built for speed.
+				</p>
+				<div class="badges">
+					<img
+						src="https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Latest%20Version&color=purple"
+						alt="version"
+					/>
+					<img
+						src="https://img.shields.io/github/stars/Ash1421/Midnight-Ash?style=for-the-badge&color=gold"
+						alt="stars"
+					/>
+					<img
+						src="https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/total?style=for-the-badge&color=blueviolet&label=Total%20Downloads"
+						alt="downloads"
+					/>
+					<img
+						src="https://img.shields.io/codefactor/grade/github/ash1421/midnight-ash?style=for-the-badge&color=purple"
+						alt="codefactor"
+					/>
+					<img
+						src="https://img.shields.io/badge/License-GPL%20v3.0-gold.svg?style=for-the-badge"
+						alt="license"
+					/>
+					<img
+						src="https://img.shields.io/badge/Discord-Server%20Invite-7289DA?style=for-the-badge&logo=discord&logoColor=white&color=blueviolet"
+						alt="discord"
+					/>
+				</div>
+			</header>
+
+			<div class="install-box">
+				<div class="install-label">🔗 Installation URL</div>
+				<div class="install-url">
+					<code id="url-text">https://theme.ash1421.com/midnight-ash.css</code>
+					<button class="copy-btn" id="copyBtn" onclick="copyUrl()">
+						Copy
+					</button>
+				</div>
+				<p
+					style="
+						margin-top: 14px;
+						font-size: 0.78rem;
+						color: var(--text2);
+						font-family: &quot;Fira Code&quot;, monospace;
+					"
+				>
+					Paste this URL into your Discord client's theme loader and reload.
+					Need help?
+					<a
+						href="https://github.com/Ash1421/Midnight-Ash"
+						target="_blank"
+						style="color: var(--p1); text-decoration: none"
+						>View the full documentation on GitHub →</a
+					>
+				</p>
+			</div>
+
+			<div class="section-head">Repository</div>
+			<div class="filetree">
+				<div class="filetree-bar">
+					<div class="dot r"></div>
+					<div class="dot y"></div>
+					<div class="dot g"></div>
+					<span class="filetree-title">Ash1421 / Midnight-Ash</span>
+				</div>
+				<div class="tree">
+					<div class="tree-root">📁 Midnight-Ash/</div>
+					<div style="padding-left: 12px">
+						<div class="tree-item file-main">
+							<span class="tree-line">├──</span>
+							<span class="icon">🎨</span>
+							<a
+								href="https://theme.ash1421.com/midnight-ash.css"
+								target="_blank"
+								>midnight-ash.css</a
+							>
+							<span class="file-badge css">CSS</span>
+						</div>
+						<div class="tree-item">
+							<span class="tree-line">├──</span>
+							<span class="icon">📄</span>
+							<a
+								href="https://github.com/Ash1421/Midnight-Ash/blob/main/README.md"
+								target="_blank"
+								>README.md</a
+							>
+							<span class="file-badge md">MD</span>
+						</div>
+						<div class="tree-item">
+							<span class="tree-line">├──</span>
+							<span class="icon">⚖️</span>
+							<a
+								href="https://github.com/Ash1421/Midnight-Ash/blob/main/LICENSE"
+								target="_blank"
+								>LICENSE</a
+							>
+							<span class="file-badge txt">GPL v3</span>
+						</div>
+						<div class="tree-item">
+							<span class="tree-line">├──</span>
+							<span class="icon">🌐</span>
+							<span>index.html</span>
+							<span class="file-badge md">this page</span>
+						</div>
+						<div class="tree-item">
+							<span class="tree-line">├──</span>
+							<span class="icon">📁</span>
+							<a
+								href="https://github.com/Ash1421/Midnight-Ash/tree/main/Screenshots"
+								target="_blank"
+								>Screenshots/</a
+							>
+							<span class="file-badge dir">DIR</span>
+						</div>
+						<div class="tree-item">
+							<span class="tree-line">└──</span>
+							<span class="icon">📁</span>
+							<a
+								href="https://github.com/Ash1421/Midnight-Ash/tree/main/ORIGINAL_LICENSES"
+								target="_blank"
+								>ORIGINAL_LICENSES/</a
+							>
+							<span class="file-badge dir">DIR</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-head">What's Included</div>
+			<div class="features">
+				<div class="feature-card">
+					<div class="feature-icon">🖤</div>
+					<div class="feature-name">Midnight AMOLED</div>
+					<div class="feature-desc">
+						Pure #000000 backgrounds, easy on OLED displays and battery.
+					</div>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">⚙️</div>
+					<div class="feature-name">Settings Modal</div>
+					<div class="feature-desc">
+						Clean modal windows replace the default settings sidebar.
+					</div>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">🔘</div>
+					<div class="feature-name">Radial Status</div>
+					<div class="feature-desc">
+						Beautiful circular status rings around user avatars.
+					</div>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">📱</div>
+					<div class="feature-name">Horizontal Servers</div>
+					<div class="feature-desc">
+						Server list moves to the top for more vertical chat space.
+					</div>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">🍎</div>
+					<div class="feature-name">Apple Emojis</div>
+					<div class="feature-desc">
+						Clean, modern Apple emoji replacements throughout Discord.
+					</div>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">🎨</div>
+					<div class="feature-name">Purple Palette</div>
+					<div class="feature-desc">
+						Fully customizable OKLCH color system with accent variables.
+					</div>
+				</div>
+			</div>
+
+			<div class="section-head">Supported Clients</div>
+			<div class="clients">
+				<a class="client-card" href="https://equicord.org/" target="_blank">
+					<span class="client-icon">⭐</span>
+					<div>
+						<div class="client-name">Equicord</div>
+						<div class="client-rec">Recommended</div>
+					</div>
+				</a>
+				<a class="client-card" href="https://vencord.dev/" target="_blank">
+					<span class="client-icon">🎯</span>
+					<div><div class="client-name">Vencord</div></div>
+				</a>
+				<a
+					class="client-card"
+					href="https://betterdiscord.app/"
+					target="_blank"
+				>
+					<span class="client-icon">🔧</span>
+					<div><div class="client-name">BetterDiscord</div></div>
+				</a>
+				<a class="client-card" href="https://replugged.dev/" target="_blank">
+					<span class="client-icon">🔌</span>
+					<div><div class="client-name">Replugged</div></div>
+				</a>
+				<a class="client-card" href="https://legcord.app/" target="_blank">
+					<span class="client-icon">💻</span>
+					<div><div class="client-name">Legcord</div></div>
+				</a>
+				<a
+					class="client-card"
+					href="https://github.com/SpacingBat3/WebCord"
+					target="_blank"
+				>
+					<span class="client-icon">🌐</span>
+					<div><div class="client-name">WebCord</div></div>
+				</a>
+			</div>
+
+			<div class="links">
+				<a
+					class="btn primary"
+					href="https://github.com/Ash1421/Midnight-Ash/releases/latest"
+					>⬇️ Latest Release</a
+				>
+				<a class="btn ghost" href="https://github.com/Ash1421/Midnight-Ash"
+					>📁 GitHub Repo</a
+				>
+				<a class="btn ghost" href="https://rb.ash1421.com/discord"
+					>💬 Discord Server</a
+				>
+				<a
+					class="btn ghost"
+					href="https://github.com/Ash1421/Midnight-Ash/issues/new"
+					>🐛 Report Issue</a
+				>
+			</div>
+
+			<footer>
+				<span
+					>Made with 💜 by
+					<a href="https://github.com/Ash1421">Ash1421</a></span
+				>
+				<span
+					>Licensed under
+					<a href="https://github.com/Ash1421/Midnight-Ash/blob/main/LICENSE"
+						>GPL v3.0</a
+					></span
+				>
+				<a href="https://github.com/Ash1421/Midnight-Ash">⭐ Star on GitHub</a>
+			</footer>
+		</div>
+
+		<script>
+			function copyUrl() {
+				const url = document.getElementById("url-text").textContent;
+				const btn = document.getElementById("copyBtn");
+				navigator.clipboard.writeText(url).then(() => {
+					btn.textContent = "Copied!";
+					btn.classList.add("copied");
+					setTimeout(() => {
+						btn.textContent = "Copy";
+						btn.classList.remove("copied");
+					}, 2000);
+				});
+			}
+		</script>
+	</body>
+</html>
