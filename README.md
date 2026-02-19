@@ -21,6 +21,7 @@
 
 [![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://daringfireball.net/projects/markdown/)
 [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
 [![Open Source](https://img.shields.io/badge/Open%20Source-%23302E6.svg?style=for-the-badge&logo=open-source-initiative&logoColor=black)](https://opensource.org/about)
 [![GNU](https://img.shields.io/badge/GNU-darkred.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/)
@@ -275,6 +276,14 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+### V5.6.23
+
+- ✅️ Added gitattributes to fix HTML stats in repo.
+- ✅️ Added HTML5 badge.
+- ✅️ Removed Discord badge on html file / themes website.
+- ✅️ Added favicon / website icon.
+- ✅ Added changelog strip with hyperlink to website for convenience.
 
 ### V5.6.22
 

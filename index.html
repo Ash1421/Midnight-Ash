@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>🌙 Midnight-Ash — Discord Theme</title>
+		<link rel="icon" type="image/png" href="favicon.png" />
 		<meta
 			name="description"
 			content="A sleek, feature-rich Discord theme combining the best of dark aesthetics and modern functionality."
@@ -151,7 +152,7 @@
 				border: 1px solid var(--border);
 				border-radius: 16px;
 				padding: 28px 32px;
-				margin: 40px 0;
+				margin: 40px 0 12px;
 				position: relative;
 				animation: fadeUp 0.7s 0.2s ease both;
 			}
@@ -212,6 +213,44 @@
 			}
 			.copy-btn.copied {
 				background: var(--green);
+			}
+
+			.changelog-strip {
+				background: var(--bg2);
+				border: 1px solid var(--border);
+				border-radius: 10px;
+				padding: 13px 20px;
+				margin-bottom: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 12px;
+				flex-wrap: wrap;
+				animation: fadeUp 0.7s 0.22s ease both;
+			}
+			.changelog-strip-left {
+				display: flex;
+				align-items: center;
+				gap: 9px;
+				font-family: "Fira Code", monospace;
+				font-size: 0.75rem;
+				color: var(--text2);
+			}
+			.changelog-strip-left span.icon {
+				font-size: 0.85rem;
+			}
+			.changelog-strip a {
+				font-family: "Fira Code", monospace;
+				font-size: 0.75rem;
+				color: var(--p1);
+				text-decoration: none;
+				opacity: 0.85;
+				white-space: nowrap;
+				transition: opacity 0.15s;
+			}
+			.changelog-strip a:hover {
+				opacity: 1;
+				text-decoration: underline;
 			}
 
 			.section-head {
@@ -525,13 +564,10 @@
 						src="https://img.shields.io/badge/License-GPL%20v3.0-gold.svg?style=for-the-badge"
 						alt="license"
 					/>
-					<img
-						src="https://img.shields.io/badge/Discord-Server%20Invite-7289DA?style=for-the-badge&logo=discord&logoColor=white&color=blueviolet"
-						alt="discord"
-					/>
 				</div>
 			</header>
 
+			<!-- ── Install box ── -->
 			<div class="install-box">
 				<div class="install-label">🔗 Installation URL</div>
 				<div class="install-url">
@@ -557,6 +593,18 @@
 						>View the full documentation on GitHub →</a
 					>
 				</p>
+			</div>
+
+			<div class="changelog-strip">
+				<div class="changelog-strip-left">
+					<span class="icon">📝</span>
+					<span>Want to see what's new?</span>
+				</div>
+				<a
+					href="https://github.com/Ash1421/Midnight-Ash#-changelog"
+					target="_blank"
+					>View changelog →</a
+				>
 			</div>
 
 			<div class="section-head">Repository</div>
