@@ -277,6 +277,13 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.6.24
+
+- ✅ Added meta info for social platforms and embeds to the themes website.
+- ✅ Added custom animated page title to the themes website.
+- ✅ Changed static title on the themes website.
+- ✅ Changed Readme footer.
+
 ### V5.6.23
 
 - ✅️ Added gitattributes to fix HTML stats in repo.
@@ -485,7 +492,7 @@ The only things that have been modified from the license files is the names of t
 
 ---
 
-**Made with 💜 for the Discord community**
+**Made with 💜 by [@Ash1421](https://github.com/Ash1421), for the Discord community.**
 
 ⭐ **Star this repo if you like it!** ⭐
 

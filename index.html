@@ -3,12 +3,33 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>🌙 Midnight-Ash — Discord Theme</title>
+		<title>🌙 Midnight-Ash</title>
 		<link rel="icon" type="image/png" href="favicon.png" />
+		<meta property="og:title" content="🌙 Midnight-Ash — Discord Theme" />
 		<meta
-			name="description"
+			property="og:description"
 			content="A sleek, feature-rich Discord theme combining the best of dark aesthetics and modern functionality."
 		/>
+		<meta name="theme-color" content="#7c50a8" />
+		<script>
+			const staticPart = "🌙 Midnight-Ash | ";
+			const text = "Discord Theme";
+
+			let index = text.length;
+			let direction = -1;
+
+			setInterval(() => {
+				document.title = staticPart + text.substring(0, index);
+
+				if (index === 0) {
+					direction = 1;
+				} else if (index === text.length) {
+					direction = -1;
+				}
+
+				index += direction;
+			}, 200);
+		</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Fira+Code:wght@300;400;500&display=swap"
@@ -567,7 +588,6 @@
 				</div>
 			</header>
 
-			<!-- ── Install box ── -->
 			<div class="install-box">
 				<div class="install-label">🔗 Installation URL</div>
 				<div class="install-url">
