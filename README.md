@@ -277,6 +277,13 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.6.27
+
+- ✅ Changed website back to root of repository not docs
+- ✅ Added assets folder with `favicon.ico` at root of main branch
+- ✅ Release workflow now uses builtin body of `publish-css.yml` file
+- ✅ Changed `publish-css.yml` 
+
 ### V5.6.26
 
 - ✅ Updated website favicon to `favicon.ico`
