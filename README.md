@@ -277,6 +277,11 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.6.28
+
+- ✅ Changed `publish-css.yml` to artifact and naming of automations
+- ✅ Added update to node24 using env for `publish-css.yml` to avoid warnings and future issues when GitHub defaults to Node.js 24 in June 2026
+
 ### V5.6.27
 
 - ✅ Changed website back to root of repository not docs

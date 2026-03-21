@@ -1,5 +1,7 @@
-name: Publish CSS Release
+name: Automated Release
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 on:
   push:
     branches:
@@ -7,7 +9,7 @@ on:
 
 jobs:
   release:
-    name: Auto CSS Release
+    name: Automated File Release
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -80,4 +82,4 @@ jobs:
 
             Compatible with Equicord, Vencord, BetterDiscord, Replugged, and other Discord clients.
 
-          assets: midnight-ash.css
+          artifact: midnight-ash.css
