@@ -277,6 +277,13 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.6.26
+
+- ✅ Updated website favicon to `favicon.ico`
+- ✅ Release workflow now uses `message/release-body.md` for the release message
+- ✅ Minor tweaks to badges and installation instructions in release message
+- ✅ Changed `publish-css.yml` 
+
 ### V5.6.25
 
 - ✅ Added GitHub Actions workflow to automatically publish releases.
