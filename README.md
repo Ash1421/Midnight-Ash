@@ -277,6 +277,15 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.6.25
+
+- ✅ Added GitHub Actions workflow to automatically publish releases.
+- ✅ Added automatic version detection from commit messages (Release - VX.X.XX).
+- ✅ Added automatic CSS file attachment to GitHub releases.
+- ✅ Added automatic release notes template generation.
+- ✅ Changed development workflow to skip releases for Testing, Dev, and Development commits.
+- ✅ Moved website files (index.html and favicon.png) into docs/ for GitHub Pages, with future-proofing for docs/assets/.
+
 ### V5.6.24
 
 - ✅ Added meta info for social platforms and embeds to the themes website.
