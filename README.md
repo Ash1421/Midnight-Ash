@@ -42,7 +42,7 @@
 
 ## 📖 Infomation About this theme
 
-This theme has been made with **my prefrence in mind** and features the best of dark aesthetics and modern functionality, it offers customization, documentation, support and instructions for most modern clients. The theme is made with a purple favorited color palette with animations and the lovely features from the other themes such as radial status for better status of other users curent state, settings modal for a better and nicer look of the discord settings menu allowing a more modern look while giving the user a more transparent menu for better viewability, a horizontal server list for better screen usage, and emoji replace for cleaner and more modern emojis.
+This theme has been made with **my prefrence in mind** and features the best of dark aesthetics and modern functionality, it offers customization, documentation, support and instructions for most modern clients. The theme is made with a purple favorited color palette, animations and the lovely features from the other themes such as radial status for better status of other users curent state, settings modal for a better and nicer look of the discord settings menu allowing a more modern look while giving` the user a more transparent menu for better viewability, a horizontal server list for better screen usage, and emoji replace for cleaner and more modern emojis.
 
 I have tried to keep the theme reletively small simple and clean for speedy load times on laptops or low end pc's, maybe even phones as well, and have the easy use and modification of the theme and features via documentation, links, support, or issues.
 
@@ -277,23 +277,32 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.6.29
+
+- ✅ Changed `index.html` website file structure.
+- ✅ Changed website aspects such as buttons and colors.
+- ✅ Added `index.css` and `index.js` files.
+- ✅ Changed some theme infomation in `README.md`.
+- ✅ Added and changed parts of `index.html` file.
+- ✅ Changed `publish-css.yml` to fix artifact warning.
+
 ### V5.6.28
 
-- ✅ Changed `publish-css.yml` to artifact and naming of automations
-- ✅ Added update to node24 using env for `publish-css.yml` to avoid warnings and future issues when GitHub defaults to Node.js 24 in June 2026
+- ✅ Changed `publish-css.yml` to artifact and naming of automations.
+- ✅ Added update to node24 using env for `publish-css.yml` to avoid warnings and future issues when GitHub defaults to Node.js 24 in June 2026.
 
 ### V5.6.27
 
-- ✅ Changed website back to root of repository not docs
-- ✅ Added assets folder with `favicon.ico` at root of main branch
-- ✅ Release workflow now uses builtin body of `publish-css.yml` file
+- ✅ Changed website back to root of repository not docs.
+- ✅ Added assets folder with `favicon.ico` at root of main branch.
+- ✅ Release workflow now uses builtin body of `publish-css.yml` file.
 - ✅ Changed `publish-css.yml` 
 
 ### V5.6.26
 
 - ✅ Updated website favicon to `favicon.ico`
-- ✅ Release workflow now uses `message/release-body.md` for the release message
-- ✅ Minor tweaks to badges and installation instructions in release message
+- ✅ Release workflow now uses `message/release-body.md` for the release message.
+- ✅ Minor tweaks to badges and installation instructions in release message.
 - ✅ Changed `publish-css.yml` 
 
 ### V5.6.25
@@ -448,11 +457,11 @@ To change anything listed below please open the css file you have downloaded in 
 
 ### v3.0.0
 
-- ✅ Combined all themes into one package
-- ✅ Added AMOLED backgrounds
-- ✅ Integrated radial status
-- ✅ Added horizontal server list
-- ✅ Apple emoji replacements
+- ✅ Combined all themes into one package.
+- ✅ Added AMOLED backgrounds.
+- ✅ Integrated radial status.
+- ✅ Added horizontal server list.
+- ✅ Apple emoji replacements.
 
 ## 🐛 Issues & Support
 

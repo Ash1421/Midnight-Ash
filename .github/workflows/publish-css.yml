@@ -82,4 +82,4 @@ jobs:
 
             Compatible with Equicord, Vencord, BetterDiscord, Replugged, and other Discord clients.
 
-          artifact: midnight-ash.css
+          artifacts: midnight-ash.css
