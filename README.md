@@ -277,6 +277,10 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.8.30
+
+- ✅ Javascript language repository fix.
+
 ### V5.7.29
 
 - ✅ Release error fix.
