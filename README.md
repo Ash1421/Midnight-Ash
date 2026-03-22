@@ -277,6 +277,10 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.7.29
+
+- ✅ Release error fix.
+
 ### V5.6.29
 
 - ✅ Changed `index.html` website file structure.
