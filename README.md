@@ -277,11 +277,15 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.8.32
+
+- ✅ Fixed `publish-css.yml` badge bug.
+
 ### V5.8.31
 
-- ✅ Changed `README.md` badges
-- ✅ Changed `index.html` badges
-- ✅ Changed `publish-css.yml` badges
+- ✅ Changed `README.md` badges.
+- ✅ Changed `index.html` badges.
+- ✅ Changed `publish-css.yml` badges.
 
 ### V5.8.30
 
