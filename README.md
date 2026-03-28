@@ -7,6 +7,14 @@
 [![Discord Server Invite](https://img.shields.io/badge/Discord-Server%20Invite-7289DA?style=for-the-badge&logo=discord&logoColor=white&color=blueviolet&labelColor=1c1917)](https://rb.ash1421.com/discord)
 [![GitHub Stars](https://img.shields.io/github/stars/Ash1421/Midnight-Ash?style=for-the-badge&color=gold&labelColor=1c1917&logo=github&logoColor=white)](https://github.com/Ash1421/Midnight-Ash/stargazers)
 
+## 💜 Donations & Funding
+
+#### Donations and or support are appreciated very much!
+#### If you would like to show love to the creator of this project or this project in general please consider helping fund the development of this project by donating on Ko-fi.
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-ff69b4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917)](https://kofi.ash1421.com)
+<!-- [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ff69b4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917)](https://coffee.ash1421.com) -->
+
 ## Github Repository Infomation
 
 [![Latest Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Latest%20Version&logo=github&logoColor=white&labelColor=1c1917&color=6829B1)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
@@ -277,6 +285,11 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+### V5.8.33
+
+- ✅ Added donation / support badges and infomation.
+- ✅ Formatted all supported files with a code formatter.
+
 ### V5.8.32
 
 - ✅ Fixed `publish-css.yml` badge bug.
@@ -544,6 +557,57 @@ The only things that have been modified from the license files is the names of t
 </a>
 
 <div align="center">
+
+---
+
+## 💵 Support me and or my projects
+
+<table width="100%" style="border-collapse: collapse; border: 1px solid #ddd;">
+  <tr>
+    <td align="center" style="border: 1px solid #ddd; padding: 15px; vertical-align: top;">
+      <h3>💜 Donations and support are appreciated very much!</h3>
+      <p><strong>Minimum donation:</strong> $5 (NZD)</p>
+      <p><strong>Payment methods:</strong> Credit/Debit Card, PayPal, Apple Pay, Google Pay</p>
+      <p><strong>Supported Cards:</strong> Visa, Mastercard, Amex / American Express</p>
+      <p>Membership options are <strong>available</strong> for recurring support.</p>
+      <p><strong>You can donate via:</strong></p>
+      <a href="https://kofi.ash1421.com">
+        <img src="https://img.shields.io/badge/Ko--fi-FF69B4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917" alt="Ko-fi">
+      </a>
+    </td>
+
+<td align="center" style="border: 1px solid #ddd; padding: 15px; vertical-align: top;">
+
+  <h3 style="color:#553BBB;">💜 Supported Payment Methods:</h3>
+
+  <div style="margin-bottom:8px;">
+    <div>
+    <a href="https://www.visa.co.nz/">
+      <img src="https://img.shields.io/badge/Visa%20Credit%2FDebit_Card-9C51E3?style=for-the-badge&logo=visa&logoColor=white&labelColor=1c1917" alt="Visa Credit/Debit Card">
+    </a>
+    <a href="https://www.mastercard.co.nz/">
+      <img src="https://img.shields.io/badge/Mastercard%20Credit%2FDebit_Card-8F40E0?style=for-the-badge&logo=mastercard&logoColor=white&labelColor=1c1917" alt="Mastercard Credit/Debit Card">
+    </a>
+    <a href="https://www.americanexpress.com/newzealand/">
+      <img src="https://img.shields.io/badge/Amex%2FAmerican%20Express%20Credit%2FDebit_Card-8433DD?style=for-the-badge&logo=american-express&logoColor=white&labelColor=1c1917" alt="Amex / American Express Credit/Debit Card">
+    </a>
+  </div>
+
+  <div>
+    <a href="https://www.paypal.com/nz/">
+      <img src="https://img.shields.io/badge/PayPal-Supported-7930DA?style=for-the-badge&logo=paypal&logoColor=white&labelColor=1c1917" alt="PayPal">
+    </a>
+    <a href="https://www.apple.com/nz/apple-pay/">
+      <img src="https://img.shields.io/badge/Apple_Pay-Supported-6F28D7?style=for-the-badge&logo=apple&logoColor=white&labelColor=1c1917" alt="Apple Pay">
+    </a>
+    <a href="https://pay.google.com/intl/en_nz/about/">
+      <img src="https://img.shields.io/badge/Google_Pay-Supported-6320D3?style=for-the-badge&logo=google-pay&logoColor=white&labelColor=1c1917" alt="Google Pay">
+    </a>
+  </div>
+
+</td>
+  </tr>
+</table>
 
 ---
 
