@@ -12,8 +12,8 @@
 #### Donations and or support are appreciated very much!
 #### If you would like to show love to the creator of this project or this project in general please consider helping fund the development of this project by donating on Ko-fi.
 
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-ff69b4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917)](https://kofi.ash1421.com)
-<!-- [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ff69b4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917)](https://coffee.ash1421.com) -->
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate-FF69B4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917)](https://kofi.ash1421.com)
+<!-- [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-FF69B4?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white&labelColor=1c1917)](https://coffee.ash1421.com) -->
 
 ## Github Repository Infomation
 
@@ -284,6 +284,15 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+## V5.8.34
+
+- ✅ Added donation / support badges and infomation to the `publish-css.yml` file.
+- ✅ Added Donations & Support section to the website.
+- ✅ Made header badges clickable with links to releases, stargazers, CodeFactor, and license.
+- ✅ Changed existing donation / badges.
+- ✅ Changed `index.html`
+- ✅ Changed `index.css`
 
 ### V5.8.33
 

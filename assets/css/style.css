@@ -595,3 +595,131 @@ footer a:hover {
 		flex-direction: column;
 	}
 }
+
+.donate-card {
+	background: var(--bg2);
+	border: 1px solid var(--border);
+	border-radius: 14px;
+	overflow: hidden;
+	margin: 20px 0;
+	position: relative;
+	animation: fadeUp 0.7s 0.38s ease both;
+}
+.donate-card::before {
+	content: "";
+	position: absolute;
+	inset: -1px;
+	border-radius: 14px;
+	background: linear-gradient(135deg, var(--p2) 0%, transparent 60%);
+	opacity: 0.15;
+	pointer-events: none;
+}
+.donate-top {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	gap: 0;
+}
+.donate-info {
+	padding: 28px 28px 28px 28px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+.donate-title {
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--text);
+}
+.donate-desc {
+	font-family: "Fira Code", monospace;
+	font-size: 0.78rem;
+	color: var(--text2);
+	line-height: 1.6;
+}
+.donate-desc strong {
+	color: var(--p1);
+	font-weight: 600;
+}
+.donate-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+.donate-pill {
+	font-family: "Fira Code", monospace;
+	font-size: 0.68rem;
+	background: oklch(55% 0.14 305 / 0.15);
+	color: var(--p1);
+	padding: 3px 10px;
+	border-radius: 20px;
+	border: 1px solid oklch(55% 0.14 305 / 0.25);
+	white-space: nowrap;
+}
+.kofi-btn img {
+	height: 28px;
+	border-radius: 4px;
+	transition:
+		opacity 0.2s,
+		transform 0.15s;
+}
+.kofi-btn:hover img {
+	opacity: 0.85;
+	transform: translateY(-1px);
+}
+.donate-divider {
+	width: 1px;
+	background: var(--border);
+	margin: 20px 0;
+}
+.donate-methods {
+	padding: 28px 28px 28px 28px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+.donate-methods-title {
+	font-size: 0.85rem;
+	font-weight: 700;
+	color: var(--p1);
+}
+.donate-badges {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	align-items: flex-start;
+}
+.donate-badges a img {
+	height: 26px;
+	border-radius: 4px;
+	transition:
+		opacity 0.2s,
+		transform 0.15s;
+}
+.donate-badges a:hover img {
+	opacity: 0.85;
+	transform: translateY(-1px);
+}
+
+@media (max-width: 680px) {
+	.donate-top {
+		grid-template-columns: 1fr;
+	}
+	.donate-divider {
+		width: auto;
+		height: 1px;
+		margin: 0 20px;
+	}
+}
+
+.badges a {
+	display: inline-flex;
+	text-decoration: none;
+	border-radius: 4px;
+	transition:
+		opacity 0.2s,
+		transform 0.15s;
+}
+.badges a:hover {
+	opacity: 0.82;
+	transform: translateY(-2px);
+}
