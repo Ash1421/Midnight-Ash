@@ -285,6 +285,10 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+## V5.8.35
+
+- ✅ Chaned donation badge stuff.
+
 ## V5.8.34
 
 - ✅ Added donation / support badges and infomation to the `publish-css.yml` file.
@@ -581,7 +585,7 @@ The only things that have been modified from the license files is the names of t
       <p>Membership options are <strong>available</strong> for recurring support.</p>
       <p><strong>You can donate via:</strong></p>
       <a href="https://kofi.ash1421.com">
-        <img src="https://img.shields.io/badge/Ko--fi-FF69B4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917" alt="Ko-fi">
+        <img src="https://img.shields.io/badge/Ko--fi-Donate-FF69B4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917" alt="Ko-fi">
       </a>
     </td>
 
