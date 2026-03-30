@@ -2,7 +2,7 @@
  * @name Midnight-Ash
  * @description Midnight-AMOLED theme with Settings Modal, Radial Status, Horizontal Server List, and Apple Emojis.
  * @author Ash1421 
- * @version 5.8.36
+ * @version 5.9.36
  * @website https://ash1421.com
  * @source https://github.com/Ash1421/Midnight-Ash
  * @authorId 616485235982467085
@@ -11,10 +11,10 @@
 
 @import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
 @import url("https://luckfire.github.io/amoled-cord/src/amoled-cord.css");
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
 @import url("https://discordstyles.github.io/RadialStatus/RadialStatus.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
 @import url("https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css");
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css");
 
 body {
 	--font: "figtree";

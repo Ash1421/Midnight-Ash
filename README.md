@@ -285,6 +285,10 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+## V5.9.36
+
+- ✅ Fixed `midnight-ash.css` import url format.
+
 ## V5.8.36
 
 - ✅ Added donation / support github funding.
