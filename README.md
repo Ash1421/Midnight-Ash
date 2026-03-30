@@ -285,6 +285,10 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
+## V5.8.36
+
+- ✅ Added donation / support github funding.
+
 ## V5.8.35
 
 - ✅ Chaned donation badge stuff.
