@@ -1,6 +1,12 @@
-# 🌙 Midnight-Ash Theme Pack
+<div align="center">
+  <img src="assets/svg/midnight_ash_banner.svg" alt="Midnight-Ash Banner" width="650"/>
+</div>
 
-> **A sleek, feature-rich Discord theme combining the best of dark aesthetics and modern functionality**
+---
+
+<!-- # 🌙 Midnight-Ash Theme Pack -->
+
+<!-- > **A sleek, feature-rich Discord theme combining the best of dark aesthetics and modern functionality** -->
 
 ## ✨ Socials & Stars
 
@@ -284,6 +290,13 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+## V5.9.37
+
+- ✅ Added github banner `midnight_ash_banner.svg`
+- ✅ Added svg folder with banner.
+- ✅ Added svg banner.
+- ✅ Removed some title text at the top of `README.md`
 
 ## V5.9.36
 

@@ -1,0 +1,66 @@
+<svg width="100%" viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="grad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1a0e38" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#0a0812" stop-opacity="0"/>
+  </linearGradient>
+  <style>
+    .star { fill: #a89de8; opacity: 0.7; }
+    .title { font-family: Georgia, 'Times New Roman', serif; font-size: 40px; font-weight: 700; fill: #f0ecff; letter-spacing: 3px; }
+    .sub { font-family: 'Segoe UI', sans-serif; font-size: 13px; font-weight: 400; fill: #9b94d0; letter-spacing: 0.5px; }
+    .feat { font-family: 'Segoe UI', sans-serif; font-size: 12px; font-weight: 400; fill: #9b94d0; }
+    .fi { font-family: 'Segoe UI', sans-serif; font-size: 12px; fill: #7f77dd; }
+    .url { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; fill: #c4b8ff; letter-spacing: 0.5px; }
+  </style>
+</defs>
+
+<!-- Background -->
+<rect width="680" height="260" fill="#0a0812" rx="14"/>
+<rect width="680" height="260" fill="url(#grad)" rx="14"/>
+
+<!-- Stars -->
+<circle class="star" cx="40"  cy="20"  r="1.2"/><circle class="star" cx="100" cy="12"  r="0.8"/>
+<circle class="star" cx="170" cy="28"  r="1.4"/><circle class="star" cx="260" cy="10"  r="0.9"/>
+<circle class="star" cx="340" cy="18"  r="0.6"/><circle class="star" cx="420" cy="8"   r="1.1"/>
+<circle class="star" cx="510" cy="22"  r="0.8"/><circle class="star" cx="590" cy="14"  r="1.3"/>
+<circle class="star" cx="648" cy="24"  r="0.9"/><circle class="star" cx="20"  cy="55"  r="0.7"/>
+<circle class="star" cx="660" cy="50"  r="0.8"/><circle class="star" cx="130" cy="235" r="0.9"/>
+<circle class="star" cx="550" cy="242" r="1.0"/><circle class="star" cx="70"  cy="245" r="0.7"/>
+<circle class="star" cx="615" cy="248" r="1.2"/>
+
+<!-- Glow -->
+<ellipse cx="340" cy="100" rx="260" ry="75" fill="#3c3489" opacity="0.13"/>
+
+<!-- Moon LEFT — open side facing left -->
+<g transform="translate(90, 100)">
+  <circle cx="0" cy="0" r="28" fill="#1a1030"/>
+  <circle cx="-10" cy="-4" r="23" fill="#0a0812"/>
+  <circle cx="0" cy="0" r="28" fill="none" stroke="#7f77dd" stroke-width="0.8" opacity="0.5"/>
+</g>
+
+<!-- Moon RIGHT — open side facing right -->
+<g transform="translate(590, 100)">
+  <circle cx="0" cy="0" r="28" fill="#1a1030"/>
+  <circle cx="10" cy="-4" r="23" fill="#0a0812"/>
+  <circle cx="0" cy="0" r="28" fill="none" stroke="#7f77dd" stroke-width="0.8" opacity="0.5"/>
+</g>
+
+<!-- Title -->
+<text class="title" x="340" y="84" text-anchor="middle">Midnight-Ash</text>
+
+<!-- Tagline -->
+<text class="sub" x="340" y="112" text-anchor="middle">A sleek, feature-rich Discord theme — dark aesthetics &amp; modern functionality</text>
+
+<!-- Divider top -->
+<line x1="200" y1="126" x2="480" y2="126" stroke="#534ab7" stroke-width="0.5" opacity="0.6"/>
+
+<!-- Features -->
+<text class="feat" x="340" y="149" text-anchor="middle"><tspan class="fi">🖤</tspan><tspan> Midnight-AMOLED</tspan><tspan dx="14" class="fi">⚙️</tspan><tspan> Settings Modal</tspan><tspan dx="14" class="fi">🔘</tspan><tspan> Radial Status</tspan></text>
+<text class="feat" x="340" y="172" text-anchor="middle"><tspan class="fi">📱</tspan><tspan> Horizontal Server List</tspan><tspan dx="14" class="fi">🍎</tspan><tspan> Apple Emojis</tspan></text>
+
+<!-- Divider bottom -->
+<line x1="200" y1="186" x2="480" y2="186" stroke="#534ab7" stroke-width="0.5" opacity="0.6"/>
+
+<!-- URL — clear, bold, high contrast, no tricks -->
+<text class="url" x="340" y="218" text-anchor="middle">theme.ash1421.com</text>
+</svg>
