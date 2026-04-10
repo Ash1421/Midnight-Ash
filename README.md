@@ -33,14 +33,17 @@
 
 ## ❤️ Made With love using
 
-[![Open Source](https://img.shields.io/badge/Open%20Source-%23302E6.svg?style=for-the-badge&logo=open-source-initiative&labelColor=1c1917)](https://opensource.org/about)
-[![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://daringfireball.net/projects/markdown/)
-[![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
-[![GNU](https://img.shields.io/badge/GNU-darkred.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/)
-[![Shields.io](https://img.shields.io/badge/Shields.io-darkgreen.svg?style=for-the-badge&logo=shields.io&logoColor=white)](https://shields.io/)
-[![CodeFactor](https://img.shields.io/badge/Code%20Factor-red?style=for-the-badge&logo=codefactor&logoColor=white)](https://www.codefactor.io/)
+[![Open Source](https://img.shields.io/badge/Open%20Source-%23302E6.svg?style=for-the-badge&logo=open-source-initiative&logoColor=white&labelColor=1c1917)](https://opensource.org/about)
+[![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white&labelColor=1c1917)](https://daringfireball.net/projects/markdown/)
+[![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css&logoColor=white&labelColor=1c1917)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white&labelColor=1c1917)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white&labelColor=1c1917)](https://pages.github.com/)
+[![GNU](https://img.shields.io/badge/GNU-darkred.svg?style=for-the-badge&logo=gnu&logoColor=white&labelColor=1c1917)](https://www.gnu.org/)
+[![Shields.io](https://img.shields.io/badge/Shields.io-darkgreen.svg?style=for-the-badge&logo=shields.io&logoColor=white&labelColor=1c1917)](https://shields.io/)
+[![CodeFactor](https://img.shields.io/badge/Code%20Factor-red?style=for-the-badge&logo=codefactor&logoColor=white&labelColor=1c1917)](https://www.codefactor.io/)
+[![Node.js](https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=1c1917)](https://nodejs.org/)
+[![JSON](https://img.shields.io/badge/json-000000?style=for-the-badge&logo=json&logoColor=white&labelColor=1c1917)](https://www.json.org/json-en.html)
+[![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=white&labelColor=1c1917)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## 📜 Licensed Under
 
@@ -157,6 +160,38 @@ GitHub: https://github.com/GooseMod/OpenAsar
 
 Compatible with BetterDiscord, Equicord or Vencord installation methods.
 
+## 📊 Performance
+
+> ⚠️ These results are approximate (~) and may change if upstream themes or `midnight-ash.css` are updated.
+> Load times measured via Discord DevTools Network tab with cache disabled.
+
+| Import | Load Time | Transfer Size |
+| --- | --- | --- |
+| `midnight-ash.css` | ~42ms | ~2.02 KB |
+| `midnight-discord` | ~54ms | ~16.35 KB |
+| `amoled-cord` | ~44ms | ~4.91 KB |
+| `RadialStatus` | ~42ms | ~2.17 KB |
+| `SettingsModal` | ~44ms | ~1.72 KB |
+| `HorizontalServerList` | ~44ms | ~0.75 KB |
+| `Apple Emojis` | ~249ms | ~0.53 KB |
+| `Font Awesome Moon SVG` | ~123ms | ~0.75 KB |
+| **Total** | | **~29.20 KB** |
+
+## 📦 Import Sizes
+
+> ⚠️ Sizes may change if upstream themes or `midnight-ash.css` are updated, therefore the sizes are approximate (~).
+> Sizes measured via a custom Node.js script against the full uncompressed and gzipped CSS files.
+
+| Import | Uncompressed | Gzipped |
+| --- | --- | --- |
+| `midnight-discord` | ~79.01 KB | ~15.86 KB |
+| `amoled-cord` | ~28.63 KB | ~4.46 KB |
+| `RadialStatus` | ~8.33 KB | ~1.91 KB |
+| `SettingsModal` | ~7.81 KB | ~1.36 KB |
+| `HorizontalServerList` | ~1.65 KB | ~614 B |
+| `Apple Emojis` | ~1.34 KB | ~343 B |
+| **Total** | **~126.76 KB** | **~24.40 KB** |
+
 ## ⚙️ Customization Documentation
 
 ### 🔓 Editing The Theme yourself ⚠️
@@ -171,8 +206,8 @@ To change anything listed below please open the css file you have downloaded in 
 
 ### Settings Modal
 
-- `--settingswidth`: Width in pixels (default: 960px)
-- `--settingsheight`: Height in vh (default: 80vh)
+- `--settingswidth`: Width in pixels (default: 960)
+- `--settingsheight`: Height in vh (default: 80)
 - `--settingsbackground`: Background color (default: transparent)
 
 ### Radial Status rings
@@ -189,43 +224,43 @@ To change anything listed below please open the css file you have downloaded in 
 
 ### Theme Colors
 
-- `--purple-1`: Lightest purple (default: oklch(75% 0.11 310))
-- `--purple-2`: Light purple (default: oklch(70% 0.11 310))
-- `--purple-3`: Medium purple (default: oklch(65% 0.11 310))
-- `--purple-4`: Dark purple (default: oklch(60% 0.11 310))
-- `--purple-5`: Darkest purple (default: oklch(55% 0.11 310))
+- `--purple-1`: Lightest purple (default: oklch(75% 0.11 310deg))
+- `--purple-2`: Light purple (default: oklch(70% 0.11 310deg))
+- `--purple-3`: Medium purple (default: oklch(65% 0.11 310deg))
+- `--purple-4`: Dark purple (default: oklch(60% 0.11 310deg))
+- `--purple-5`: Darkest purple (default: oklch(55% 0.11 310deg))
 
 ---
 
-- `--green-1`: Lightest green (default: oklch(75% 0.11 170))
-- `--green-2`: Light green (default: oklch(70% 0.11 170))
-- `--green-3`: Medium green (default: oklch(65% 0.11 170))
-- `--green-4`: Dark green (default: oklch(60% 0.11 170))
-- `--green-5`: Darkest green (default: oklch(55% 0.11 160))
+- `--green-1`: Lightest green (default: oklch(75% 0.11 170deg))
+- `--green-2`: Light green (default: oklch(70% 0.11 170deg))
+- `--green-3`: Medium green (default: oklch(65% 0.11 170deg))
+- `--green-4`: Dark green (default: oklch(60% 0.11 170deg))
+- `--green-5`: Darkest green (default: oklch(55% 0.11 160deg))
 
 ---
 
-- `--blue-1`: Lightest blue (default: oklch(75% 0.1 215))
-- `--blue-2`: Light blue (default: oklch(70% 0.1 215))
-- `--blue-3`: Medium blue (default: oklch(65% 0.1 215))
-- `--blue-4`: Dark blue (default: oklch(60% 0.1 215))
-- `--blue-5`: Darkest blue (default: oklch(55% 0.1 215))
+- `--blue-1`: Lightest blue (default: oklch(75% 0.1 215deg))
+- `--blue-2`: Light blue (default: oklch(70% 0.1 215deg))
+- `--blue-3`: Medium blue (default: oklch(65% 0.1 215deg))
+- `--blue-4`: Dark blue (default: oklch(60% 0.1 215deg))
+- `--blue-5`: Darkest blue (default: oklch(55% 0.1 215deg))
 
 ---
 
-- `--yellow-1`: Lightest yellow (default: oklch(80% 0.11 90))
-- `--yellow-2`: Light yellow (default: oklch(75% 0.11 90))
-- `--yellow-3`: Medium yellow (default: oklch(70% 0.11 90))
-- `--yellow-4`: Dark yellow (default: oklch(65% 0.11 90))
-- `--yellow-5`: Darkest yellow (default: oklch(60% 0.11 90))
+- `--yellow-1`: Lightest yellow (default: oklch(80% 0.11 90deg))
+- `--yellow-2`: Light yellow (default: oklch(75% 0.11 90deg))
+- `--yellow-3`: Medium yellow (default: oklch(70% 0.11 90deg))
+- `--yellow-4`: Dark yellow (default: oklch(65% 0.11 90deg))
+- `--yellow-5`: Darkest yellow (default: oklch(60% 0.11 90deg))
 
 ---
 
-- `--red-1`: Lightest red (default: oklch(75% 0.11 0))
-- `--red-2`: Light red (default: oklch(70% 0.11 0))
-- `--red-3`: Medium red (default: oklch(65% 0.11 0))
-- `--red-4`: Dark red (default: oklch(60% 0.11 0))
-- `--red-5`: Darkest red (default: oklch(55% 0.11 0))
+- `--red-1`: Lightest red (default: oklch(75% 0.12 0deg))
+- `--red-2`: Light red (default: oklch(70% 0.12 0deg))
+- `--red-3`: Medium red (default: oklch(65% 0.12 0deg))
+- `--red-4`: Dark red (default: oklch(60% 0.12 0deg))
+- `--red-5`: Darkest red (default: oklch(55% 0.12 0deg))
 
 ### Accents
 
@@ -259,10 +294,10 @@ To change anything listed below please open the css file you have downloaded in 
 
 - The screenshots below show the theme in action when it is correctly loaded.
 
-<div align="center">
-  <img width="800" src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme.png?raw=true" alt="Midnight Ash Theme">
-  <img width="800" src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme-Loaded.png?raw=true" alt="Midnight Ash Theme Loaded">
-  <img width="800" src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme-With-URL.png?raw=true" alt="Midnight Ash Theme With URL">
+<div style="text-align: center;">
+  <img src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme.png?raw=true" alt="Midnight Ash Theme" style="width: 800px;">
+  <img src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme-Loaded.png?raw=true" alt="Midnight Ash Theme Loaded" style="width: 800px;">
+  <img src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme-With-URL.png?raw=true" alt="Midnight Ash Theme With URL" style="width: 800px;">
 </div>
 
 ### 🌑 AMOLED-Optimized
@@ -290,6 +325,21 @@ To change anything listed below please open the css file you have downloaded in 
 - Modern, streamlined appearance
 
 ## 📝 Changelog
+
+## V6.0.0
+
+- ✅ Major verion bump to 6.0.0 with many changes.
+- ✅ Modernised CSS color syntax throughout `midnight-ash.css`.
+- ✅ Converted `hsla()` comma syntax to modern `hsl()` slash syntax.
+- ✅ Added `deg` unit to all `oklch()` hue values.
+- ✅ Restructured `midnight-ash.css` for easier editing and readability.
+- ✅ Fixed text color scale to match original values.
+- ✅ Linted `midnight-ash.css` with Stylelint, Prettier and duplication/unused variable removal.
+- ✅ Added Performance and Import Sizes sections to `README.md`.
+- ✅ Fixed / reformed screenshots div code.
+- ✅ Updated `README.md` to releflect changes.
+- ✅ Updated `README.md` customization documentation.
+- ✅ Updated / Added to `README.md` existing and new javascript, json, and node.js badges reflecting what was used.
 
 ## V5.9.37
 
