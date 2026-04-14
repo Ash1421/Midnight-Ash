@@ -4,10 +4,6 @@
 
 ---
 
-<!-- # 🌙 Midnight-Ash Theme Pack -->
-
-<!-- > **A sleek, feature-rich Discord theme combining the best of dark aesthetics and modern functionality** -->
-
 ## ✨ Socials & Stars
 
 [![Discord Server Invite](https://img.shields.io/badge/Discord-Server%20Invite-7289DA?style=for-the-badge&logo=discord&logoColor=white&color=blueviolet&labelColor=1c1917)](https://rb.ash1421.com/discord)
@@ -19,9 +15,8 @@
 #### If you would like to show love to the creator of this project or this project in general please consider helping fund the development of this project by donating on Ko-fi.
 
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate-FF69B4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917)](https://kofi.ash1421.com)
-<!-- [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-FF69B4?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white&labelColor=1c1917)](https://coffee.ash1421.com) -->
 
-## Github Repository Infomation
+## Github Repository Information
 
 [![Latest Version](https://img.shields.io/github/v/release/Ash1421/Midnight-Ash?style=for-the-badge&label=Latest%20Version&logo=github&logoColor=white&labelColor=1c1917&color=6829B1)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
 [![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/ash1421/midnight-ash?style=for-the-badge&logo=codefactor&logoColor=white&labelColor=1c1917&color=6829B1)](https://www.codefactor.io/repository/github/ash1421/midnight-ash)
@@ -29,7 +24,7 @@
 [![Downloads at latest](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/latest/total?style=for-the-badge&logo=github&logoColor=white&labelColor=1c1917&color=6829B1&label=Downloads%20@%20latest)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
 [![GitHub Issues](https://img.shields.io/github/issues/Ash1421/Midnight-Ash/open?style=for-the-badge&labelColor=1c1917&logo=github&logoColor=white)](https://github.com/Ash1421/Midnight-Ash/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/Ash1421/Midnight-Ash/closed?style=for-the-badge&color=red&labelColor=1c1917&logo=github&logoColor=white)](https://github.com/Ash1421/Midnight-Ash/issues?q=is:closed)
-[![New Issue](https://img.shields.io/badge/Open%20A%20New-Issue-orange?style=for-the-badge&labelColor=1c1917&logo=github&logoColor=white)](https://github.com/Ash1421/Midnight-Ash/issues/new)
+[![New Issue](https://img.shields.io/badge/Open%20A%20New-Issue-orange?style=for-the-badge&labelColor=1c1917&logo=github&logoColor=white)](https://github.com/Ash1421/Midnight-Ash/issues/new?template=ISSUE_TEMPLATE.md)
 
 ## ❤️ Made With love using
 
@@ -57,11 +52,11 @@
 📱 **Horizontal Server List** - Servers displayed at the top for better screen usage  
 🍎 **Apple Emojis** - Clean, modern Apple emoji replacements
 
-## 📖 Infomation About this theme
+## 📖 Information About this theme
 
-This theme has been made with **my prefrence in mind** and features the best of dark aesthetics and modern functionality, it offers customization, documentation, support and instructions for most modern clients. The theme is made with a purple favorited color palette, animations and the lovely features from the other themes such as radial status for better status of other users curent state, settings modal for a better and nicer look of the discord settings menu allowing a more modern look while giving` the user a more transparent menu for better viewability, a horizontal server list for better screen usage, and emoji replace for cleaner and more modern emojis.
+This theme has been made with **my preference in mind** and features the best of dark aesthetics and modern functionality, it offers customization, documentation, support and instructions for most modern clients. The theme is made with a purple favorited color palette, animations and the lovely features from the other themes such as radial status for better status of other users current state, settings modal for a better and nicer look of the discord settings menu allowing a more modern look while giving the user a more transparent menu for better viewability, a horizontal server list for better screen usage, and emoji replace for cleaner and more modern emojis.
 
-I have tried to keep the theme reletively small simple and clean for speedy load times on laptops or low end pc's, maybe even phones as well, and have the easy use and modification of the theme and features via documentation, links, support, or issues.
+I have tried to keep the theme relatively small simple and clean for speedy load times on laptops or low end pc's, maybe even phones as well, and have the easy use and modification of the theme and features via documentation, links, support, or issues.
 
 ## 🚀 Installation
 
@@ -73,7 +68,7 @@ https://theme.ash1421.com/midnight-ash.css
 
 #### 👋 Help Guide
 
-To download and install for most modern clients copy the url above and paste or type into the requred field then Load, Toggle, Reload, or Restart to refresh theme, for more help please view the client specific instructions.
+To download and install for most modern clients copy the url above and paste or type into the required field then Load, Toggle, Reload, or Restart to refresh theme, for more help please view the client specific instructions.
 
 For file based installs please download the CSS file and move it to the required path.
 
@@ -200,9 +195,12 @@ To change the accent color, also known as the main color, please use the followi
 
 To change anything listed below please open the css file you have downloaded in a text or code editor and edit the according options to the values you like or want.
 
-****To change any options below is at your own risk and could cause the theme to break if not done correctly, please report issues if found and use documentation. You have been warned.****
+**To change any options below is at your own risk and could cause the theme to break if not done correctly, please report issues if found and use documentation. You have been warned.**
 
 ---
+
+<details>
+<summary>⚙️ Customization Options</summary>
 
 ### Settings Modal
 
@@ -210,7 +208,7 @@ To change anything listed below please open the css file you have downloaded in 
 - `--settingsheight`: Height in vh (default: 80)
 - `--settingsbackground`: Background color (default: transparent)
 
-### Radial Status rings
+### Radial Status Rings
 
 - `--rs-small-width`: Status ring thickness (default: 2px)
 - `--rs-avatar-shape`: Avatar shape (default: 50% = round, 0% = square)
@@ -271,10 +269,10 @@ To change anything listed below please open the css file you have downloaded in 
 - `--accent-5`: Accent 5 (default: var(--purple-5))
 - `--accent-new`: Accent new (default: var(--accent-2))
 
-### Custom DM'S Icon
+### Custom DM's Icon
 
 - `--custom-dms-icon`: Custom DM'S icon (default: custom)
-- `--dms-icon-svg-url`: SVG URL for custom DM'S icon (default: url("<https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg>"))
+- `--dms-icon-svg-url`: SVG URL for custom DM'S icon (default: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"))
 
 ### Fonts
 
@@ -290,15 +288,20 @@ To change anything listed below please open the css file you have downloaded in 
 
 - `--custom-window-controls`: Custom window controls (default: on)
 
-## 📸 Screenshots of the theme in action
+</details>
 
-- The screenshots below show the theme in action when it is correctly loaded.
+<details>
+<summary>📸 Screenshots of the theme in action</summary>
+
+The screenshots below show the theme in action when it is correctly loaded.
 
 <div style="text-align: center;">
   <img src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme.png?raw=true" alt="Midnight Ash Theme" style="width: 800px;">
   <img src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme-Loaded.png?raw=true" alt="Midnight Ash Theme Loaded" style="width: 800px;">
   <img src="https://github.com/Ash1421/Midnight-Ash/blob/main/Screenshots/Midnight-Ash-Theme-With-URL.png?raw=true" alt="Midnight Ash Theme With URL" style="width: 800px;">
 </div>
+
+</details>
 
 ### 🌑 AMOLED-Optimized
 
@@ -326,251 +329,282 @@ To change anything listed below please open the css file you have downloaded in 
 
 ## 📝 Changelog
 
-## V6.0.0
+### V7.1.0
 
-- ✅ Major verion bump to 6.0.0 with many changes.
-- ✅ Modernised CSS color syntax throughout `midnight-ash.css`.
-- ✅ Converted `hsla()` comma syntax to modern `hsl()` slash syntax.
-- ✅ Added `deg` unit to all `oklch()` hue values.
-- ✅ Restructured `midnight-ash.css` for easier editing and readability.
-- ✅ Fixed text color scale to match original values.
-- ✅ Linted `midnight-ash.css` with Stylelint, Prettier and duplication/unused variable removal.
-- ✅ Added Performance and Import Sizes sections to `README.md`.
-- ✅ Fixed / reformed screenshots div code.
-- ✅ Updated `README.md` to releflect changes.
-- ✅ Updated `README.md` customization documentation.
-- ✅ Updated / Added to `README.md` existing and new javascript, json, and node.js badges reflecting what was used.
+> [!IMPORTANT]
+> - ✅ Major version bump with many changes.
+> - 🐛 Fixed CSS theme header comment syntax and fields (removed non-standard `!` and `?` prefixes, corrected indentation).
+> - ✅ Added `CONTRIBUTING.md` with contribution guidelines, branching/fork policy, and contact info.
+> - 🔒 Added `SECURITY.md` with vulnerability reporting instructions, supported version policy, and contact info.
+> - ✅ Added `CODE_OF_CONDUCT.md` with community standards, enforcement policy, and contact info.
+> - ✅ Added `.github/PULL_REQUEST_TEMPLATE.md` for standardised pull requests.
+> - ✅ Added `.github/ISSUE_TEMPLATE.md` for standardised issues.
 
-## V5.9.37
+> [!NOTE]
+> - 📖 Updated issues and support links in `README.md` to use issue template, added security vulnerability reporting link.
+> - 📖 Updated new issue badge in `README.md` to link directly to issue template.
+> - 🔒 Enabled private vulnerability reporting on GitHub.
+> - 📖 Wrapped older changelog entries in a collapsible dropdown for cleaner `README.md` readability.
+> - 📖 Wrapped customization documentation and screenshots in collapsible dropdowns.
+> - 🧹 Fixed heading levels throughout changelog.
+> - 🧹 Fixed various typos in older changelog entries and `README.md`.
+
+> [!NOTE]
+> - 🧹 Added descriptive emojis to all changelog entries for better readability (Listed Below).
+>
+>>✅ New additions
+> 🐛 Bug fixes
+> 📖 Documentation changes
+> 🧹 Cleanup / Refactoring
+> 🔧 Config / Workflow Changes
+> 🔒 Security Related
+
+<details>
+<summary>Older Changelog Entries</summary>
+
+### V6.0.0
+
+- 🧹 Modernised CSS color syntax throughout `midnight-ash.css`.
+- 🧹 Converted `hsla()` comma syntax to modern `hsl()` slash syntax.
+- 🧹 Added `deg` unit to all `oklch()` hue values.
+- 🧹 Restructured `midnight-ash.css` for easier editing and readability.
+- 🐛 Fixed text color scale to match original values.
+- 🧹 Linted `midnight-ash.css` with Stylelint, Prettier and duplication/unused variable removal.
+- 📖 Added Performance and Import Sizes sections to `README.md`.
+- 🐛 Fixed / reformed screenshots div code.
+- 📖 Updated `README.md` to reflect changes.
+- 📖 Updated `README.md` customization documentation.
+- 📖 Updated / Added to `README.md` existing and new javascript, json, and node.js badges reflecting what was used.
+
+### V5.9.37
 
 - ✅ Added github banner `midnight_ash_banner.svg`
 - ✅ Added svg folder with banner.
 - ✅ Added svg banner.
-- ✅ Removed some title text at the top of `README.md`
+- 🧹 Removed some title text at the top of `README.md`
 
-## V5.9.36
+### V5.9.36
 
-- ✅ Fixed `midnight-ash.css` import url format.
+- 🐛 Fixed `midnight-ash.css` import url format.
 
-## V5.8.36
+### V5.8.36
 
 - ✅ Added donation / support github funding.
 
-## V5.8.35
+### V5.8.35
 
-- ✅ Chaned donation badge stuff.
+- 🧹 Changed donation badge stuff.
 
-## V5.8.34
+### V5.8.34
 
-- ✅ Added donation / support badges and infomation to the `publish-css.yml` file.
+- ✅ Added donation / support badges and information to the `publish-css.yml` file.
 - ✅ Added Donations & Support section to the website.
 - ✅ Made header badges clickable with links to releases, stargazers, CodeFactor, and license.
-- ✅ Changed existing donation / badges.
-- ✅ Changed `index.html`
-- ✅ Changed `index.css`
+- 🧹 Changed existing donation / badges.
+- 🔧 Changed `index.html`
+- 🔧 Changed `index.css`
 
 ### V5.8.33
 
-- ✅ Added donation / support badges and infomation.
-- ✅ Formatted all supported files with a code formatter.
+- ✅ Added donation / support badges and information.
+- 🧹 Formatted all supported files with a code formatter.
 
 ### V5.8.32
 
-- ✅ Fixed `publish-css.yml` badge bug.
+- 🐛 Fixed `publish-css.yml` badge bug.
 
 ### V5.8.31
 
-- ✅ Changed `README.md` badges.
-- ✅ Changed `index.html` badges.
-- ✅ Changed `publish-css.yml` badges.
+- 🧹 Changed `README.md` badges.
+- 🧹 Changed `index.html` badges.
+- 🧹 Changed `publish-css.yml` badges.
 
 ### V5.8.30
 
-- ✅ Javascript language repository fix.
+- 🐛 Javascript language repository fix.
 
 ### V5.7.29
 
-- ✅ Release error fix.
+- 🐛 Release error fix.
 
 ### V5.6.29
 
-- ✅ Changed `index.html` website file structure.
-- ✅ Changed website aspects such as buttons and colors.
+- 🔧 Changed `index.html` website file structure.
+- 🧹 Changed website aspects such as buttons and colors.
 - ✅ Added `index.css` and `index.js` files.
-- ✅ Changed some theme infomation in `README.md`.
-- ✅ Added and changed parts of `index.html` file.
-- ✅ Changed `publish-css.yml` to fix artifact warning.
+- 📖 Changed some theme information in `README.md`.
+- 🔧 Added and changed parts of `index.html` file.
+- 🐛 Changed `publish-css.yml` to fix artifact warning.
 
 ### V5.6.28
 
-- ✅ Changed `publish-css.yml` to artifact and naming of automations.
-- ✅ Added update to node24 using env for `publish-css.yml` to avoid warnings and future issues when GitHub defaults to Node.js 24 in June 2026.
+- 🔧 Changed `publish-css.yml` to artifact and naming of automations.
+- 🔧 Added update to node24 using env for `publish-css.yml` to avoid warnings and future issues when GitHub defaults to Node.js 24 in June 2026.
 
 ### V5.6.27
 
-- ✅ Changed website back to root of repository not docs.
+- 🔧 Changed website back to root of repository not docs.
 - ✅ Added assets folder with `favicon.ico` at root of main branch.
-- ✅ Release workflow now uses builtin body of `publish-css.yml` file.
-- ✅ Changed `publish-css.yml` 
+- 🔧 Release workflow now uses builtin body of `publish-css.yml` file.
+- 🔧 Changed `publish-css.yml`
 
 ### V5.6.26
 
-- ✅ Updated website favicon to `favicon.ico`
-- ✅ Release workflow now uses `message/release-body.md` for the release message.
-- ✅ Minor tweaks to badges and installation instructions in release message.
-- ✅ Changed `publish-css.yml` 
+- 🔧 Updated website favicon to `favicon.ico`
+- 🔧 Release workflow now uses `message/release-body.md` for the release message.
+- 🧹 Minor tweaks to badges and installation instructions in release message.
+- 🔧 Changed `publish-css.yml`
 
 ### V5.6.25
 
 - ✅ Added GitHub Actions workflow to automatically publish releases.
-- ✅ Added automatic version detection from commit messages (Release - VX.X.XX).
-- ✅ Added automatic CSS file attachment to GitHub releases.
-- ✅ Added automatic release notes template generation.
-- ✅ Changed development workflow to skip releases for Testing, Dev, and Development commits.
-- ✅ Moved website files (index.html and favicon.png) into docs/ for GitHub Pages, with future-proofing for docs/assets/.
+- 🔧 Added automatic version detection from commit messages (Release - VX.X.XX).
+- 🔧 Added automatic CSS file attachment to GitHub releases.
+- 🔧 Added automatic release notes template generation.
+- 🔧 Changed development workflow to skip releases for Testing, Dev, and Development commits.
+- 🔧 Moved website files (index.html and favicon.png) into docs/ for GitHub Pages, with future-proofing for docs/assets/.
 
 ### V5.6.24
 
 - ✅ Added meta info for social platforms and embeds to the themes website.
 - ✅ Added custom animated page title to the themes website.
-- ✅ Changed static title on the themes website.
-- ✅ Changed Readme footer.
+- 🧹 Changed static title on the themes website.
+- 🧹 Changed Readme footer.
 
 ### V5.6.23
 
-- ✅️ Added gitattributes to fix HTML stats in repo.
-- ✅️ Added HTML5 badge.
-- ✅️ Removed Discord badge on html file / themes website.
-- ✅️ Added favicon / website icon.
+- 🐛 Added gitattributes to fix HTML stats in repo.
+- ✅ Added HTML5 badge.
+- 🧹 Removed Discord badge on html file / themes website.
+- ✅ Added favicon / website icon.
 - ✅ Added changelog strip with hyperlink to website for convenience.
 
 ### V5.6.22
 
-- ✅️ Domain change for github pages.
-- ✅️ Changed documentation related to domain change.
-- ✅️ Changed readme discord link.
-- ✅️ Added github pages website with general infomation.
-
+- 🔧 Domain change for github pages.
+- 📖 Changed documentation related to domain change.
+- 🧹 Changed readme discord link.
+- ✅ Added github pages website with general information.
 
 ### V4.6.22
 
-- ✅️ Minor license change to add author and general infomation.
-- ✅️ Changed author link and discord server invite link.
-- ✅️ Changed website link.
-- ✅️ Changed author infomation.
-- ✅️ Added/changed discription.
-- ✅️ Changed codefactor badge.
-- ✅️ Changed version Badge.
+- 📖 Minor license change to add author and general information.
+- 🧹 Changed author link and discord server invite link.
+- 🧹 Changed website link.
+- 📖 Changed author information.
+- 📖 Added/changed description.
+- 🧹 Changed codefactor badge.
+- 🧹 Changed version badge.
 
 ### V4.6.21
 
-- ✅️ Codefactor badge link fix.
+- 🐛 Codefactor badge link fix.
 
 ### V4.5.21
 
-- ✅️ Added multiple badges, including Codefactor, GNU, and Shields.
-- ✅️ Added Codefactor code quality badge.
-- ✅️ Changed Discord website theme link.
+- ✅ Added multiple badges, including Codefactor, GNU, and Shields.
+- ✅ Added Codefactor code quality badge.
+- 🧹 Changed Discord website theme link.
 
 ### V4.5.20
 
-- ✅️ Changed license infomation to the default GPL v3 license, with important infomation moved to the liscense section in the readme.
+- 📖 Changed license information to the default GPL v3 license, with important information moved to the license section in the readme.
 
 ### V4.4.19
 
-- ✅️ Changed Screenshots format and some documentation in the Documentation/Readme file.
+- 📖 Changed screenshots format and some documentation in the Documentation/Readme file.
 
 ### V4.4.18
 
-- ✅️ Added Screenshots to the Documentation/Readme file.
+- 📖 Added screenshots to the Documentation/Readme file.
 
 ### V4.4.17
 
-- ✅️ Readme documentation/information additions and changes.
+- 📖 Readme documentation/information additions and changes.
 
 ### V4.4.16
 
-- ✅️ Readme documentation/information additions.
+- 📖 Readme documentation/information additions.
 
 ### V4.4.15
 
-- ✅️ Readme documentation additions.
+- 📖 Readme documentation additions.
 
 ### V4.4.14
 
-- ✅️ Readme documentation, liscense, and software discalamer with changes/addition.
+- 📖 Readme documentation, license, and software disclaimer with changes/addition.
 
 ### V4.4.13
 
-- ✅️ Readme fix with changes/addition.
+- 📖 Readme fix with changes/addition.
 
 ### V4.3.12
 
-- ✅️ Readme and lisense fix/addition.
+- 📖 Readme and license fix/addition.
 
 ### V4.3.11
 
-- ✅️ Major rewrite of license files to clarify GPL v2 and MIT components and the new license for the theme.
-- ✅️ Major Update to README file with clearer license information for incorporated works.
-- ✅️ Badge changes and additions/changes to README file.
+- 📖 Major rewrite of license files to clarify GPL v2 and MIT components and the new license for the theme.
+- 📖 Major update to README file with clearer license information for incorporated works.
+- 🧹 Badge changes and additions/changes to README file.
 
 ### V3.3.11
 
-- ✅️ Readme infomation/credit additions.
+- 📖 Readme information/credit additions.
 
 ### V3.3.10
 
-- ✅️ Readme file fix.
+- 🐛 Readme file fix.
 
 ### V3.2.10
 
-- ✅️ Readme badge changes.
+- 🧹 Readme badge changes.
 
 ### V3.2.9
 
-- ✅️ Readme changes.
+- 📖 Readme changes.
 
 ### V3.2.8
 
-- ✅️ Readme file fix.
+- 🐛 Readme file fix.
 
 ### V3.1.8
 
-- ✅️ Readme help/documentation changes and additions, as well as Infomation about the theme.
+- 📖 Readme help/documentation changes and additions, as well as information about the theme.
 
 ### V3.1.7
 
-- ✅️ Readme badge changes.
+- 🧹 Readme badge changes.
 
 ### V3.1.6
 
-- ✅️ Readme file fix.
+- 🐛 Readme file fix.
 
 ### V3.0.6
 
-- ✅️ Added More Documentation and Help to Readme File.
+- 📖 Added more documentation and help to Readme file.
 
 ### V3.0.5
 
-- ✅️ Added More Help to Readme File.
+- 📖 Added more help to Readme file.
 
 ### V3.0.4
 
-- ✅️ Added Star History to Readme.
+- 📖 Added star history to Readme.
 
 ### V3.0.3
 
-- ✅️ Versioning fixes.
+- 🐛 Versioning fixes.
 
 ### V3.0.2
 
-- ✅️ Added To Readme.
+- 📖 Added to Readme.
 
 ### V3.0.1
 
-- ✅ Formatted CSS, Readme, and license files.
+- 🧹 Formatted CSS, Readme, and license files.
 
-### v3.0.0
+### V3.0.0
 
 - ✅ Combined all themes into one package.
 - ✅ Added AMOLED backgrounds.
@@ -578,12 +612,16 @@ To change anything listed below please open the css file you have downloaded in 
 - ✅ Added horizontal server list.
 - ✅ Apple emoji replacements.
 
+</details>
+
 ## 🐛 Issues & Support
 
 Found a bug? Have a suggestion?
 
-- 🐛 [Report Issues](https://github.com/Ash1421/Midnight-Ash/issues)
-- 💬 [Join Discord](https://rb.ash1421.com/discord)
+- 🐛 [Report a Bug](https://github.com/Ash1421/Midnight-Ash/issues/new?template=ISSUE_TEMPLATE.md)
+- ✨ [Request a Feature](https://github.com/Ash1421/Midnight-Ash/issues/new?template=ISSUE_TEMPLATE.md)
+- 🔒 [Report a Security Vulnerability](https://github.com/Ash1421/Midnight-Ash/security/advisories/new)
+- 💬 [Open a Ticket](https://rb.ash1421.com/discord)
 
 ## 📜 License
 
@@ -591,17 +629,16 @@ This project is licensed under the [GPL v3.0](./LICENSE).
 
 It also incorporates components from other open-source projects under MIT or GPLv2 licenses:
 
-| Component                              | Author                | License                                           |
-| -------------------------------------- | --------------------- | ------------------------------------------------- |
-| Midnight Discord Theme                 | refact0r              | [MIT](./ORIGINAL_LICENSES/LICENSE_refact0r.md)    |
-| AMOLED-Cord                            | LuckFire              | [MIT](./ORIGINAL_LICENSES/LICENSE_LuckFire.md)    |
-| Settings Modal / Emoji Replace         | DevilBro              | [GPL v2](./ORIGINAL_LICENSES/LICENSE_DevilBro.md) |
-| Radial Status / Horizontal Server List | Gibbu / DiscordStyles | [MIT](./ORIGINAL_LICENSES/LICENSE_Gibbu.md)       |
+| Component | Author | License |
+| --- | --- | --- |
+| Midnight Discord Theme | refact0r | [MIT](./ORIGINAL_LICENSES/LICENSE_refact0r.md) |
+| AMOLED-Cord | LuckFire | [MIT](./ORIGINAL_LICENSES/LICENSE_LuckFire.md) |
+| Settings Modal / Emoji Replace | DevilBro | [GPL v2](./ORIGINAL_LICENSES/LICENSE_DevilBro.md) |
+| Radial Status / Horizontal Server List | Gibbu / DiscordStyles | [MIT](./ORIGINAL_LICENSES/LICENSE_Gibbu.md) |
 
 See the [ORIGINAL_LICENSES/](./ORIGINAL_LICENSES) directory for full unmodified license texts.
 
-These incorporated works remain under their original licenses (MIT or GPLv2), compatible with the
-GNU General Public License v3.0 under which this combined project is released.
+These incorporated works remain under their original licenses (MIT or GPLv2), compatible with the GNU General Public License v3.0 under which this combined project is released.
 
 The only things that have been modified from the license files is the names of the files and file types for organization, other than that, the license texts are the same as the original authors.
 
@@ -613,7 +650,7 @@ The only things that have been modified from the license files is the names of t
 
 **By using, editing, or publishing this theme you are acknowledging that you have read and understand the license terms and conditions of using the provided files, and that you agree to be bound by the terms of the license.**
 
-****Using the provided Discord Clients is at your own risk, please use at your own discretion of your discord account and your computer.****
+**Using the provided Discord Clients is at your own risk, please use at your own discretion of your discord account and your computer.**
 
 ## 🙏 Credits
 
@@ -659,37 +696,33 @@ The only things that have been modified from the license files is the names of t
         <img src="https://img.shields.io/badge/Ko--fi-Donate-FF69B4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917" alt="Ko-fi">
       </a>
     </td>
-
-<td align="center" style="border: 1px solid #ddd; padding: 15px; vertical-align: top;">
-
-  <h3 style="color:#553BBB;">💜 Supported Payment Methods:</h3>
-
-  <div style="margin-bottom:8px;">
-    <div>
-    <a href="https://www.visa.co.nz/">
-      <img src="https://img.shields.io/badge/Visa%20Credit%2FDebit_Card-9C51E3?style=for-the-badge&logo=visa&logoColor=white&labelColor=1c1917" alt="Visa Credit/Debit Card">
-    </a>
-    <a href="https://www.mastercard.co.nz/">
-      <img src="https://img.shields.io/badge/Mastercard%20Credit%2FDebit_Card-8F40E0?style=for-the-badge&logo=mastercard&logoColor=white&labelColor=1c1917" alt="Mastercard Credit/Debit Card">
-    </a>
-    <a href="https://www.americanexpress.com/newzealand/">
-      <img src="https://img.shields.io/badge/Amex%2FAmerican%20Express%20Credit%2FDebit_Card-8433DD?style=for-the-badge&logo=american-express&logoColor=white&labelColor=1c1917" alt="Amex / American Express Credit/Debit Card">
-    </a>
-  </div>
-
-  <div>
-    <a href="https://www.paypal.com/nz/">
-      <img src="https://img.shields.io/badge/PayPal-Supported-7930DA?style=for-the-badge&logo=paypal&logoColor=white&labelColor=1c1917" alt="PayPal">
-    </a>
-    <a href="https://www.apple.com/nz/apple-pay/">
-      <img src="https://img.shields.io/badge/Apple_Pay-Supported-6F28D7?style=for-the-badge&logo=apple&logoColor=white&labelColor=1c1917" alt="Apple Pay">
-    </a>
-    <a href="https://pay.google.com/intl/en_nz/about/">
-      <img src="https://img.shields.io/badge/Google_Pay-Supported-6320D3?style=for-the-badge&logo=google-pay&logoColor=white&labelColor=1c1917" alt="Google Pay">
-    </a>
-  </div>
-
-</td>
+    <td align="center" style="border: 1px solid #ddd; padding: 15px; vertical-align: top;">
+      <h3 style="color:#553BBB;">💜 Supported Payment Methods:</h3>
+      <div style="margin-bottom:8px;">
+        <div>
+          <a href="https://www.visa.co.nz/">
+            <img src="https://img.shields.io/badge/Visa%20Credit%2FDebit_Card-9C51E3?style=for-the-badge&logo=visa&logoColor=white&labelColor=1c1917" alt="Visa Credit/Debit Card">
+          </a>
+          <a href="https://www.mastercard.co.nz/">
+            <img src="https://img.shields.io/badge/Mastercard%20Credit%2FDebit_Card-8F40E0?style=for-the-badge&logo=mastercard&logoColor=white&labelColor=1c1917" alt="Mastercard Credit/Debit Card">
+          </a>
+          <a href="https://www.americanexpress.com/newzealand/">
+            <img src="https://img.shields.io/badge/Amex%2FAmerican%20Express%20Credit%2FDebit_Card-8433DD?style=for-the-badge&logo=american-express&logoColor=white&labelColor=1c1917" alt="Amex / American Express Credit/Debit Card">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.paypal.com/nz/">
+            <img src="https://img.shields.io/badge/PayPal-Supported-7930DA?style=for-the-badge&logo=paypal&logoColor=white&labelColor=1c1917" alt="PayPal">
+          </a>
+          <a href="https://www.apple.com/nz/apple-pay/">
+            <img src="https://img.shields.io/badge/Apple_Pay-Supported-6F28D7?style=for-the-badge&logo=apple&logoColor=white&labelColor=1c1917" alt="Apple Pay">
+          </a>
+          <a href="https://pay.google.com/intl/en_nz/about/">
+            <img src="https://img.shields.io/badge/Google_Pay-Supported-6320D3?style=for-the-badge&logo=google-pay&logoColor=white&labelColor=1c1917" alt="Google Pay">
+          </a>
+        </div>
+      </div>
+    </td>
   </tr>
 </table>
 
