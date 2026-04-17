@@ -12,7 +12,7 @@
 ## 💜 Donations & Funding
 
 #### Donations and or support are appreciated very much!
-#### If you would like to show love to the creator of this project or this project in general please consider helping fund the development of this project by donating on Ko-fi.
+#### If you would like to show love to the creator of this project or this project in general, please consider helping fund the development of this project by donating on Ko-fi.
 
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate-FF69B4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917)](https://kofi.ash1421.com)
 
@@ -24,7 +24,7 @@
 [![Downloads at latest](https://img.shields.io/github/downloads/Ash1421/Midnight-Ash/latest/total?style=for-the-badge&logo=github&logoColor=white&labelColor=1c1917&color=6829B1&label=Downloads%20@%20latest)](https://github.com/Ash1421/Midnight-Ash/releases/latest)
 [![GitHub Issues](https://img.shields.io/github/issues/Ash1421/Midnight-Ash/open?style=for-the-badge&labelColor=1c1917&logo=github&logoColor=white)](https://github.com/Ash1421/Midnight-Ash/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/Ash1421/Midnight-Ash/closed?style=for-the-badge&color=red&labelColor=1c1917&logo=github&logoColor=white)](https://github.com/Ash1421/Midnight-Ash/issues?q=is:closed)
-[![New Issue](https://img.shields.io/badge/Open%20A%20New-Issue-orange?style=for-the-badge&labelColor=1c1917&logo=github&logoColor=white)](https://github.com/Ash1421/Midnight-Ash/issues/new?template=ISSUE_TEMPLATE.md)
+[![New Issue](https://img.shields.io/badge/Open%20A%20New-Issue-orange?style=for-the-badge&labelColor=1c1917&logo=github&logoColor=white)](https://github.com/Ash1421/Midnight-Ash/issues/new/choose)
 
 ## ❤️ Made With love using
 
@@ -52,11 +52,11 @@
 📱 **Horizontal Server List** - Servers displayed at the top for better screen usage  
 🍎 **Apple Emojis** - Clean, modern Apple emoji replacements
 
-## 📖 Information About this theme
+## 📖 Information About This Theme
 
-This theme has been made with **my preference in mind** and features the best of dark aesthetics and modern functionality, it offers customization, documentation, support and instructions for most modern clients. The theme is made with a purple favorited color palette, animations and the lovely features from the other themes such as radial status for better status of other users current state, settings modal for a better and nicer look of the discord settings menu allowing a more modern look while giving the user a more transparent menu for better viewability, a horizontal server list for better screen usage, and emoji replace for cleaner and more modern emojis.
+This theme has been made with **my preference in mind** and features the best of dark aesthetics and modern functionality. It offers customization, documentation, support, and instructions for most modern clients. The theme is made with a purple-themed color palette, animations, and features from included themes — such as Radial Status for better visibility of other user's current status, a Settings Modal for a cleaner and more modern Discord settings interface with improved transparency and readability, a horizontal server list for better screen usage, and emoji replacement for a cleaner and more modern look.
 
-I have tried to keep the theme relatively small simple and clean for speedy load times on laptops or low end pc's, maybe even phones as well, and have the easy use and modification of the theme and features via documentation, links, support, or issues.
+I have tried to keep the theme relatively small, simple, and clean for speedy load times on laptops and low-end PCs, and even phones, while maintaining easy use and modification of the theme through documentation, links, support, and issues.
 
 ## 🚀 Installation
 
@@ -68,11 +68,11 @@ https://theme.ash1421.com/midnight-ash.css
 
 #### 👋 Help Guide
 
-To download and install for most modern clients copy the url above and paste or type into the required field then Load, Toggle, Reload, or Restart to refresh theme, for more help please view the client specific instructions.
+To download and install for most modern clients, copy the URL above and paste or type it into the required field, then load, toggle, reload, or restart to refresh the theme. For more help, please view the client-specific instructions.
 
 For file based installs please download the CSS file and move it to the required path.
 
-Using the latest version could help with optimizations and other features to be added or that have been added and or documented.
+Using the latest version could help with optimizations and other features that have been added and/or documented.
 
 ### ✋ For more help please use a browser or tutorial to find what you need
 
@@ -119,7 +119,8 @@ GitHub: https://github.com/BetterDiscord/BetterDiscord
 
 ---
 
-### Other Clients
+<details>
+<summary><h3>💻Other Clients<h3></summary>
 
 #### 🔌 **Replugged**
 
@@ -155,9 +156,12 @@ GitHub: https://github.com/GooseMod/OpenAsar
 
 Compatible with BetterDiscord, Equicord or Vencord installation methods.
 
-## 📊 Performance
+</details>
 
-> ⚠️ These results are approximate (~) and may change if upstream themes or `midnight-ash.css` are updated.
+<details>
+<summary><h3>📊 Performance & Import Sizes 📦</h3></summary>
+
+> These results are approximate (~) and may change if upstream themes or `midnight-ash.css` are updated.
 > Load times measured via Discord DevTools Network tab with cache disabled.
 
 | Import | Load Time | Transfer Size |
@@ -172,9 +176,7 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 | `Font Awesome Moon SVG` | ~123ms | ~0.75 KB |
 | **Total** | | **~29.20 KB** |
 
-## 📦 Import Sizes
-
-> ⚠️ Sizes may change if upstream themes or `midnight-ash.css` are updated, therefore the sizes are approximate (~).
+> Sizes may change if upstream themes or `midnight-ash.css` are updated, therefore the sizes are approximate (~).
 > Sizes measured via a custom Node.js script against the full uncompressed and gzipped CSS files.
 
 | Import | Uncompressed | Gzipped |
@@ -186,6 +188,7 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 | `HorizontalServerList` | ~1.65 KB | ~614 B |
 | `Apple Emojis` | ~1.34 KB | ~343 B |
 | **Total** | **~126.76 KB** | **~24.40 KB** |
+</details>
 
 ## ⚙️ Customization Documentation
 
@@ -200,7 +203,7 @@ To change anything listed below please open the css file you have downloaded in 
 ---
 
 <details>
-<summary>⚙️ Customization Options</summary>
+<summary><h3>⚙️ Customization Options</h3></summary>
 
 ### Settings Modal
 
@@ -269,10 +272,10 @@ To change anything listed below please open the css file you have downloaded in 
 - `--accent-5`: Accent 5 (default: var(--purple-5))
 - `--accent-new`: Accent new (default: var(--accent-2))
 
-### Custom DM's Icon
+### Custom DMs Icon
 
-- `--custom-dms-icon`: Custom DM'S icon (default: custom)
-- `--dms-icon-svg-url`: SVG URL for custom DM'S icon (default: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"))
+- `--custom-dms-icon`: Custom DMs icon (default: custom)
+- `--dms-icon-svg-url`: SVG URL for custom DMs icon (default: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"))
 
 ### Fonts
 
@@ -291,7 +294,7 @@ To change anything listed below please open the css file you have downloaded in 
 </details>
 
 <details>
-<summary>📸 Screenshots of the theme in action</summary>
+<summary><h3>📸 Screenshots of the theme in action</h3></summary>
 
 The screenshots below show the theme in action when it is correctly loaded.
 
@@ -329,6 +332,24 @@ The screenshots below show the theme in action when it is correctly loaded.
 
 ## 📝 Changelog
 
+### V7.2.0
+
+- 📖 Improved grammar, punctuation, and overall readability in `README.md`.
+- 📖 Enhanced documentation consistency and formatting across the project.
+- 🐛 Refined wording, spelling, and consistency in `index.html` content (improved readability and corrected multiple typos and phrasing issues).
+- 🐛 Migrated legacy issue template (`ISSUE_TEMPLATE.md`) to GitHub Issue Forms (`.github/ISSUE_TEMPLATE/*.yml`).
+- 🐛 Introduced structured issue templates:
+  - Bug report  
+  - Feature request  
+  - Documentation issue  
+  - Question
+- 🔧 Updated `README.md` issue links by fixing broken `?template=` URLs and standardising them to GitHub issue forms.
+- 🔧 Fixed typos and improved capitalization in `publish-css.yml` release workflow.
+- 🔧 Added `config.yml` to disable blank issues and enforce structured issue templates.
+
+<details>
+<summary><h3>📝 Older Changelog Entries</h3></summary>
+
 ### V7.1.0
 
 > [!IMPORTANT]
@@ -358,9 +379,6 @@ The screenshots below show the theme in action when it is correctly loaded.
 > 🧹 Cleanup / Refactoring
 > 🔧 Config / Workflow Changes
 > 🔒 Security Related
-
-<details>
-<summary>Older Changelog Entries</summary>
 
 ### V6.0.0
 
@@ -618,14 +636,16 @@ The screenshots below show the theme in action when it is correctly loaded.
 
 Found a bug? Have a suggestion?
 
-- 🐛 [Report a Bug](https://github.com/Ash1421/Midnight-Ash/issues/new?template=ISSUE_TEMPLATE.md)
-- ✨ [Request a Feature](https://github.com/Ash1421/Midnight-Ash/issues/new?template=ISSUE_TEMPLATE.md)
+- 🐛 [Report a Bug](https://github.com/Ash1421/Midnight-Ash/issues/new/choose)
+- ✨ [Request a Feature](https://github.com/Ash1421/Midnight-Ash/issues/new/choose)
+- 📖 [Documentation Issue](https://github.com/Ash1421/Midnight-Ash/issues/new/choose)
+- ❓ [Ask a Question](https://github.com/Ash1421/Midnight-Ash/issues/new/choose)
 - 🔒 [Report a Security Vulnerability](https://github.com/Ash1421/Midnight-Ash/security/advisories/new)
 - 💬 [Open a Ticket](https://rb.ash1421.com/discord)
 
 ## 📜 License
 
-This project is licensed under the [GPL v3.0](./LICENSE).
+This project is licensed under the [GPL v3.0](./LICENSE) (GNU General Public License V3.0).
 
 It also incorporates components from other open-source projects under MIT or GPLv2 licenses:
 
