@@ -332,6 +332,14 @@ The screenshots below show the theme in action when it is correctly loaded.
 
 ## 📝 Changelog
 
+### V7.3.0
+
+- ✅ Added username copyright notice to `LICENSE`.
+- 🐛 Fixed redundant padding shorthand in `assets/css/style.css` for `.donate-info` and `.donate-methods`.
+
+<details>
+<summary><h3>📝 Older Changelog Entries</h3></summary>
+
 ### V7.2.0
 
 - 📖 Improved grammar, punctuation, and overall readability in `README.md`.
@@ -346,9 +354,6 @@ The screenshots below show the theme in action when it is correctly loaded.
 - 🔧 Updated `README.md` issue links by fixing broken `?template=` URLs and standardising them to GitHub issue forms.
 - 🔧 Fixed typos and improved capitalization in `publish-css.yml` release workflow.
 - 🔧 Added `config.yml` to disable blank issues and enforce structured issue templates.
-
-<details>
-<summary><h3>📝 Older Changelog Entries</h3></summary>
 
 ### V7.1.0
 
