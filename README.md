@@ -332,13 +332,17 @@ The screenshots below show the theme in action when it is correctly loaded.
 
 ## 📝 Changelog
 
+### V7.5.1
+
+- ✅ CSS Version Shown in Author Section (For clients that support it), for client theme version visibility.
+
+<details>
+<summary><h3>📝 Older Changelog Entries</h3></summary>
+
 ### V7.4.1
 
 - 🐛 CSS Version Mismatch Fix.
 - 🧹📖 Refactored more of old docs.
-
-<details>
-<summary><h3>📝 Older Changelog Entries</h3></summary>
 
 ### V7.4.0
 
