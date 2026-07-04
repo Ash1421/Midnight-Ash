@@ -332,13 +332,20 @@ The screenshots below show the theme in action when it is correctly loaded.
 
 ## 📝 Changelog
 
+### V7.4.0
+
+- ✅ Added New Modern Logo, `favicon.ico` to `assets/` for the Theme Website.
+- 🧹 Changed Theme Website `favicon.ico` to new updated rounded logo.
+- 🧹 Fixed typo in Theme Website file-tree.
+- 🧹📖 Cleaned Up old docs formatting.
+
+<details>
+<summary><h3>📝 Older Changelog Entries</h3></summary>
+
 ### V7.3.0
 
 - ✅ Added username copyright notice to `LICENSE`.
 - 🐛 Fixed redundant padding shorthand in `assets/css/style.css` for `.donate-info` and `.donate-methods`.
-
-<details>
-<summary><h3>📝 Older Changelog Entries</h3></summary>
 
 ### V7.2.0
 
@@ -357,33 +364,31 @@ The screenshots below show the theme in action when it is correctly loaded.
 
 ### V7.1.0
 
-> [!IMPORTANT]
-> - ✅ Major version bump with many changes.
-> - 🐛 Fixed CSS theme header comment syntax and fields (removed non-standard `!` and `?` prefixes, corrected indentation).
-> - ✅ Added `CONTRIBUTING.md` with contribution guidelines, branching/fork policy, and contact info.
-> - 🔒 Added `SECURITY.md` with vulnerability reporting instructions, supported version policy, and contact info.
-> - ✅ Added `CODE_OF_CONDUCT.md` with community standards, enforcement policy, and contact info.
-> - ✅ Added `.github/PULL_REQUEST_TEMPLATE.md` for standardised pull requests.
-> - ✅ Added `.github/ISSUE_TEMPLATE.md` for standardised issues.
+ [!IMPORTANT]
+ - ✅ Major version bump with many changes.
+ - 🐛 Fixed CSS theme header comment syntax and fields (removed non-standard `!` and `?` prefixes, corrected indentation).
+ - ✅ Added `CONTRIBUTING.md` with contribution guidelines, branching/fork policy, and contact info.
+ - 🔒 Added `SECURITY.md` with vulnerability reporting instructions, supported version policy, and contact info.
+ - ✅ Added `CODE_OF_CONDUCT.md` with community standards, enforcement policy, and contact info.
+ - ✅ Added `.github/PULL_REQUEST_TEMPLATE.md` for standardised pull requests.
+ - ✅ Added `.github/ISSUE_TEMPLATE.md` for standardised issues.
+ [!NOTE]
+ - 📖 Updated issues and support links in `README.md` to use issue template, added security vulnerability reporting link.
+ - 📖 Updated new issue badge in `README.md` to link directly to issue template.
+ - 🔒 Enabled private vulnerability reporting on GitHub.
+ - 📖 Wrapped older changelog entries in a collapsible dropdown for cleaner `README.md` readability.
+ - 📖 Wrapped customization documentation and screenshots in collapsible dropdowns.
+ - 🧹 Fixed heading levels throughout changelog.
+ - 🧹 Fixed various typos in older changelog entries and `README.md`.
+ [!NOTE]
+ - 🧹 Added descriptive emojis to all changelog entries for better readability (Listed Below).
 
-> [!NOTE]
-> - 📖 Updated issues and support links in `README.md` to use issue template, added security vulnerability reporting link.
-> - 📖 Updated new issue badge in `README.md` to link directly to issue template.
-> - 🔒 Enabled private vulnerability reporting on GitHub.
-> - 📖 Wrapped older changelog entries in a collapsible dropdown for cleaner `README.md` readability.
-> - 📖 Wrapped customization documentation and screenshots in collapsible dropdowns.
-> - 🧹 Fixed heading levels throughout changelog.
-> - 🧹 Fixed various typos in older changelog entries and `README.md`.
-
-> [!NOTE]
-> - 🧹 Added descriptive emojis to all changelog entries for better readability (Listed Below).
->
->>✅ New additions
-> 🐛 Bug fixes
-> 📖 Documentation changes
-> 🧹 Cleanup / Refactoring
-> 🔧 Config / Workflow Changes
-> 🔒 Security Related
+✅ New additions
+ 🐛 Bug fixes
+ 📖 Documentation changes
+ 🧹 Cleanup / Refactoring
+ 🔧 Config / Workflow Changes
+ 🔒 Security Related
 
 ### V6.0.0
 
