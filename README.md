@@ -332,12 +332,16 @@ The screenshots below show the theme in action when it is correctly loaded.
 
 ## 📝 Changelog
 
-### V7.5.1
+### V7.6.1
 
-- ✅ CSS Version Shown in Author Section (For clients that support it), for client theme version visibility.
+- 📖🧹Readme Star chart removement
 
 <details>
 <summary><h3>📝 Older Changelog Entries</h3></summary>
+
+### V7.5.1
+
+- ✅ CSS Version Shown in Author Section (For clients that support it), for client theme version visibility.
 
 ### V7.4.1
 
@@ -698,22 +702,6 @@ The only things that have been modified from the license files is the names of t
 - **Emoji Replace** - [@DevilBro](https://github.com/mwittrien)
 
 - **Thanks to all the contributors on [GitHub](https://github.com/Ash1421/Midnight-Ash/graphs/contributors)**
-
----
-
-<h2 align="center">
-💫 Star History
-</h2>
-
-<a href="https://www.star-history.com/#Ash1421/Midnight-Ash&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Ash1421/Midnight-Ash&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Ash1421/Midnight-Ash&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Ash1421/Midnight-Ash&type=Date" />
- </picture>
-</a>
-
-<div align="center">
 
 ---
 
