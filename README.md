@@ -12,6 +12,7 @@
 ## 💜 Donations & Funding
 
 #### Donations and or support are appreciated very much!
+
 #### If you would like to show love to the creator of this project or this project in general, please consider helping fund the development of this project by donating on Ko-fi.
 
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Donate-FF69B4?style=for-the-badge&logo=kofi&logoColor=white&labelColor=1c1917)](https://kofi.ash1421.com)
@@ -65,6 +66,9 @@ I have tried to keep the theme relatively small, simple, and clean for speedy lo
 ```
 https://theme.ash1421.com/midnight-ash.css
 ```
+
+<!-- [![Open Discord Settings](https://img.shields.io/badge/Discord-Open_Settings-5865F2?style=for-the-badge&labelColor=1c1917&logo=discord&logoColor=white)](discord://-/settings/equicord_themes)
+<sub>Opens the Discord desktop app to Settings — then click **Equicord/Vencord → Themes** to load the theme. Desktop app only.</sub> -->
 
 #### 👋 Help Guide
 
@@ -164,30 +168,31 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 > These results are approximate (~) and may change if upstream themes or `midnight-ash.css` are updated.
 > Load times measured via Discord DevTools Network tab with cache disabled.
 
-| Import | Load Time | Transfer Size |
-| --- | --- | --- |
-| `midnight-ash.css` | ~42ms | ~2.02 KB |
-| `midnight-discord` | ~54ms | ~16.35 KB |
-| `amoled-cord` | ~44ms | ~4.91 KB |
-| `RadialStatus` | ~42ms | ~2.17 KB |
-| `SettingsModal` | ~44ms | ~1.72 KB |
-| `HorizontalServerList` | ~44ms | ~0.75 KB |
-| `Apple Emojis` | ~249ms | ~0.53 KB |
-| `Font Awesome Moon SVG` | ~123ms | ~0.75 KB |
-| **Total** | | **~29.20 KB** |
+| Import                  | Load Time | Transfer Size |
+| ----------------------- | --------- | ------------- |
+| `midnight-ash.css`      | ~42ms     | ~2.02 KB      |
+| `midnight-discord`      | ~54ms     | ~16.35 KB     |
+| `amoled-cord`           | ~44ms     | ~4.91 KB      |
+| `RadialStatus`          | ~42ms     | ~2.17 KB      |
+| `SettingsModal`         | ~44ms     | ~1.72 KB      |
+| `HorizontalServerList`  | ~44ms     | ~0.75 KB      |
+| `Apple Emojis`          | ~249ms    | ~0.53 KB      |
+| `Font Awesome Moon SVG` | ~123ms    | ~0.75 KB      |
+| **Total**               |           | **~29.20 KB** |
 
 > Sizes may change if upstream themes or `midnight-ash.css` are updated, therefore the sizes are approximate (~).
 > Sizes measured via a custom Node.js script against the full uncompressed and gzipped CSS files.
 
-| Import | Uncompressed | Gzipped |
-| --- | --- | --- |
-| `midnight-discord` | ~79.01 KB | ~15.86 KB |
-| `amoled-cord` | ~28.63 KB | ~4.46 KB |
-| `RadialStatus` | ~8.33 KB | ~1.91 KB |
-| `SettingsModal` | ~7.81 KB | ~1.36 KB |
-| `HorizontalServerList` | ~1.65 KB | ~614 B |
-| `Apple Emojis` | ~1.34 KB | ~343 B |
-| **Total** | **~126.76 KB** | **~24.40 KB** |
+| Import                 | Uncompressed   | Gzipped       |
+| ---------------------- | -------------- | ------------- |
+| `midnight-discord`     | ~79.01 KB      | ~15.86 KB     |
+| `amoled-cord`          | ~28.63 KB      | ~4.46 KB      |
+| `RadialStatus`         | ~8.33 KB       | ~1.91 KB      |
+| `SettingsModal`        | ~7.81 KB       | ~1.36 KB      |
+| `HorizontalServerList` | ~1.65 KB       | ~614 B        |
+| `Apple Emojis`         | ~1.34 KB       | ~343 B        |
+| **Total**              | **~126.76 KB** | **~24.40 KB** |
+
 </details>
 
 ## ⚙️ Customization Documentation
@@ -330,328 +335,6 @@ The screenshots below show the theme in action when it is correctly loaded.
 - More vertical space for chat
 - Modern, streamlined appearance
 
-## 📝 Changelog
-
-### V7.6.1
-
-- 📖🧹Readme Star chart removement
-
-<details>
-<summary><h3>📝 Older Changelog Entries</h3></summary>
-
-### V7.5.1
-
-- ✅ CSS Version Shown in Author Section (For clients that support it), for client theme version visibility.
-
-### V7.4.1
-
-- 🐛 CSS Version Mismatch Fix.
-- 🧹📖 Refactored more of old docs.
-
-### V7.4.0
-
-- ✅ Added New Modern Logo, `favicon.ico` to `assets/` for the Theme Website.
-- 🧹 Changed Theme Website `favicon.ico` to new updated rounded logo.
-- 🧹 Fixed typo in Theme Website file-tree.
-- 🧹📖 Cleaned Up old docs formatting.
-
-### V7.3.0
-
-- ✅ Added username copyright notice to `LICENSE`.
-- 🐛 Fixed redundant padding shorthand in `assets/css/style.css` for `.donate-info` and `.donate-methods`.
-
-### V7.2.0
-
-- 📖 Improved grammar, punctuation, and overall readability in `README.md`.
-- 📖 Enhanced documentation consistency and formatting across the project.
-- 🐛 Refined wording, spelling, and consistency in `index.html` content (improved readability and corrected multiple typos and phrasing issues).
-- 🐛 Migrated legacy issue template (`ISSUE_TEMPLATE.md`) to GitHub Issue Forms (`.github/ISSUE_TEMPLATE/*.yml`).
-- 🐛 Introduced structured issue templates:
-  - Bug report  
-  - Feature request  
-  - Documentation issue  
-  - Question
-- 🔧 Updated `README.md` issue links by fixing broken `?template=` URLs and standardising them to GitHub issue forms.
-- 🔧 Fixed typos and improved capitalization in `publish-css.yml` release workflow.
-- 🔧 Added `config.yml` to disable blank issues and enforce structured issue templates.
-
-### V7.1.0
-
- - ✅ Major version bump with many changes.
- - 🐛 Fixed CSS theme header comment syntax and fields (removed non-standard `!` and `?` prefixes, corrected indentation).
- - ✅ Added `CONTRIBUTING.md` with contribution guidelines, branching/fork policy, and contact info.
- - 🔒 Added `SECURITY.md` with vulnerability reporting instructions, supported version policy, and contact info.
- - ✅ Added `CODE_OF_CONDUCT.md` with community standards, enforcement policy, and contact info.
- - ✅ Added `.github/PULL_REQUEST_TEMPLATE.md` for standardised pull requests.
- - ✅ Added `.github/ISSUE_TEMPLATE.md` for standardised issues.
- - 📖 Updated issues and support links in `README.md` to use issue template, added security vulnerability reporting link.
- - 📖 Updated new issue badge in `README.md` to link directly to issue template.
- - 🔒 Enabled private vulnerability reporting on GitHub.
- - 📖 Wrapped older changelog entries in a collapsible dropdown for cleaner `README.md` readability.
- - 📖 Wrapped customization documentation and screenshots in collapsible dropdowns.
- - 🧹 Fixed heading levels throughout changelog.
- - 🧹 Fixed various typos in older changelog entries and `README.md`.
- - 🧹 Added descriptive emojis to all changelog entries for better readability (Listed Below).
-
- ✅ New additions
- 🐛 Bug fixes
- 📖 Documentation changes
- 🧹 Cleanup / Refactoring
- 🔧 Config / Workflow Changes
- 🔒 Security Related
-
-### V6.0.0
-
-- 🧹 Modernised CSS color syntax throughout `midnight-ash.css`.
-- 🧹 Converted `hsla()` comma syntax to modern `hsl()` slash syntax.
-- 🧹 Added `deg` unit to all `oklch()` hue values.
-- 🧹 Restructured `midnight-ash.css` for easier editing and readability.
-- 🐛 Fixed text color scale to match original values.
-- 🧹 Linted `midnight-ash.css` with Stylelint, Prettier and duplication/unused variable removal.
-- 📖 Added Performance and Import Sizes sections to `README.md`.
-- 🐛 Fixed / reformed screenshots div code.
-- 📖 Updated `README.md` to reflect changes.
-- 📖 Updated `README.md` customization documentation.
-- 📖 Updated / Added to `README.md` existing and new javascript, json, and node.js badges reflecting what was used.
-
-### V5.9.37
-
-- ✅ Added github banner `midnight_ash_banner.svg`
-- ✅ Added svg folder with banner.
-- ✅ Added svg banner.
-- 🧹 Removed some title text at the top of `README.md`
-
-### V5.9.36
-
-- 🐛 Fixed `midnight-ash.css` import url format.
-
-### V5.8.36
-
-- ✅ Added donation / support github funding.
-
-### V5.8.35
-
-- 🧹 Changed donation badge stuff.
-
-### V5.8.34
-
-- ✅ Added donation / support badges and information to the `publish-css.yml` file.
-- ✅ Added Donations & Support section to the website.
-- ✅ Made header badges clickable with links to releases, stargazers, CodeFactor, and license.
-- 🧹 Changed existing donation / badges.
-- 🔧 Changed `index.html`
-- 🔧 Changed `index.css`
-
-### V5.8.33
-
-- ✅ Added donation / support badges and information.
-- 🧹 Formatted all supported files with a code formatter.
-
-### V5.8.32
-
-- 🐛 Fixed `publish-css.yml` badge bug.
-
-### V5.8.31
-
-- 🧹 Changed `README.md` badges.
-- 🧹 Changed `index.html` badges.
-- 🧹 Changed `publish-css.yml` badges.
-
-### V5.8.30
-
-- 🐛 Javascript language repository fix.
-
-### V5.7.29
-
-- 🐛 Release error fix.
-
-### V5.6.29
-
-- 🔧 Changed `index.html` website file structure.
-- 🧹 Changed website aspects such as buttons and colors.
-- ✅ Added `index.css` and `index.js` files.
-- 📖 Changed some theme information in `README.md`.
-- 🔧 Added and changed parts of `index.html` file.
-- 🐛 Changed `publish-css.yml` to fix artifact warning.
-
-### V5.6.28
-
-- 🔧 Changed `publish-css.yml` to artifact and naming of automations.
-- 🔧 Added update to node24 using env for `publish-css.yml` to avoid warnings and future issues when GitHub defaults to Node.js 24 in June 2026.
-
-### V5.6.27
-
-- 🔧 Changed website back to root of repository not docs.
-- ✅ Added assets folder with `favicon.ico` at root of main branch.
-- 🔧 Release workflow now uses builtin body of `publish-css.yml` file.
-- 🔧 Changed `publish-css.yml`
-
-### V5.6.26
-
-- 🔧 Updated website favicon to `favicon.ico`
-- 🔧 Release workflow now uses `message/release-body.md` for the release message.
-- 🧹 Minor tweaks to badges and installation instructions in release message.
-- 🔧 Changed `publish-css.yml`
-
-### V5.6.25
-
-- ✅ Added GitHub Actions workflow to automatically publish releases.
-- 🔧 Added automatic version detection from commit messages (Release - VX.X.XX).
-- 🔧 Added automatic CSS file attachment to GitHub releases.
-- 🔧 Added automatic release notes template generation.
-- 🔧 Changed development workflow to skip releases for Testing, Dev, and Development commits.
-- 🔧 Moved website files (index.html and favicon.png) into docs/ for GitHub Pages, with future-proofing for docs/assets/.
-
-### V5.6.24
-
-- ✅ Added meta info for social platforms and embeds to the themes website.
-- ✅ Added custom animated page title to the themes website.
-- 🧹 Changed static title on the themes website.
-- 🧹 Changed Readme footer.
-
-### V5.6.23
-
-- 🐛 Added gitattributes to fix HTML stats in repo.
-- ✅ Added HTML5 badge.
-- 🧹 Removed Discord badge on html file / themes website.
-- ✅ Added favicon / website icon.
-- ✅ Added changelog strip with hyperlink to website for convenience.
-
-### V5.6.22
-
-- 🔧 Domain change for github pages.
-- 📖 Changed documentation related to domain change.
-- 🧹 Changed readme discord link.
-- ✅ Added github pages website with general information.
-
-### V4.6.22
-
-- 📖 Minor license change to add author and general information.
-- 🧹 Changed author link and discord server invite link.
-- 🧹 Changed website link.
-- 📖 Changed author information.
-- 📖 Added/changed description.
-- 🧹 Changed codefactor badge.
-- 🧹 Changed version badge.
-
-### V4.6.21
-
-- 🐛 Codefactor badge link fix.
-
-### V4.5.21
-
-- ✅ Added multiple badges, including Codefactor, GNU, and Shields.
-- ✅ Added Codefactor code quality badge.
-- 🧹 Changed Discord website theme link.
-
-### V4.5.20
-
-- 📖 Changed license information to the default GPL v3 license, with important information moved to the license section in the readme.
-
-### V4.4.19
-
-- 📖 Changed screenshots format and some documentation in the Documentation/Readme file.
-
-### V4.4.18
-
-- 📖 Added screenshots to the Documentation/Readme file.
-
-### V4.4.17
-
-- 📖 Readme documentation/information additions and changes.
-
-### V4.4.16
-
-- 📖 Readme documentation/information additions.
-
-### V4.4.15
-
-- 📖 Readme documentation additions.
-
-### V4.4.14
-
-- 📖 Readme documentation, license, and software disclaimer with changes/addition.
-
-### V4.4.13
-
-- 📖 Readme fix with changes/addition.
-
-### V4.3.12
-
-- 📖 Readme and license fix/addition.
-
-### V4.3.11
-
-- 📖 Major rewrite of license files to clarify GPL v2 and MIT components and the new license for the theme.
-- 📖 Major update to README file with clearer license information for incorporated works.
-- 🧹 Badge changes and additions/changes to README file.
-
-### V3.3.11
-
-- 📖 Readme information/credit additions.
-
-### V3.3.10
-
-- 🐛 Readme file fix.
-
-### V3.2.10
-
-- 🧹 Readme badge changes.
-
-### V3.2.9
-
-- 📖 Readme changes.
-
-### V3.2.8
-
-- 🐛 Readme file fix.
-
-### V3.1.8
-
-- 📖 Readme help/documentation changes and additions, as well as information about the theme.
-
-### V3.1.7
-
-- 🧹 Readme badge changes.
-
-### V3.1.6
-
-- 🐛 Readme file fix.
-
-### V3.0.6
-
-- 📖 Added more documentation and help to Readme file.
-
-### V3.0.5
-
-- 📖 Added more help to Readme file.
-
-### V3.0.4
-
-- 📖 Added star history to Readme.
-
-### V3.0.3
-
-- 🐛 Versioning fixes.
-
-### V3.0.2
-
-- 📖 Added to Readme.
-
-### V3.0.1
-
-- 🧹 Formatted CSS, Readme, and license files.
-
-### V3.0.0
-
-- ✅ Combined all themes into one package.
-- ✅ Added AMOLED backgrounds.
-- ✅ Integrated radial status.
-- ✅ Added horizontal server list.
-- ✅ Apple emoji replacements.
-
-</details>
-
 ## 🐛 Issues & Support
 
 Found a bug? Have a suggestion?
@@ -669,12 +352,12 @@ This project is licensed under the [GPL v3.0](./LICENSE) (GNU General Public Lic
 
 It also incorporates components from other open-source projects under MIT or GPLv2 licenses:
 
-| Component | Author | License |
-| --- | --- | --- |
-| Midnight Discord Theme | refact0r | [MIT](./ORIGINAL_LICENSES/LICENSE_refact0r.md) |
-| AMOLED-Cord | LuckFire | [MIT](./ORIGINAL_LICENSES/LICENSE_LuckFire.md) |
-| Settings Modal / Emoji Replace | DevilBro | [GPL v2](./ORIGINAL_LICENSES/LICENSE_DevilBro.md) |
-| Radial Status / Horizontal Server List | Gibbu / DiscordStyles | [MIT](./ORIGINAL_LICENSES/LICENSE_Gibbu.md) |
+| Component                              | Author                | License                                           |
+| -------------------------------------- | --------------------- | ------------------------------------------------- |
+| Midnight Discord Theme                 | refact0r              | [MIT](./ORIGINAL_LICENSES/LICENSE_refact0r.md)    |
+| AMOLED-Cord                            | LuckFire              | [MIT](./ORIGINAL_LICENSES/LICENSE_LuckFire.md)    |
+| Settings Modal / Emoji Replace         | DevilBro              | [GPL v2](./ORIGINAL_LICENSES/LICENSE_DevilBro.md) |
+| Radial Status / Horizontal Server List | Gibbu / DiscordStyles | [MIT](./ORIGINAL_LICENSES/LICENSE_Gibbu.md)       |
 
 See the [ORIGINAL_LICENSES/](./ORIGINAL_LICENSES) directory for full unmodified license texts.
 
