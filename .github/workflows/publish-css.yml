@@ -1,7 +1,5 @@
 name: Automated Release
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 on:
   push:
     branches:
@@ -16,34 +14,42 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Get latest commit message
         id: commit
         run: |
-          COMMIT_MSG=$(git log -1 --pretty=%B)
-          echo "commit_msg=$COMMIT_MSG" >> $GITHUB_OUTPUT
+          delimiter="$(openssl rand -hex 8)"
+          echo "commit_msg<<${delimiter}" >> "$GITHUB_OUTPUT"
+          git log -1 --pretty=%B >> "$GITHUB_OUTPUT"
+          echo "${delimiter}" >> "$GITHUB_OUTPUT"
 
       - name: Skip dev/testing commits
-        if: contains(steps.commit.outputs.commit_msg, 'Testing') || contains(steps.commit.outputs.commit_msg, 'Dev') || contains(steps.commit.outputs.commit_msg, 'Development')
+        id: skip_check
+        env:
+          COMMIT_MSG: ${{ steps.commit.outputs.commit_msg }}
         run: |
-          echo "Commit is for Testing/Dev/Development. Skipping release."
-          exit 0
+          if echo "$COMMIT_MSG" | grep -qiE '(testing|dev|development)'; then
+            echo "Commit is for Testing/Dev/Development. Skipping release."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Extract version
         id: version
+        if: steps.skip_check.outputs.skip == 'false'
+        env:
+          COMMIT_MSG: ${{ steps.commit.outputs.commit_msg }}
         run: |
-          VERSION=$(echo '${{ steps.commit.outputs.commit_msg }}' | grep -o 'V[0-9]\+\.[0-9]\+\.[0-9]\+')
-          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-
-      - name: Check version
-        run: |
-          if [ -z "${{ steps.version.outputs.VERSION }}" ]; then
-            echo "No version found in commit message. Exiting."
-            exit 0
+          VERSION=$(echo "$COMMIT_MSG" | grep -oE 'V[0-9]+\.[0-9]+\.[0-9]+' | head -n1)
+          if [ -z "$VERSION" ]; then
+            echo "No version found in commit message. Skipping release."
           fi
+          echo "VERSION=$VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Create GitHub Release
+        if: steps.skip_check.outputs.skip == 'false' && steps.version.outputs.VERSION != ''
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ steps.version.outputs.VERSION }}
@@ -90,4 +96,3 @@ jobs:
             Compatible with Equicord, Vencord, BetterDiscord, Replugged, and other Discord clients.
 
           artifacts: midnight-ash.css
-          
