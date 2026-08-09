@@ -1,8 +1,8 @@
 /**
 * @name Midnight-Ash
 * @description Midnight-AMOLED theme with Settings Modal, Radial Status, Horizontal Server List, and Apple Emojis.
-* @author Ash1421 - V8.0.3
-* @version 8.0.3
+* @author Ash1421 - V8.1.3
+* @version 8.1.3
 * @website https://ash1421.com
 * @source https://github.com/Ash1421/Midnight-Ash
 * @authorId 616485235982467085
@@ -34,7 +34,7 @@ body {
 	--custom-window-controls: on;
 	--window-control-size: 14px;
 	--custom-dms-icon: custom;
-	--dms-icon-svg-url: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg");
+	--dms-icon-svg-url: url("https://theme.ash1421.com/assets/svg/moon-solid-full-black.svg");
 	--dms-icon-svg-size: 90%;
 	--dms-icon-color-before: var(--icon-secondary);
 	--dms-icon-color-after: var(--white);

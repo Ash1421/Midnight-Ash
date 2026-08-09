@@ -280,7 +280,17 @@ To change anything listed below please open the css file you have downloaded in 
 ### Custom DMs Icon
 
 - `--custom-dms-icon`: Custom DMs icon (default: custom)
-- `--dms-icon-svg-url`: SVG URL for custom DMs icon (default: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"))
+- `--dms-icon-svg-url`: SVG URL for custom DMs icon (default: url("https://theme.ash1421.com/assets/svg/moon-solid-full-black.svg"))
+
+Available icon variants, self-hosted at `theme.ash1421.com` — swap any of these into `--dms-icon-svg-url` to change the look:
+
+| Variant                         | Source                                                                        | URL                                                                  |
+| ------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Original                        | refact0r's pick — Font Awesome Free 5.2.0 (CC BY 4.0), self-hosted unmodified | `https://theme.ash1421.com/assets/svg/Font_Awesome_5_solid_moon.svg` |
+| Moon Regular, black             | Font Awesome Free 7.3.1, recolored for this repo                              | `https://theme.ash1421.com/assets/svg/moon-regular-full-black.svg`   |
+| Moon Regular, white             | Font Awesome Free 7.3.1, recolored for this repo                              | `https://theme.ash1421.com/assets/svg/moon-regular-full-white.svg`   |
+| Moon Solid, black — **default** | Font Awesome Free 7.3.1, recolored for this repo                              | `https://theme.ash1421.com/assets/svg/moon-solid-full-black.svg`     |
+| Moon Solid, white               | Font Awesome Free 7.3.1, recolored for this repo                              | `https://theme.ash1421.com/assets/svg/moon-solid-full-white.svg`     |
 
 ### Fonts
 
