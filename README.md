@@ -1,3 +1,5 @@
+
+
 <div align="center">
   <img src="assets/svg/midnight_ash_banner.svg" alt="Midnight-Ash Banner" width="650"/>
 </div>
@@ -124,7 +126,7 @@ GitHub: https://github.com/BetterDiscord/BetterDiscord
 ---
 
 <details>
-<summary><h3>💻Other Clients<h3></summary>
+<summary><h3>💻 Other Clients</h3></summary>
 
 #### 🔌 **Replugged**
 
