@@ -1,44 +1,62 @@
 /**
-* @name Midnight-Ash
-* @description Midnight-AMOLED theme with Settings Modal, Radial Status, Horizontal Server List, and Apple Emojis.
-* @author Ash1421 - V8.2.4
-* @version 8.2.4
-* @website https://ash1421.com
-* @source https://github.com/Ash1421/Midnight-Ash
-* @authorId 616485235982467085
-* @authorLink https://rb.ash1421.com/discord
-*/
+ * @name Midnight-Ash
+ * @description Midnight-AMOLED theme with Settings Modal, Radial Status, Horizontal Server List, and Apple Emojis.
+ * @author Ash1421 - V8.3.0
+ * @version 8.3.0
+ * @website https://ash1421.com
+ * @source https://github.com/Ash1421/Midnight-Ash
+ * @authorId 616485235982467085
+ * @authorLink https://rb.ash1421.com/discord
+ */
 
-@import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
-@import url("https://luckfire.github.io/amoled-cord/src/amoled-cord.css");
-@import url("https://discordstyles.github.io/RadialStatus/RadialStatus.css");
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css");
-@import url("https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css");
 
-body {
-	--font: "figtree";
-	--code-font: "";
-	font-weight: 400;
-	--gap: 12px;
-	--divider-thickness: 4px;
-	--border-thickness: 1px;
-	--animations: on;
-	--list-item-transition: 0.2s ease;
-	--dms-icon-svg-transition: 0.4s ease;
+/* ==========================================================================
+   ███  MIDNIGHT-ASH CONFIGURATION  ███
+   --------------------------------------------------------------------------
+   This is the only section you normally need to edit.
+   Every option is a CSS custom property with a comment describing it.
+
+   The selectors below are `html body` and `html:root` on purpose: they are
+   slightly more specific than the inlined upstream defaults further down, so
+   the values here always win no matter where they sit in the file.
+   ========================================================================== */
+
+html body {
+	/* ---------- Fonts ---------------------------------------------------- */
+	--font: "figtree"; /* main font family. use "" for Discord's default */
+	--code-font: ""; /* code block font. use "" for Discord's default */
+	font-weight: 400; /* base font weight */
+
+	/* ---------- Layout --------------------------------------------------- */
+	--gap: 12px; /* spacing between the main panels */
+	--divider-thickness: 4px; /* unread divider + highlighted message border */
+	--border-thickness: 1px; /* border around the main panels */
+	--top-bar-height: var(--gap); /* height of the custom top bar */
+	--top-bar-button-position: titlebar; /* titlebar | sidebar */
+	--top-bar-title-position: off; /* on | off */
+	--subtle-top-bar-title: off; /* on | off */
+	--custom-window-controls: on; /* on | off */
+	--window-control-size: 14px; /* size of the custom window controls */
+	--custom-chatbar: aligned; /* aligned | separated | off */
+	--chatbar-height: 47px;
+	--chatbar-padding: 8px;
+	--small-user-panel: on; /* on | off - compact user panel */
+
+	/* ---------- Animations ----------------------------------------------- */
+	--animations: on; /* on | off - master switch */
+	--list-item-transition: 0.2s ease; /* channel / member / settings hover */
+	--dms-icon-svg-transition: 0.4s ease; /* home icon spin on hover */
 	--border-hover-transition: 0.2s ease;
-	--top-bar-height: var(--gap);
-	--top-bar-button-position: titlebar;
-	--top-bar-title-position: off;
-	--subtle-top-bar-title: off;
-	--custom-window-controls: on;
-	--window-control-size: 14px;
-	--custom-dms-icon: custom;
+
+	/* ---------- Direct Messages (home) icon ------------------------------- */
+	--custom-dms-icon: custom; /* custom | off */
 	--dms-icon-svg-url: url("https://theme.ash1421.com/assets/svg/Font_Awesome_5_solid_moon.svg");
 	--dms-icon-svg-size: 90%;
-	--dms-icon-color-before: var(--icon-secondary);
-	--dms-icon-color-after: var(--white);
-	--custom-dms-background: off;
+	--dms-icon-color-before: var(--text-4); /* icon colour, not selected */
+	--dms-icon-color-after: var(--white); /* icon colour, hovered / selected */
+	--custom-dms-background: off; /* off | image | color | gradient */
 	--dms-background-image-url: url("");
 	--dms-background-image-size: cover;
 	--dms-background-color: linear-gradient(
@@ -47,35 +65,34 @@ body {
 		var(--purple-2),
 		var(--red-2)
 	);
-	--background-image: off;
+
+	/* ---------- Background / transparency -------------------------------- */
+	--background-image: off; /* on | off */
 	--background-image-url: url("");
-	--transparency-tweaks: off;
-	--remove-bg-layer: off;
-	--panel-blur: off;
+	--transparency-tweaks: off; /* on | off */
+	--remove-bg-layer: off; /* on | off */
+	--panel-blur: off; /* on | off */
 	--blur-amount: 12px;
-	--bg-floating: var(--bg-3);
-	--custom-chatbar: aligned;
-	--chatbar-height: 47px;
-	--chatbar-padding: 8px;
-	--small-user-panel: on;
+	--bg-floating: var(--bg-3); /* background of popouts / tooltips */
 }
 
-:root {
-	--colors: on;
-	--text-0: var(--bg-4);
-	--text-1: hsl(220deg 45% 95%);
-	--text-2: hsl(220deg 25% 70%);
-	--text-3: hsl(220deg 20% 60%);
-	--text-4: hsl(220deg 15% 40%);
-	--text-5: hsl(220deg 15% 25%);
-	--bg-1: hsl(0deg 0% 8%);
-	--bg-2: hsl(0deg 0% 5%);
-	--bg-3: hsl(0deg 0% 2%);
-	--bg-4: hsl(0deg 0% 0%);
-	--hover: hsl(221deg 19% 40% / 10%);
-	--active: hsl(220deg 19% 40% / 20%);
-	--active-2: hsl(220deg 19% 40% / 30%);
-	--message-hover: hsl(220deg 0% 100% / 2%);
+html:root {
+	--colors: on; /* on | off - master switch for the palette below */
+
+	/* ---------- Text colours --------------------------------------------- */
+	--text-0: var(--bg-4); /* text on coloured elements */
+	--text-1: hsl(220deg 45% 95%); /* normally white text */
+	--text-2: hsl(220deg 25% 70%); /* headings and important text */
+	--text-3: hsl(220deg 20% 60%); /* normal text */
+	--text-4: hsl(220deg 15% 40%); /* icon buttons and channels */
+	--text-5: hsl(220deg 15% 25%); /* muted channels, timestamps */
+
+	/* ---------- Backgrounds (AMOLED: everything is black / near black) ---- */
+	--bg-1: hsl(0deg 0% 8%); /* dark buttons when clicked */
+	--bg-2: hsl(0deg 0% 5%); /* dark buttons */
+	--bg-3: hsl(0deg 0% 2%); /* spacing, secondary elements */
+	--bg-4: hsl(0deg 0% 0%); /* main background - pure black */
+
 	--background-primary: hsl(0deg 0% 0%);
 	--background-secondary: hsl(0deg 0% 2%);
 	--background-secondary-alt: hsl(0deg 0% 1%);
@@ -84,16 +101,26 @@ body {
 	--background-floating: hsl(0deg 0% 2%);
 	--background-mobile-primary: hsl(0deg 0% 0%);
 	--background-mobile-secondary: hsl(0deg 0% 2%);
+
+	/* ---------- Interaction states --------------------------------------- */
+	--hover: hsl(221deg 19% 40% / 10%); /* channels and buttons hovered */
+	--active: hsl(220deg 19% 40% / 20%); /* channels and buttons active */
+	--active-2: hsl(220deg 19% 40% / 30%);
+	--message-hover: hsl(220deg 0% 100% / 2%); /* messages hovered */
 	--background-modifier-hover: hsl(0deg 0% 100% / 2%);
 	--background-modifier-active: hsl(0deg 0% 100% / 4%);
 	--background-modifier-selected: hsl(0deg 0% 100% / 6%);
 	--background-modifier-accent: hsl(0deg 0% 100% / 6%);
-	--accent-1: var(--purple-1);
-	--accent-2: var(--purple-2);
-	--accent-3: var(--purple-3);
-	--accent-4: var(--purple-4);
-	--accent-5: var(--purple-5);
-	--accent-new: var(--accent-2);
+
+	/* ---------- Accents --------------------------------------------------- */
+	--accent-1: var(--purple-1); /* links and other accent text */
+	--accent-2: var(--purple-2); /* small accent elements */
+	--accent-3: var(--purple-3); /* accent buttons */
+	--accent-4: var(--purple-4); /* accent buttons hovered */
+	--accent-5: var(--purple-5); /* accent buttons clicked */
+	--accent-new: var(--accent-2); /* badges, pings, notifications */
+
+	/* ---------- Mentions / replies --------------------------------------- */
 	--mention: linear-gradient(
 		to right,
 		color-mix(in hsl, var(--accent-2), transparent 90%) 40%,
@@ -114,50 +141,64 @@ body {
 		color-mix(in hsl, var(--text-3), transparent 95%) 40%,
 		transparent
 	);
+
+	/* ---------- Status colours ------------------------------------------- */
 	--online: var(--green-2);
 	--dnd: var(--red-2);
 	--idle: var(--yellow-2);
 	--streaming: var(--purple-2);
 	--offline: var(--text-4);
+
+	/* ---------- Borders --------------------------------------------------- */
 	--border-light: hsl(0deg 0% 100% / 8%);
 	--border: hsl(0deg 0% 100% / 12%);
 	--border-hover: hsl(0deg 0% 100% / 16%);
 	--button-border: hsl(0deg 0% 100% / 10%);
-	--red-1: oklch(75% 0.12 0deg);
+
+	/* ---------- Palette --------------------------------------------------- */
+	--red-1: oklch(75% 0.12 0deg); /* lightest */
 	--red-2: oklch(70% 0.12 0deg);
 	--red-3: oklch(65% 0.12 0deg);
 	--red-4: oklch(60% 0.12 0deg);
-	--red-5: oklch(55% 0.12 0deg);
+	--red-5: oklch(55% 0.12 0deg); /* darkest */
+
 	--green-1: oklch(75% 0.11 170deg);
 	--green-2: oklch(70% 0.11 170deg);
 	--green-3: oklch(65% 0.11 170deg);
 	--green-4: oklch(60% 0.11 170deg);
 	--green-5: oklch(55% 0.11 160deg);
+
 	--blue-1: oklch(75% 0.1 215deg);
 	--blue-2: oklch(70% 0.1 215deg);
 	--blue-3: oklch(65% 0.1 215deg);
 	--blue-4: oklch(60% 0.1 215deg);
 	--blue-5: oklch(55% 0.1 215deg);
+
 	--yellow-1: oklch(80% 0.11 90deg);
 	--yellow-2: oklch(75% 0.11 90deg);
 	--yellow-3: oklch(70% 0.11 90deg);
 	--yellow-4: oklch(65% 0.11 90deg);
 	--yellow-5: oklch(60% 0.11 90deg);
+
 	--purple-1: oklch(75% 0.11 310deg);
 	--purple-2: oklch(70% 0.11 310deg);
 	--purple-3: oklch(65% 0.11 310deg);
 	--purple-4: oklch(60% 0.11 310deg);
 	--purple-5: oklch(55% 0.11 310deg);
-	--settingswidth: 960;
-	--settingsheight: 80;
-	--settingsbackground: transparent;
-	--rs-small-spacing: 2px;
+
+	/* ---------- Settings modal ------------------------------------------- */
+	--settingswidth: 960; /* width in px */
+	--settingsheight: 80; /* height in vh */
+	--settingsbackground: transparent; /* modal background colour */
+
+	/* ---------- Radial Status rings -------------------------------------- */
+	--rs-small-spacing: 2px; /* gap between avatar and ring */
 	--rs-medium-spacing: 3px;
 	--rs-large-spacing: 4px;
-	--rs-small-width: 2px;
+	--rs-small-width: 2px; /* ring thickness */
 	--rs-medium-width: 3px;
 	--rs-large-width: 4px;
-	--rs-avatar-shape: 50%;
+	--rs-avatar-shape: 50%; /* 50% = round, 0% = square */
 	--rs-online-color: var(--green-2);
 	--rs-idle-color: var(--yellow-2);
 	--rs-dnd-color: var(--red-2);
@@ -166,26 +207,3448 @@ body {
 	--rs-invisible-color: #747f8d;
 	--rs-self-speaking-color: var(--green-4);
 	--rs-phone-color: var(--rs-online-color);
-	--rs-phone-visible: block;
-	--HSL-server-direction: column;
-	--HSL-server-alignment: flex-start;
+	--rs-phone-visible: block; /* block | none - phone badge on avatars */
+
+	/* ---------- Horizontal Server List ----------------------------------- */
+	--HSL-server-direction: column; /* column | column-reverse */
+	--HSL-server-alignment: flex-start; /* flex-start | center | flex-end */
+	--HSL-top-padding: var(--size-sm); /* space above the server list */
 }
 
-.theme-midnight {
-	--background-message-hover: hsl(0deg 0% 100% / 2%) !important;
-	--background-mod-faint: hsl(0deg 0% 100% / 2%) !important;
-	--background-mod-normal: hsl(0deg 0% 100% / 4%) !important;
-	--background-mod-strong: hsl(0deg 0% 100% / 6%) !important;
-	--background-mod-subtle: hsl(0deg 0% 100% / 3%) !important;
-	--background-modifier-active: hsl(0deg 0% 100% / 4%) !important;
-	--background-modifier-hover: hsl(0deg 0% 100% / 2%) !important;
-	--background-modifier-selected: hsl(0deg 0% 100% / 6%) !important;
-	--background-secondary-alt: hsl(0deg 0% 1%) !important;
-	--card-primary-bg: hsl(0deg 0% 2%) !important;
-	--modal-background: hsl(0deg 0% 0%) !important;
-	--modal-footer-background: hsl(0deg 0% 0%) !important;
-	--scrollbar-auto-scrollbar-color-thumb: hsl(0deg 0% 20%) !important;
-	--scrollbar-auto-thumb: hsl(0deg 0% 20%) !important;
-	--scrollbar-thin-thumb: hsl(0deg 0% 18%) !important;
-	--custom-channel-members-bg: hsl(0deg 0% 0%) !important;
+/* ==========================================================================
+   midnight-discord — upstream build (commit 9bc3edb, Nov 2026 hashes)
+   https://refact0r.github.io/midnight-discord/
+   ========================================================================== */
+/* main.css */
+
+:root {
+	container-name: root;
+
+	--custom-guild-list-padding: 12px;
+	--panel-backdrop-filter: none;
+}
+
+body {
+	container-name: body;
+
+	/* font, change to '' for default discord font */
+	--font: "figtree";
+	--code-font: "";
+
+	/* sizes */
+	--gap: 12px; /* spacing between panels */
+	--divider-thickness: 4px; /* thickness of unread messages divider and highlighted message borders */
+	--border-thickness: 1px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
+	--custom-guild-list-width: calc(
+		var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2 +
+			var(--border-thickness) * 2
+	);
+
+	--border-hover-transition: 0.2s ease;
+	--elevation-low: none;
+	--elevation-medium: none;
+	--elevation-high: none;
+}
+
+/* panel separation */
+.container_rhYbEd > .toolbar_rhYbEd /* server boosts titlebar */,
+.container_rhYbEd > .contentContainer_rhYbEd /* server boosts tab */,
+.guilds_pog62O /* server list */,
+.sidebarList_pog62O /* channel list (includes dm list) */,
+.panels_pog62O /* user panel */,
+.chat_z_gUBg > .subtitleContainer_z_gUBg /* chat titlebar */,
+.chatContent_z_gUBg /* chat */,
+.container_86es0b /* member list */,
+.content_z_gUBg > .membersWrap_86es0b /* forum post member list */,
+.container_zrUwGA > .container_ybUK7Z /* friends titlebar */,
+.container_nMe-a6 > .container_ybUK7Z /* message requests titlebar */,
+.homeWrapper_8iSxT3 > .container_ybUK7Z /* nitro page titlebar */,
+.container_FrbQJp > .container_ybUK7Z /* vc chat titlebar */,
+.container_UU236g > .container_ybUK7Z /* new thread panel */,
+.peopleColumn_zrUwGA /* online friends */,
+.nowPlayingColumn_zrUwGA /* active now */,
+.mainPageScroller_IRnLy8 /* nitro page */,
+.headerBar_tSk_LE /* quests page titlebar */,
+.scroller_jkJlMe /* quests page */,
+.container_nMe-a6 > .content_z_gUBg /* message requests */,
+.shop_Mqg79R /* shop */,
+.content_z_gUBg > aside > .outer_P1YEjQ /* dm user panel */,
+.searchResultsWrap_QHVbp3 /* search results */,
+.container_BkGrJJ /* forum */,
+.chat_UU236g /* new thread panel */,
+.container_I4BhVZ /* server discovery */,
+.callContainer_hbKzX7 /* vc container */,
+.wrapper_hbKzX7.sidebarOpen_hbKzX7 .callContainer_hbKzX7 /* vc container when chat open */,
+.callContainer_DwQMm_ /* stage */,
+.chat_z_gUBg > .header_zjGJlN /* server members header */,
+.chat_z_gUBg > .scrollerBase_tqapBM /* server members page */,
+.chat_z_gUBg > .header_xTP3zy  /* server channels and roles header */,
+.chat_z_gUBg > .container_xTP3zy /* server channels and roles page */,
+.container_dvN-MP /* popout modals */ {
+	background-color: var(--background-base-lower);
+	border-radius: var(--radius-lg);
+	border: var(--border-thickness) solid var(--border-subtle);
+	backdrop-filter: var(--panel-backdrop-filter);
+	box-sizing: border-box;
+	transition: border-color var(--border-hover-transition);
+
+	&:hover {
+		border-color: var(--border-hover);
+	}
+}
+
+.panels_pog62O /* user panel */ {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.sidebar_pog62O /* server list + channel list + user panel group */,
+.popout_9Aa-7R .content_9Aa-7R /* VC popout spacing */ {
+	margin: 0 var(--gap) var(--gap) var(--gap);
+}
+
+.guilds_pog62O /* server list */ {
+	margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
+	margin-right: var(--gap);
+}
+.guilds_pog62O + div:not(.sidebarList_pog62O) /* betterfolders */ {
+	width: 100% !important;
+}
+.scroller_5dqHTG /* server list inner scroller */ {
+	padding-top: var(--custom-guild-list-padding) !important;
+	padding-bottom: var(--custom-guild-list-padding);
+}
+/* full scroller width (overlapping the scrollbar gutter) so items stay centered, like discord does */
+.folderGroup_RTMSuZ,
+.listItem_rwEpIL {
+	width: calc(
+		var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2
+	);
+}
+
+.sidebarList_pog62O /* channel list */ {
+	margin-bottom: calc(var(--custom-app-panels-height, 0) + var(--gap));
+}
+.container_H5ozaj /* channel list inner */ {
+	padding-bottom: 0;
+}
+.container_H5ozaj /* channel list inner */,
+    .header_XH4OpX /* server name */ {
+	background: none;
+}
+.scroller_ysO7Gy /* channel list inner scroller */ {
+	margin-bottom: 0;
+}
+
+/* fix discord's idiotic server banners */
+.bannerImage_XH4OpX,
+.bannerImg_XH4OpX {
+	width: 100%;
+}
+.bannerVisible_XH4OpX .headerEllipseBackdrop_XH4OpX {
+	display: none;
+}
+.headerGlass_XH4OpX {
+	top: 0;
+	left: 0;
+	right: 0;
+	width: auto;
+	border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.sidebar_pog62O:after /* server list + channel list bottom shadow */ {
+	display: none;
+}
+
+.wrapper_5dqHTG /* remove server list shadow */ {
+	mask: none;
+}
+
+.chat_z_gUBg /* chat group outer */ {
+	border: none !important;
+	background: none;
+}
+.chatContent_z_gUBg {
+	overflow: hidden;
+}
+.container_zrUwGA /* friends page group outer */,
+    .page_pog62O {
+	padding-bottom: var(--gap);
+	padding-right: var(--gap);
+	border: none !important;
+	background: none;
+}
+.page_pog62O > .chat_z_gUBg,
+.page_pog62O > .container_zrUwGA {
+	padding: 0;
+}
+
+#app-mount .container_ybUK7Z /* friends, message requests, + other stuff titlebar */ {
+	margin-bottom: var(--gap);
+	border-bottom: none;
+}
+
+.subtitleContainer_z_gUBg /* chat titlebar  */ {
+	margin-bottom: var(--gap);
+}
+.title_z_gUBg /* chat titlebar inner */ {
+	border: none;
+	background: none !important;
+	margin-bottom: 0;
+}
+
+.page_pog62O > div > .chat_z_gUBg > .content_z_gUBg /* chat outer */ {
+	border-left: none;
+}
+.tabBody_zrUwGA /* friends page */ {
+	border: none !important;
+}
+
+.listeningAlong_Zar2Rk /* user panel listening along */ {
+	border-top: none !important;
+}
+
+.container_86es0b /* member list */ {
+	margin-left: var(--gap);
+	overflow: hidden;
+	height: auto;
+	min-width: fit-content;
+}
+.content_z_gUBg > .membersWrap_86es0b /* forum post member list */ {
+	margin-left: var(--gap);
+	overflow: hidden;
+	height: auto;
+	min-width: fit-content;
+}
+.members_86es0b /* member list inner */,
+    .member_86es0b /* member list item */ {
+	background: none;
+}
+
+.resizeHandle_FrbQJp /* resize handle */ {
+	background: transparent;
+}
+
+.privateChannels_u88IQl /* dm list */,
+    .scroller_Bce46W /* dm list inner */ {
+	background: none;
+}
+.scroller_Bce46W /* dm list inner */ {
+	margin-bottom: 0;
+}
+
+.tabBody_zrUwGA /* online friends + active now group outer */ {
+	background: none;
+}
+
+.nowPlayingColumn_zrUwGA /* active now */ {
+	margin-left: var(--gap);
+}
+.container_GNEh_C /* active now inner */ {
+	background: none;
+}
+.scroller_GNEh_C /* active now inner */ {
+	border: none;
+}
+
+.homeWrapper_8iSxT3 /* nitro page group inner */ {
+	border: none;
+	background: none;
+}
+.applicationStore_6U3jXZ /* nitro page group outer */ {
+	background: none;
+}
+
+.shop_Mqg79R /* shop */ {
+	overflow: hidden;
+	height: auto;
+}
+.shop_XBXDcd /* shop inner scroller */ {
+	margin-top: calc(var(--custom-channel-header-height) * -1 - 16px);
+}
+
+.container_ZTJWQo /* quests outer */ {
+	border: none;
+}
+
+.aside_HbUF2J /* dm user panel wrapper */ {
+	padding: 0;
+	background: none;
+}
+
+.content_z_gUBg > aside > .outer_P1YEjQ /* dm user panel */ {
+	margin-left: var(--gap);
+	overflow: hidden;
+	/* min-width: 340px; */
+	background-position: center calc(-1 * var(--border-thickness));
+	background-size: 100% calc(100% + 2 * var(--border-thickness));
+}
+
+.content_z_gUBg > aside > .outer_P1YEjQ /* dm user panel */ {
+	overflow: visible;
+	margin-right: 0;
+}
+
+.searchResultsWrap_QHVbp3 /* search results */ {
+	margin-left: var(--gap);
+}
+
+.notice_Q02kKo /* notice banner */,
+.notice_6g5Jai /* nitro notice? */ {
+	margin: 0 var(--gap) var(--gap) 0;
+	border-radius: var(--radius-md);
+	box-sizing: border-box;
+	height: 40px;
+}
+
+.container_FrbQJp /* vc chat + titlebar group */ {
+	border: none;
+	background: none;
+}
+.chat_fjXxyy::before /* VC / thread chat shadow */ {
+	display: none;
+}
+.channelChatWrapper_hbKzX7 /* vc chat + titlebar group outer */ {
+	background: none;
+}
+
+.page_pog62O > div > .chatLayerWrapper_FrbQJp /* forum/thread chat outer */ {
+	margin: 0 var(--gap) var(--gap) 0;
+	height: calc(100% - var(--gap));
+}
+.container_FrbQJp /* forum/thread chat */ {
+	padding-left: calc((var(--gap) - var(--chat-resize-handle-width)));
+}
+
+.container_UU236g /* new thread panel */ {
+	background: none;
+}
+.chat_UU236g::before /* new thread panel chat shadow */ {
+	display: none;
+}
+
+.container_I4BhVZ /* server discovery */ {
+	overflow: hidden;
+}
+.backdrop_Y0eJLL /* server discovery top bar */ {
+	background-color: var(--background-base-lower);
+}
+
+/* DM / server VC containers */
+.wrapper_hbKzX7 {
+	background: none;
+}
+.wrapper_hbKzX7.fullScreen_hbKzX7 {
+	margin-top: var(--gap);
+	margin-left: var(--gap);
+	width: calc(100% - var(--gap));
+	height: calc(100% - var(--gap));
+
+	+ div + div .container_FrbQJp {
+		margin-top: var(--gap);
+	}
+}
+.popout_9Aa-7R .content_9Aa-7R:has(> div > .wrapper_hbKzX7.fullScreen_hbKzX7) {
+	margin-left: 0;
+}
+/* padding between dm vc and chat*/
+.wrapper_hbKzX7 ~ .content_z_gUBg {
+	padding-top: var(--gap);
+}
+
+/* Fullscreen VC popout backdrop */
+#app-mount::backdrop {
+	display: none;
+}
+
+/* Apply gap to mod view container */
+.sidebarContainer_MLLsfk {
+	margin-inline-start: var(--gap);
+}
+
+/* remove excess background from settings  */
+.standardSidebarView_jnk11m,
+.contentRegion_jnk11m,
+.contentRegionScroller_jnk11m {
+	background: none;
+}
+.standardSidebarView_jnk11m {
+	backdrop-filter: var(--panel-backdrop-filter);
+}
+
+/* remove excess backgrounds */
+.wrapper_oQjLgZ /* message loading placeholders */,
+.wrapper_oQjLgZ > .wrapper_oITdBA {
+	background: none;
+}
+.page_pog62O > .container_rhYbEd /* server boosts page */,
+.page_pog62O > .chat_z_gUBg /* friend page, server members page */ {
+	background: none !important;
+}
+.titleBar_9Aa-7R /* VC popout titlebar */ {
+	background: none;
+}
+
+/* channel messages bar */
+.barBase_j9Vvzj:not(.bottomBar_j9Vvzj) {
+	top: 12px;
+	left: 12px;
+	right: 12px;
+	border-radius: var(--radius-sm);
+	padding: 0 8px;
+	border-top: 1px solid var(--border-subtle);
+}
+
+/* "This channel is not in your channel list" header */
+.chatHeaderBar_rsucr8 {
+	margin: 12px;
+	margin-bottom: 0;
+	padding-left: 16px;
+	background-color: var(--bg-3);
+	border-radius: var(--radius-sm);
+	border: 1px solid var(--border-subtle);
+
+	&::after {
+		display: none;
+	}
+}
+
+.bottom_t1P8Sn /* channel list new unreads pill */,
+.unreadBottom_ysO7Gy /* channel list non-community unread pill */ {
+	bottom: 0;
+}
+
+.unreadMentionsIndicatorBottom_5dqHTG /* server list new pill */,
+.unreadMentionsIndicatorTop_5dqHTG {
+	width: calc(
+		var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2
+	);
+	padding: calc(var(--custom-guild-list-padding) / 2);
+}
+
+#vc-spotify-player /* vencord spotify plugin */ {
+	background: none;
+}
+
+/* general chat bar improvements */
+.channelTextArea_z_gUBg /* chat bar */ {
+	border-radius: var(--radius-md);
+}
+.form_z_gUBg .themedBackground_2x8-Qn /* chat bar inner */ {
+	background: none;
+}
+.slateTextArea_q99V_- /* actual typing area */ {
+	margin-left: 2px;
+}
+
+/* improve unread divider */
+.divider_4TfzT5 {
+	border-width: var(--divider-thickness);
+	border-radius: var(--divider-thickness);
+}
+.endCap_4TfzT5 {
+	margin-top: calc(var(--divider-thickness) / -2);
+}
+.divider_4TfzT5 .content_4TfzT5 {
+	margin-top: calc(var(--divider-thickness) - var(--divider-thickness) * 2);
+}
+
+/* improve highlight message left edge */
+.message_SY_P2T.mentioned_SY_P2T::before,
+.replying_SY_P2T::before,
+.ephemeral_SY_P2T::before {
+	width: var(--divider-thickness);
+	border-radius: var(--divider-thickness);
+	height: calc(100% - 2 * var(--radius-sm));
+	top: var(--radius-sm);
+	left: calc(var(--divider-thickness) / -2 + 1px);
+	left: calc(var(--radius-sm) / 2);
+}
+
+.message_SY_P2T {
+	border-radius: var(--radius-md);
+	margin-left: 4px;
+}
+
+/* improve server selected marker */
+.item__o8_Xq {
+	width: 4px;
+	border-radius: 4px;
+	margin-left: calc((var(--custom-guild-list-padding) - 4px) / 2);
+}
+
+/* improve embeds */
+.embedFull_XyW1ZT {
+	border: 4px solid var(--border-normal);
+	border-top-color: var(--border-subtle) !important;
+	border-top-width: 1px;
+	border-bottom-color: var(--border-subtle) !important;
+	border-bottom-width: 1px;
+	border-right-color: var(--border-subtle) !important;
+	border-right-width: 1px;
+}
+
+/* improve borders */
+.reaction_MmKct8 /* message reactions */,
+.reactionBtn_MmKct8.forceShow_MmKct8 /* add reaction button */ {
+	border-width: 2px;
+}
+
+/* roundness */
+.embedFull_XyW1ZT /* embeds */,
+.hljs /* code block */,
+.imageWrapper_W6wEGA /* image */,
+.container_g2fiji /* thread link */ {
+	border-radius: var(--radius-md);
+}
+
+.outer_P1YEjQ /* profile outer */,
+.contentWrapper_58b0l2  /* gif panel */ {
+	border-radius: var(--radius-lg) !important;
+}
+.inner_P1YEjQ /* profile inner */ {
+	border-radius: calc(var(--radius-lg) - 4px);
+}
+
+.outer_P1YEjQ /* profile outer */ {
+	border: 1px solid var(--border-subtle);
+	background-position: center calc(-1 * var(--border-thickness));
+	background-size: 100% calc(100% + 2 * var(--border-thickness));
+}
+.root_NxZlvf {
+	background: none;
+}
+
+.container_g6VwXp {
+	margin-inline-start: 0;
+	-webkit-margin-start: 0;
+}
+.container_g6VwXp .container_AFi54G /* nameplate */ {
+	border-radius: var(--radius-lg);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/* Fix screen share modal coloring and spacing */
+.container_dvN-MP:has(> div > .footer_oszuaw) {
+	padding-bottom: 0;
+
+	.sourceOverlayCTA_4HfQya {
+		color: var(--text-3);
+	}
+
+	.footer_oszuaw {
+		border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+
+		.footerContent_oszuaw {
+			padding: var(--space-16) var(--space-24);
+		}
+	}
+}
+.vcd-screen-picker-option-radio[data-checked="true"] span {
+	color: var(--text-0);
+}
+
+/* Activity popout message field */
+.replyInput_39obR1 {
+	background-color: var(--bg-4);
+}
+
+/* keep the divider below the tags row within the bounds of the new forum post input box */
+.tagsDivider_owUmX8 {
+	inset-inline-start: 0px;
+	width: 100%;
+}
+
+/* remove unnecessary backgrounds */
+.app_QbT-Jy,
+#app-mount,
+body {
+	background: transparent !important;
+}
+
+body {
+	--font-primary:
+		var(--font), "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	--font-display:
+		var(--font), "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	--font-code:
+		var(--code-font), "gg mono", "Source Code Pro", Consolas, Monaco, monospace;
+}
+
+[class*="scroll"] {
+	will-change: scroll-position;
+}
+.burstGlow_MmKct8 {
+	display: none;
+}
+
+/* animations.css */
+body {
+	--list-item-transition: 0.2s ease; /* transition for list items */
+	--dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+}
+
+@property --animations {
+	syntax: "off | on";
+	inherits: false;
+	initial-value: on;
+}
+
+@container body style(--animations: on) {
+	/* list hover animations */
+	.wrapper_TNyK-N .link_TNyK-N /* channels */,
+        .container_J1Adu_ /* members */,
+        .channel_zln_tS /* dms */,
+        .side_6zZYhF .item_6zZYhF /* settings */ {
+		transition: margin-left var(--list-item-transition);
+		will-change: margin-left;
+	}
+	.wrapper_TNyK-N:hover .link_TNyK-N,
+	.side_6zZYhF .item_6zZYhF:hover {
+		margin-left: 10px;
+	}
+	.container_J1Adu_:hover,
+	.channel_zln_tS:hover {
+		margin-left: 18px;
+	}
+	/* list hover channel dot */
+	.unread_TNyK-N {
+		border-radius: 50%;
+		width: 8px;
+		height: 8px;
+		margin-left: -4px;
+		transition: var(--list-item-transition);
+		will-change: margin-left;
+	}
+	.wrapper_TNyK-N:hover .unread_TNyK-N {
+		margin-left: 4px;
+	}
+	.typeThread_TNyK-N .unread_TNyK-N {
+		margin-left: -8px;
+	}
+	.wrapper_TNyK-N.typeThread_TNyK-N:hover .unread_TNyK-N {
+		margin-left: 0px;
+	}
+}
+
+/* background-image.css */
+body {
+	--background-image-url: url("");
+}
+
+@property --background-image {
+	syntax: "off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--background-image: on) {
+	#app-mount .bg_Fd0FEH {
+		background: var(--background-image-url);
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+/* chatbar.css */
+body {
+	--chatbar-height: 47px; /* height of the chatbar (52px by default, 47px to align it with the user panel) */
+
+	--custom-channel-textarea-text-area-height: var(--chatbar-height);
+}
+
+@property --custom-chatbar {
+	syntax: "off | separated";
+	inherits: false;
+	initial-value: off;
+}
+
+.attachWrapper_7TM4SO {
+	padding-top: 0;
+	padding-bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon_kgeBdh {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.attachButton_2x8-Qn {
+	display: flex;
+	align-items: center;
+}
+
+@container body style(--custom-chatbar: separated) {
+	.chatContent_z_gUBg {
+		background: none;
+		border-radius: 0;
+		border: none;
+		backdrop-filter: none;
+	}
+	.messagesWrapper_8AE1Qq {
+		background-color: var(--background-base-lower);
+		border-radius: var(--radius-lg);
+		border: var(--border-thickness) solid var(--border-subtle);
+		backdrop-filter: var(--panel-backdrop-filter);
+		transition: border-color var(--border-hover-transition);
+		overflow: hidden;
+
+		&:hover {
+			border-color: var(--border-hover);
+		}
+	}
+	.scrollerSpacer_8AE1Qq {
+		height: calc(26px + var(--space-xs));
+	}
+	.scroller_8AE1Qq::-webkit-scrollbar-track {
+		margin-bottom: calc(26px);
+	}
+	.chatContent_z_gUBg:has(> .form_z_gUBg > .typing_U9Tvvz)
+		.messagesWrapper_8AE1Qq::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: var(--background-base-lower);
+		height: 26px;
+		border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+		z-index: 2;
+	}
+	.form_z_gUBg {
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		width: 100%;
+		margin-top: 0;
+	}
+	.typing_U9Tvvz {
+		position: absolute;
+		order: -1;
+		top: calc(-26px + var(--border-thickness) * -1);
+		left: calc(var(--border-thickness));
+		border-radius: 0 0 0 var(--radius-lg);
+		padding: 0 0 0 var(--space-sm);
+		height: 26px;
+	}
+	.channelBottomBarArea_z_gUBg {
+		margin-top: var(--gap);
+	}
+	#app-mount .channelTextArea_z_gUBg {
+		margin: 0;
+		background-color: var(--background-base-lower);
+		border-radius: var(--radius-lg);
+		border: var(--border-thickness) solid var(--border-subtle);
+		backdrop-filter: var(--panel-backdrop-filter);
+		transition: border-color var(--border-hover-transition);
+
+		&:hover {
+			border-color: var(--border-hover);
+		}
+	}
+	.stackedBars_2x8-Qn {
+		background: none !important;
+	}
+	.wrapper_ST_Y69 {
+		margin: var(--gap) 0 0 0;
+		height: var(--chatbar-height);
+		padding: 0;
+		border-radius: var(--radius-lg);
+		border: var(--border-thickness) solid var(--border-subtle);
+		background-color: var(--bg-4);
+		backdrop-filter: var(--panel-backdrop-filter);
+		transition: border-color var(--border-hover-transition);
+
+		&:hover {
+			border-color: var(--border-hover);
+		}
+	}
+	/* "This channel is not in your channel list" header */
+	.chatHeaderBar_rsucr8 {
+		margin: 0px;
+		margin-bottom: var(--gap);
+		padding-left: 28px;
+		border-width: var(--border-thickness);
+		border-radius: var(--radius-lg);
+		background-color: var(--bg-4);
+	}
+}
+
+/* colors.css */
+@property --colors {
+	syntax: "off | on";
+	inherits: false;
+	initial-value: on;
+}
+
+:root {
+	/* text colors */
+	--text-0: var(--bg-4); /* text on colored elements */
+	--text-1: hsl(220, 45%, 95%); /* other normally white text */
+	--text-2: hsl(220, 25%, 70%); /* headings and important text */
+	--text-3: hsl(220, 20%, 60%); /* normal text */
+	--text-4: hsl(220, 15%, 40%); /* icon buttons and channels */
+	--text-5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
+
+	/* background and dark colors */
+	--bg-1: hsla(220, 15%, 20%, 1); /* dark buttons when clicked */
+	--bg-2: hsla(220, 15%, 16%, 1); /* dark buttons */
+	--bg-3: hsla(220, 15%, 13%, 1); /* spacing, secondary elements */
+	--bg-4: hsla(220, 15%, 10%, 1); /* main background color */
+	--hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
+	--active: hsla(
+		220,
+		19%,
+		40%,
+		0.2
+	); /* channels and buttons when clicked or selected */
+	--active-2: hsla(
+		220,
+		19%,
+		40%,
+		0.3
+	); /* extra state for transparent buttons */
+	--message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
+
+	/* accent colors */
+	--accent-1: var(--blue-1); /* links and other accent text */
+	--accent-2: var(--blue-2); /* small accent elements */
+	--accent-3: var(--blue-3); /* accent buttons */
+	--accent-4: var(--blue-4); /* accent buttons when hovered */
+	--accent-5: var(--blue-5); /* accent buttons when clicked */
+	--accent-new: var(
+		--accent-2
+	); /* stuff that's normally red like mute/deafen buttons */
+	--mention: linear-gradient(
+		to right,
+		color-mix(in hsl, var(--accent-2), transparent 90%) 40%,
+		transparent
+	); /* background of messages that mention you */
+	--mention-hover: linear-gradient(
+		to right,
+		color-mix(in hsl, var(--accent-2), transparent 95%) 40%,
+		transparent
+	); /* background of messages that mention you when hovered */
+	--reply: linear-gradient(
+		to right,
+		color-mix(in hsl, var(--text-3), transparent 90%) 40%,
+		transparent
+	); /* background of messages that reply to you */
+	--reply-hover: linear-gradient(
+		to right,
+		color-mix(in hsl, var(--text-3), transparent 95%) 40%,
+		transparent
+	); /* background of messages that reply to you when hovered */
+
+	/* status indicator colors */
+	--online: var(--green-2); /* change to #40a258 for default */
+	--dnd: var(--red-2); /* change to #d83a41 for default */
+	--idle: var(--yellow-2); /* change to #cc954c for default */
+	--streaming: var(--purple-2); /* change to ##9147ff for default */
+	--offline: var(--text-4); /* change to #82838b for default offline color */
+
+	/* border colors */
+	--border-light: var(--hover); /* general light border color */
+	--border: var(--active); /* general normal border color */
+	--border-hover: var(--active); /* border color of panels when hovered */
+	--button-border: hsl(
+		220,
+		0%,
+		100%,
+		0.1
+	); /* neutral border color of buttons */
+
+	/* base colors */
+	--red-1: oklch(75% 0.12 0);
+	--red-2: oklch(70% 0.12 0);
+	--red-3: oklch(65% 0.12 0);
+	--red-4: oklch(60% 0.12 0);
+	--red-5: oklch(55% 0.12 0);
+
+	--green-1: oklch(75% 0.11 170);
+	--green-2: oklch(70% 0.11 170);
+	--green-3: oklch(65% 0.11 170);
+	--green-4: oklch(60% 0.11 170);
+	--green-5: oklch(55% 0.11 160);
+
+	--blue-1: oklch(75% 0.1 215);
+	--blue-2: oklch(70% 0.1 215);
+	--blue-3: oklch(65% 0.1 215);
+	--blue-4: oklch(60% 0.1 215);
+	--blue-5: oklch(55% 0.1 215);
+
+	--yellow-1: oklch(80% 0.11 90);
+	--yellow-2: oklch(75% 0.11 90);
+	--yellow-3: oklch(70% 0.11 90);
+	--yellow-4: oklch(65% 0.11 90);
+	--yellow-5: oklch(60% 0.11 90);
+
+	--purple-1: oklch(75% 0.11 310);
+	--purple-2: oklch(70% 0.11 310);
+	--purple-3: oklch(65% 0.11 310);
+	--purple-4: oklch(60% 0.11 310);
+	--purple-5: oklch(55% 0.11 310);
+}
+
+@container root style(--colors: on) {
+	body,
+	.theme-dark:not(.custom-user-profile-theme),
+	.theme-light:not(.custom-user-profile-theme) {
+		--app-frame-background: var(--bg-3);
+		--app-frame-border: var(--border);
+		--app-message-embed-secondary-text: var(--text-2);
+		--background-accent: var(--bg-2);
+		--background-base-low: var(--bg-4);
+		--background-base-lower: var(--bg-4);
+		--background-base-lowest: var(--bg-4);
+		--background-brand: var(--accent-2);
+		--background-code: var(--bg-3);
+		--background-code-addition: color-mix(
+			in hsl,
+			var(--green-2),
+			transparent 80%
+		);
+		--background-code-deletion: color-mix(
+			in hsl,
+			var(--red-2),
+			transparent 80%
+		);
+		--background-feedback-critical: color-mix(
+			in hsl,
+			var(--red-2),
+			transparent 80%
+		);
+		--background-feedback-info: color-mix(
+			in hsl,
+			var(--blue-2),
+			transparent 80%
+		);
+		--background-feedback-positive: color-mix(
+			in hsl,
+			var(--green-2),
+			transparent 80%
+		);
+		--background-feedback-warning: color-mix(
+			in hsl,
+			var(--yellow-2),
+			transparent 80%
+		);
+		--background-feedback-notification: var(--accent-new);
+		--background-mod-muted: var(--hover);
+		--background-mod-normal: var(--bg-2);
+		--background-mod-strong: var(--bg-1);
+		--background-mod-subtle: var(--hover);
+		--background-scrim: hsl(0, 0%, 0%, 0.7);
+		--background-scrim-lightbox: hsl(0, 0%, 0%, 0.9);
+		--background-secondary-alt: var(--bg-3);
+		--background-surface-high: var(--bg-3);
+		--background-surface-higher: var(--bg-3);
+		--background-surface-highest: var(--bg-3);
+		/* --background-tile-gradient-pink-end: yellow;
+        --background-tile-gradient-pink-start: lime; */
+		--badge-background-default: var(--accent-2);
+		--badge-expressive-background-default: var(--accent-2);
+		--badge-expressive-text-default: var(--text-0);
+		--badge-notification-background: var(--accent-new);
+		--badge-text-default: var(--text-0);
+		--bg-surface-overlay-tmp: var(--bg-3);
+		--bg-surface-raised: var(--bg-3);
+		--border-feedback-critical: var(--border);
+		--border-focus: var(--border);
+		--border-muted: var(--border-light);
+		--border-normal: var(--border);
+		--border-strong: var(--border);
+		--border-subtle: var(--border);
+		--button-danger-background-disabled: lime;
+		--button-outline-brand-background-hover: blue;
+		--button-outline-brand-border-active: magenta;
+		--button-outline-primary-text: var(--text-1);
+		--card-background-default: var(--bg-3);
+		--card-primary-pressed-bg: lime;
+		--card-secondary-bg: blue;
+		--card-secondary-pressed-bg: magenta;
+		--channel-icon: var(--text-4);
+		--channel-text-area-placeholder: var(--text-5);
+		--channels-default: var(--text-4);
+		--channeltextarea-background: var(--border);
+		--chat-background: yellow;
+		--chat-background-default: var(--bg-3);
+		--chat-border: lime;
+		--chat-text-muted: var(--text-5);
+		--checkbox-background-active: blue;
+		--checkbox-background-default: var(--bg-2);
+		--checkbox-background-hover: var(--bg-1);
+		--checkbox-background-selected-default: var(--accent-2);
+		--checkbox-background-selected-hover: var(--accent-3);
+		--checkbox-border-active: var(--border);
+		--checkbox-border-default: var(--border);
+		--checkbox-border-hover: var(--border);
+		--checkbox-border-selected-default: var(--button-border);
+		--checkbox-border-selected-hover: var(--button-border);
+		--checkbox-icon-active: var(--text-0);
+		--chip-blurple-dark-background: magenta;
+		--chip-blurple-dark-text: red;
+		--chip-blurple-light-background: yellow;
+		--chip-blurple-light-text: lime;
+		--chip-blurple-medium-background: blue;
+		--chip-blurple-medium-text: magenta;
+		--chip-gray-dark-background: red;
+		--chip-gray-dark-text: yellow;
+		--chip-gray-light-background: lime;
+		--chip-gray-light-text: blue;
+		--chip-gray-medium-background: magenta;
+		--chip-gray-medium-text: red;
+		--chip-green-dark-background: yellow;
+		--chip-green-dark-text: lime;
+		--chip-green-light-background: blue;
+		--chip-green-light-text: magenta;
+		--chip-green-medium-background: red;
+		--chip-green-medium-text: yellow;
+		--chip-orange-dark-background: lime;
+		--chip-orange-dark-text: blue;
+		--chip-orange-light-background: magenta;
+		--chip-orange-light-text: red;
+		--chip-orange-medium-background: yellow;
+		--chip-orange-medium-text: lime;
+		--chip-pink-dark-background: blue;
+		--chip-pink-dark-text: magenta;
+		--chip-pink-light-background: red;
+		--chip-pink-light-text: yellow;
+		--chip-pink-medium-background: lime;
+		--chip-pink-medium-text: blue;
+		--chip-purple-dark-background: magenta;
+		--chip-purple-dark-text: red;
+		--chip-purple-light-background: yellow;
+		--chip-purple-light-text: lime;
+		--chip-purple-medium-background: blue;
+		--chip-purple-medium-text: magenta;
+		--chip-red-dark-background: red;
+		--chip-red-dark-text: yellow;
+		--chip-red-light-background: lime;
+		--chip-red-light-text: blue;
+		--chip-red-medium-background: magenta;
+		--chip-red-medium-text: red;
+		--chip-yellow-dark-background: yellow;
+		--chip-yellow-dark-text: lime;
+		--chip-yellow-light-background: blue;
+		--chip-yellow-light-text: magenta;
+		--chip-yellow-medium-background: red;
+		--chip-yellow-medium-text: yellow;
+		--content-inventory-media-seekbar-container: var(--bg-1);
+		--content-inventory-overlay-text-primary: var(--text-2);
+		--content-inventory-overlay-text-secondary: var(--text-3);
+		--context-menu-backdrop-background: red;
+		--control-brand-foreground: var(--accent-2);
+		--control-brand-foreground-new: lime;
+		--control-connect-background-active: var(--accent-5);
+		--control-connect-background-default: var(--accent-4);
+		--control-connect-background-hover: var(--accent-3);
+		--control-connect-border-active: var(--button-border);
+		--control-connect-border-default: var(--button-border);
+		--control-connect-border-hover: var(--button-border);
+		--control-connect-icon-active: var(--text-0);
+		--control-connect-icon-default: var(--text-0);
+		--control-connect-icon-hover: var(--text-0);
+		--control-connect-text-active: var(--text-0);
+		--control-connect-text-default: var(--text-0);
+		--control-connect-text-hover: var(--text-0);
+		--control-critical-primary-background-active: var(--red-5);
+		--control-critical-primary-background-default: var(--red-3);
+		--control-critical-primary-background-hover: var(--red-4);
+		--control-critical-primary-border-active: var(--button-border);
+		--control-critical-primary-border-default: var(--button-border);
+		--control-critical-primary-border-hover: var(--button-border);
+		--control-critical-primary-icon-active: var(--text-0);
+		--control-critical-primary-icon-default: var(--text-0);
+		--control-critical-primary-icon-hover: var(--text-0);
+		--control-critical-primary-text-active: var(--text-0);
+		--control-critical-primary-text-default: var(--text-0);
+		--control-critical-primary-text-hover: var(--text-0);
+		--control-critical-secondary-background-active: var(--text-5);
+		--control-critical-secondary-background-default: var(--bg-2);
+		--control-critical-secondary-background-hover: var(--bg-1);
+		--control-critical-secondary-border-active: var(--border-light);
+		--control-critical-secondary-border-default: var(--border-light);
+		--control-critical-secondary-border-hover: var(--border-light);
+		--control-critical-secondary-icon-active: var(--red-2);
+		--control-critical-secondary-icon-default: var(--red-2);
+		--control-critical-secondary-icon-hover: var(--red-2);
+		--control-critical-secondary-text-active: var(--red-2);
+		--control-critical-secondary-text-default: var(--red-2);
+		--control-critical-secondary-text-hover: var(--red-2);
+		--control-expressive-background-active: var(--text-3);
+		--control-expressive-background-default: var(--text-1);
+		--control-expressive-background-hover: var(--text-2);
+		--control-expressive-border-active: var(--button-border);
+		--control-expressive-border-default: var(--button-border);
+		--control-expressive-border-hover: var(--button-border);
+		--control-expressive-icon-active: var(--bg-4);
+		--control-expressive-icon-default: var(--bg-4);
+		--control-expressive-icon-hover: var(--bg-4);
+		--control-expressive-text-active: var(--bg-4);
+		--control-expressive-text-default: var(--bg-4);
+		--control-expressive-text-hover: var(--bg-4);
+		--control-icon-only-background-active: var(--active);
+		--control-icon-only-background-hover: var(--hover);
+		--control-icon-only-border-active: var(--border-light);
+		--control-icon-only-border-hover: var(--border-light);
+		--control-icon-only-icon-active: var(--text-3);
+		--control-icon-only-icon-default: var(--text-4);
+		--control-icon-only-icon-hover: var(--text-3);
+		--control-overlay-primary-background-active: var(--text-3);
+		--control-overlay-primary-background-default: var(--text-1);
+		--control-overlay-primary-background-hover: var(--text-2);
+		--control-overlay-primary-border-active: var(--button-border);
+		--control-overlay-primary-border-default: var(--button-border);
+		--control-overlay-primary-border-hover: var(--button-border);
+		--control-overlay-primary-icon-active: var(--bg-4);
+		--control-overlay-primary-icon-default: var(--bg-4);
+		--control-overlay-primary-icon-hover: var(--bg-4);
+		--control-overlay-primary-text-active: var(--bg-4);
+		--control-overlay-primary-text-default: var(--bg-4);
+		--control-overlay-primary-text-hover: var(--bg-4);
+		--control-overlay-secondary-background-active: hsl(0, 0%, 0%, 0.4);
+		--control-overlay-secondary-background-default: hsl(0, 0%, 0%, 0.5);
+		--control-overlay-secondary-background-hover: hsl(0, 0%, 0%, 0.6);
+		--control-overlay-secondary-border-active: var(--border-light);
+		--control-overlay-secondary-border-default: var(--border-light);
+		--control-overlay-secondary-border-hover: var(--border-light);
+		--control-overlay-secondary-icon-active: var(--text-3);
+		--control-overlay-secondary-icon-default: var(--text-3);
+		--control-overlay-secondary-icon-hover: var(--text-3);
+		--control-overlay-secondary-text-active: var(--text-3);
+		--control-overlay-secondary-text-default: var(--text-3);
+		--control-overlay-secondary-text-hover: var(--text-3);
+		--control-primary-background-active: var(--accent-5);
+		--control-primary-background-default: var(--accent-3);
+		--control-primary-background-hover: var(--accent-4);
+		--control-primary-border-active: var(--button-border);
+		--control-primary-border-default: var(--button-border);
+		--control-primary-border-hover: var(--button-border);
+		--control-primary-icon-active: var(--text-0);
+		--control-primary-icon-default: var(--text-0);
+		--control-primary-icon-hover: var(--text-0);
+		--control-primary-text-active: var(--text-0);
+		--control-primary-text-default: var(--text-0);
+		--control-primary-text-hover: var(--text-0);
+		--control-secondary-background-active: var(--text-5);
+		--control-secondary-background-default: var(--bg-2);
+		--control-secondary-background-hover: var(--bg-1);
+		--control-secondary-border-active: var(--border-light);
+		--control-secondary-border-default: var(--border-light);
+		--control-secondary-border-hover: var(--border-light);
+		--control-secondary-icon-active: var(--text-3);
+		--control-secondary-icon-default: var(--text-3);
+		--control-secondary-icon-hover: var(--text-3);
+		--control-secondary-text-active: var(--text-3);
+		--control-secondary-text-default: var(--text-3);
+		--control-secondary-text-hover: var(--text-3);
+		--creator-revenue-icon-gradient-end: blue;
+		--creator-revenue-icon-gradient-start: magenta;
+		--creator-revenue-info-box-background: red;
+		--creator-revenue-info-box-border: yellow;
+		--creator-revenue-locked-channel-icon: lime;
+		--creator-revenue-progress-bar: blue;
+		--embed-background: magenta;
+		--embed-background-alternate: red;
+		--experimental-avatar-embed-bg: yellow;
+		/* --expressive-gradient-blue-end: lime;
+        --expressive-gradient-blue-start: blue;
+        --expressive-gradient-green-end: magenta;
+        --expressive-gradient-green-start: red;
+        --expressive-gradient-nitro-green-end: yellow;
+        --expressive-gradient-nitro-green-start: lime;
+        --expressive-gradient-nitro-pink-end: blue;
+        --expressive-gradient-nitro-pink-start: magenta;
+        --expressive-gradient-pink-end: red;
+        --expressive-gradient-pink-start: yellow;
+        --expressive-gradient-purple-end: lime;
+        --expressive-gradient-purple-start: blue;
+        --expressive-gradient-tenure-badge-bronze-end: magenta;
+        --expressive-gradient-tenure-badge-bronze-start: red;
+        --expressive-gradient-tenure-badge-diamond-end: yellow;
+        --expressive-gradient-tenure-badge-diamond-start: lime;
+        --expressive-gradient-tenure-badge-emerald-end: blue;
+        --expressive-gradient-tenure-badge-emerald-start: magenta;
+        --expressive-gradient-tenure-badge-gold-end: red;
+        --expressive-gradient-tenure-badge-gold-start: yellow;
+        --expressive-gradient-tenure-badge-opal-end: lime;
+        --expressive-gradient-tenure-badge-opal-start: blue;
+        --expressive-gradient-tenure-badge-platinum-end: magenta;
+        --expressive-gradient-tenure-badge-platinum-start: red;
+        --expressive-gradient-tenure-badge-ruby-end: yellow;
+        --expressive-gradient-tenure-badge-ruby-start: lime;
+        --expressive-gradient-tenure-badge-silver-end: blue;
+        --expressive-gradient-tenure-badge-silver-start: magenta; */
+		--gradient-progress-pill-background: var(--text-5);
+		--home-background: var(--bg-4);
+		--icon-default: var(--text-4);
+		--icon-feedback-critical: var(--red-1);
+		--icon-feedback-info: var(--blue-1);
+		--icon-feedback-positive: var(--green-1);
+		--icon-feedback-warning: var(--yellow-1);
+		--icon-invert: magenta;
+		--icon-link: var(--text-4);
+		--icon-muted: var(--text-5);
+		--icon-status-dnd: var(--dnd);
+		--icon-status-idle: var(--idle);
+		--icon-status-offline: var(--offline);
+		--icon-status-online: var(--online);
+		--icon-strong: var(--text-3);
+		--icon-subtle: var(--text-4);
+		--icon-transparent: lime;
+		--icon-voice-muted: var(--accent-new);
+		--input-background-default: var(--bg-3);
+		--input-background-error-default: color-mix(
+			in hsl,
+			var(--red-2),
+			transparent 90%
+		);
+		--input-border-active: var(--accent-2);
+		--input-border-default: var(--border-light);
+		--input-border-error-default: var(--red-2);
+		--input-border-error-hover: blue;
+		--input-border-hover: var(--border);
+		--input-border-readonly: red;
+		--input-foreground-placeholder: yellow;
+		--input-icon-default: lime;
+		--input-placeholder-text-default: var(--text-5);
+		--input-text-default: var(--text-3);
+		--input-text-error-default: var(--text-3);
+		--interactive-background-active: var(--active);
+		--interactive-background-hover: var(--hover);
+		--interactive-background-selected: var(--active);
+		--interactive-icon-active: var(--text-3);
+		--interactive-icon-default: var(--text-4);
+		--interactive-icon-hover: var(--text-3);
+		--interactive-muted: var(--text-5);
+		--interactive-text-active: var(--text-3);
+		--interactive-text-default: var(--text-4);
+		--interactive-text-hover: var(--text-3);
+		--logo-primary: yellow;
+		--mention-background: color-mix(in hsl, var(--accent-2), transparent 90%);
+		--mention-foreground: var(--accent-1);
+		--message-automod-background-default: lime;
+		--message-automod-background-hover: blue;
+		--message-background-hover: var(--message-hover);
+		--message-highlight-background-default: var(--reply);
+		--message-highlight-background-hover: var(--reply-hover);
+		--message-mentioned-background-default: var(--mention);
+		--message-mentioned-background-hover: var(--mention-hover);
+		--message-reacted-background-default: color-mix(
+			in hsl,
+			var(--accent-2),
+			transparent 80%
+		);
+		--message-reacted-text-default: var(--text-2);
+		--mobile-background-scrim-opaque: magenta;
+		--mobile-expression-picker-background-default: red;
+		--mobile-text-heading-primary: yellow;
+		--modal-background: var(--bg-4);
+		--modal-footer-background: var(--bg-4);
+		--navigator-header-tint: lime;
+		--notice-background-critical: var(--bg-3);
+		--notice-background-info: var(--blue-3);
+		--notice-background-positive: var(--green-3);
+		--notice-background-warning: var(--yellow-3);
+		--notice-text-critical: var(--text-0);
+		--notice-text-info: var(--text-0);
+		--notice-text-positive: var(--text-0);
+		--notice-text-warning: var(--text-0);
+		--overlay-backdrop-lightbox: yellow;
+		--panel-bg: lime;
+		--polls-normal-image-background: blue;
+		--polls-victor-fill: color-mix(in hsl, var(--green-2), transparent 90%);
+		--polls-voted-fill: color-mix(in hsl, var(--accent-2), transparent 90%);
+		/* --premium-nitro-pink-text: magenta; */
+		--profile-gradient-note-background: red;
+		--profile-gradient-overlay: yellow;
+		--profile-gradient-overlay-synced-with-user-theme: lime;
+		--profile-gradient-role-pill-background: blue;
+		--profile-gradient-role-pill-border: magenta;
+		--profile-gradient-section-box: red;
+		--progressbar-indicator-background: var(--accent-2);
+		--progressbar-track-background: var(--bg-2);
+		--radio-background-active: var(--bg-1);
+		--radio-background-default: var(--bg-2);
+		--radio-background-hover: var(--bg-1);
+		--radio-background-selected-default: var(--accent-2);
+		--radio-background-selected-hover: var(--accent-3);
+		--radio-border-active: var(--border);
+		--radio-border-default: var(--border);
+		--radio-border-hover: var(--border);
+		--radio-border-selected-default: var(--button-border);
+		--radio-border-selected-hover: var(--button-border);
+		--radio-foreground-active: yellow;
+		--radio-foreground-default: lime;
+		--radio-foreground-hover: blue;
+		--radio-thumb-background-active: var(--text-0);
+		--reaction-background-active: var(--active);
+		--reaction-background-default: var(--hover);
+		--reaction-background-hover: var(--active);
+		--reaction-background-reacted-default: color-mix(
+			in hsl,
+			var(--accent-2),
+			transparent 80%
+		);
+		--reaction-background-reacted-hover: color-mix(
+			in hsl,
+			var(--accent-2),
+			transparent 70%
+		);
+		--reaction-border-active: var(--border);
+		--reaction-border-default: var(--border-light);
+		--reaction-border-hover: var(--border-light);
+		--reaction-border-reacted-default: var(--accent-2);
+		--reaction-text-active: var(--text-2);
+		--reaction-text-default: var(--text-3);
+		--reaction-text-hover: var(--text-2);
+		--reaction-text-reacted-default: var(--text-1);
+		--redesign-button-active-background: red;
+		--redesign-button-active-pressed-background: yellow;
+		--redesign-button-active-text: lime;
+		--redesign-button-danger-background: blue;
+		--redesign-button-destructive-background: magenta;
+		--redesign-button-destructive-pressed-background: red;
+		--redesign-button-destructive-text: yellow;
+		--redesign-button-overlay-alpha-background: hsl(0, 0%, 0%, 0.5);
+		--redesign-button-overlay-alpha-pressed-background: hsl(0, 0%, 0%, 0.7);
+		--redesign-button-overlay-alpha-text: var(--text-3);
+		--redesign-button-positive-background: red;
+		--redesign-button-premium-primary-pink-for-gradient: yellow;
+		--redesign-button-premium-primary-pressed-background: lime;
+		--redesign-button-premium-primary-purple-for-gradient: blue;
+		--redesign-button-premium-primary-purple-for-gradient-2: magenta;
+		--redesign-button-primary-alt-border: red;
+		--redesign-button-primary-background: yellow;
+		--redesign-button-primary-overlay-background: lime;
+		--redesign-button-primary-overlay-pressed-background: blue;
+		--redesign-button-primary-overlay-text: magenta;
+		--redesign-button-primary-pressed-background: red;
+		--redesign-button-primary-text: yellow;
+		--redesign-button-secondary-background: var(--bg-2);
+		--redesign-button-secondary-border: blue;
+		--redesign-button-secondary-overlay-background: magenta;
+		--redesign-button-secondary-overlay-pressed-background: red;
+		--redesign-button-secondary-overlay-text: yellow;
+		--redesign-button-secondary-pressed-background: var(--bg-1);
+		--redesign-button-secondary-pressed-border: blue;
+		--redesign-button-secondary-text: var(--text-3);
+		--redesign-button-selected-background: magenta;
+		--redesign-button-selected-pressed-background: red;
+		--redesign-button-selected-text: yellow;
+		--redesign-button-tertiary-background: lime;
+		--redesign-button-tertiary-pressed-background: blue;
+		--redesign-button-tertiary-pressed-text: magenta;
+		--redesign-button-tertiary-text: red;
+		--scrollbar-auto-scrollbar-color-thumb: yellow;
+		--scrollbar-auto-scrollbar-color-track: lime;
+		--scrollbar-auto-thumb: var(--bg-1);
+		--scrollbar-auto-track: transparent;
+		--scrollbar-thin-thumb: var(--bg-1);
+		--scrollbar-thin-track: transparent;
+		--slider-track-background: var(--bg-2);
+		--spine-default: var(--text-5);
+		--spoiler-hidden-background: yellow;
+		--spoiler-hidden-background-hover: lime;
+		--spoiler-revealed-background: blue;
+		--status-danger: var(--red-2);
+		--status-online: var(--green-2);
+		--status-positive: var(--green-2);
+		--status-positive-background: var(--green-2);
+		--status-positive-text: magenta;
+		--status-speaking: var(--green-2);
+		--status-warning: var(--yellow-2);
+		--status-warning-background: red;
+		--status-warning-text: yellow;
+		--switch-background-active: lime;
+		--switch-background-default: var(--bg-2);
+		--switch-background-hover: var(--bg-2);
+		--switch-background-selected-default: var(--accent-2);
+		--switch-background-selected-hover: var(--accent-2);
+		--switch-border-default: var(--border);
+		--switch-border-hover: var(--border-hover);
+		--switch-border-selected-default: var(--border-light);
+		--switch-border-selected-hover: var(--border-hover);
+		--switch-thumb-background-default: rgb(255, 255, 255);
+		--switch-thumb-background-selected-default: rgb(255, 255, 255);
+		--switch-thumb-icon-active: blue;
+		--switch-thumb-icon-default: magenta;
+		--text-brand: var(--accent-1);
+		/* --text-code: red;
+        --text-code-addition: yellow;
+        --text-code-builtin: lime;
+        --text-code-bullet: blue;
+        --text-code-comment: magenta;
+        --text-code-deletion: red;
+        --text-code-keyword: yellow;
+        --text-code-section: lime;
+        --text-code-string: blue;
+        --text-code-tag: magenta;
+        --text-code-title: red;
+        --text-code-variable: yellow; */
+		--text-default: var(--text-3);
+		--text-feedback-critical: var(--red-1);
+		--text-feedback-info: var(--accent-1);
+		--text-feedback-positive: var(--green-1);
+		--text-feedback-warning: var(--yellow-1);
+		--text-invert: blue;
+		--text-link: var(--accent-1);
+		--text-muted: var(--text-5);
+		--text-overlay-dark: magenta;
+		--text-overlay-light: var(--text-0);
+		--text-status-dnd: var(--dnd);
+		--text-status-idle: var(--idle);
+		--text-status-offline: var(--offline);
+		--text-status-online: var(--online);
+		--text-strong: var(--text-2);
+		--text-subtle: var(--text-4);
+		--textbox-markdown-syntax: var(--text-4);
+		--thread-channel-spine: blue;
+		--user-profile-activity-toolbar-background: magenta;
+		--user-profile-background-hover: var(--hover);
+		--user-profile-border: var(--border);
+		--user-profile-note-background-focus: var(--bg-4);
+		--user-profile-overlay-background: var(--bg-4);
+		--user-profile-overlay-background-hover: var(--hover);
+		--user-profile-toolbar-background: var(--bg-3);
+		--user-profile-toolbar-border: var(--border);
+
+		--white: var(--text-0);
+		--white-500: var(--text-0);
+
+		--brand-260: var(--accent-2);
+		--brand-360: var(--accent-2);
+		--brand-500: var(--accent-2);
+		--blurple-50: var(--accent-2);
+
+		--red-400: var(--red-2);
+		--red-500: var(--red-3);
+
+		--green-360: var(
+			--green-2
+		); /* seems to be mostly used by vencord plugins */
+		--yellow-300: var(--yellow-2); /* voice settings sensitivity bar */
+		--primary-400: var(--text-4);
+	}
+
+	.custom-user-profile-theme {
+		--white: var(--text-1);
+		--white-500: var(--text-1);
+	}
+
+	/* User profile sidebar */
+	.user-profile-sidebar .inner_P1YEjQ {
+		--user-profile-overlay-background: var(--bg-3);
+		--profile-gradient-secondary-color: var(--bg-4);
+	}
+
+	::placeholder {
+		color: var(--text-5);
+	}
+
+	.bg_Fd0FEH /* main background */ {
+		background: var(--bg-3);
+	}
+
+	.clickable_ybUK7Z .icon_ybUK7Z /* main top bar icons */,
+    .clickable_fErCLM {
+		color: var(--text-4);
+	}
+	.clickable_ybUK7Z:hover .icon_ybUK7Z {
+		color: var(--text-3);
+	}
+
+	.modeUnreadImportant_TNyK-N .icon_TNyK-N,
+    .wrapper_TNyK-N:hover .icon_TNyK-N /* correct channel icon color */ {
+		color: var(--text-3);
+	}
+
+	.text_U9Tvvz > strong /* xxx is typing.. */ {
+		color: var(--text-3);
+	}
+
+	.hiddenVisually_FX8kaC[aria-expanded="false"] > .folderPreviewWrapper_RTMSuZ /* collapsed folders */ {
+		--background-primary: var(--bg-3);
+	}
+
+	.panel_8eCwJY /* game activity panel */,
+        .container_DwQMm_ /* background between vc and vc chat */ {
+		background: none;
+	}
+
+	/* dm profile panel custom background footer */
+	.footerButton_YBm90d,
+	.footerButton_YBm90d::before {
+		background-color: transparent !important;
+	}
+
+	.sidebarRegionScroller_jnk11m /* server and channel settings sidebar */ {
+		background-color: var(--bg-3);
+	}
+	.side_6zZYhF .item_6zZYhF:hover /* settings tab */ {
+		background-color: var(--bg-3) !important;
+	}
+	.side_6zZYhF .item_6zZYhF:active,
+	.side_6zZYhF .item_6zZYhF.selected_6zZYhF {
+		background-color: var(--bg-2) !important;
+	}
+
+	.participantsButton_1uD6uZ /* vc participants button */,
+    .voiceBar_t1P8Sn /* n in voice bar (channel list) */,
+    .mainCard_BkGrJJ /* form posts */ {
+		background-color: var(--bg-3);
+	}
+
+	.colorable_K9Xq13.primaryDark_K9Xq13,
+        .reaction_UNkajC /* forum post reaction */ {
+		background-color: var(--bg-2);
+	}
+
+	.colorPickerSwatch_BorJ2C[style="background-color: rgb(88, 101, 242);"] /* folder color picker swatch */,
+        .newBadge_SOY5H6 /* forum post new badge */,
+        .mentioned_SY_P2T:before /* mention message left edge */ {
+		background-color: var(--accent-2) !important;
+	}
+	.replying_SY_P2T:before /* reply message left edge */ {
+		background-color: var(--text-2) !important;
+	}
+
+	#app-mount .message_SY_P2T.replying_SY_P2T:hover /* override fix for message reply hover */ {
+		background: var(--reply-hover);
+	}
+
+	.voiceBar_t1P8Sn .barText_t1P8Sn, .voiceChannelsIcon_t1P8Sn /* x in voice bar text */,
+    .activeButtonChild_plpOf8 /* message bar send button icon */,
+    #app-mount .button_plpOf8:hover .activeButtonChild_plpOf8 {
+		color: var(--accent-2);
+	}
+
+	.ephemeral_SY_P2T /* ephemeral messages */ {
+		background: var(--mention) !important;
+	}
+	.ephemeral_SY_P2T:hover {
+		background: var(--mention-hover) !important;
+	}
+
+	.botTagRegular_feVUtO /* bot tag */ {
+		background-color: var(--accent-2);
+	}
+	.botTagOP_feVUtO /* forum post op tag */ {
+		color: var(--text-0);
+	}
+
+	.productCardBadge_Ruy7qb {
+		background-color: var(--bg-2) !important;
+		color: var(--text-3) !important;
+	}
+
+	#app-mount .addFriend_zrUwGA:hover /* add friend button hover */ {
+		color: var(--text-0);
+	}
+	#app-mount .addFriend_zrUwGA[aria-selected=true] /* add friend button selected */ {
+		background-color: var(--accent-5) !important;
+		color: var(--text-0);
+	}
+
+	.vc-switch-container {
+		background-color: var(--bg-1) !important;
+		transition: background-color 0.2s ease;
+	}
+	.vc-switch-container.vc-switch-checked {
+		background-color: var(--accent-2) !important;
+	}
+	.vc-switch-container .vc-switch-slider > svg > path {
+		fill: var(--bg-1) !important;
+		transition: fill 0.2s ease;
+	}
+	.vc-switch-container.vc-switch-checked .vc-switch-slider > svg > path {
+		fill: var(--accent-2) !important;
+	}
+	.vc-switch-container .vc-switch-slider rect[fill="white"] {
+		fill: var(--text-3) !important;
+		transition: fill 0.2s ease;
+	}
+	.vc-switch-container.vc-switch-checked .vc-switch-slider rect[fill="white"] {
+		fill: var(--text-0) !important;
+	}
+
+	.refreshIcon_jqZBm0 /* settings radiobutton center */ {
+		fill: var(--text-0);
+	}
+
+	.categoryText_d2GpC2 /* gif chooser category names */,
+        .backButton_qOjco6 /* stream preview back button */,
+        .viewersIcon_Xa_Vtp /* stream preview viewers icon */,
+        .bottomControls_qOjco6 /* stream preview viewer number */,
+        .pictureInPictureVideo_qOjco6 .controlIcon_K9Xq13 /* stream preview control icon */,
+        .bannerVisible_XH4OpX .name_XH4OpX /* server name over banner image */,
+        .mediaMosaicAltText_j9Vvzj /* image alt text label */,
+        .bannerButton_C4gRrZ /* profile banner corner buttons */,
+        .embed_v5eeZH /* embed primary text */ {
+		color: var(--text-1);
+	}
+	.participantName_ScIiLS /* stream preview participant name */ {
+		color: var(--text-1) !important;
+	}
+	.playPausePopIcon_FJ99sr > path /* video play/pause popup */,
+    .normalIconColor_M2FQyv /* shop favorite button icon */ {
+		fill: var(--text-1);
+	}
+	.headerTitle_qOjco6:hover /* stream preview header title hover underline */ {
+		border-color: var(--text-1) !important;
+	}
+	.controlIcon_FJ99sr /* video play button */,
+        .wrapper_FJ99sr /* video time */,
+        .iconWrapper_ifLhOx /* video initial play button */,
+        .wrapper_lj7V-K /* youtube embed play button */,
+        .viewersIcon_Xa_Vtp:hover /* stream preview viewers icon */ ,
+        .headerTitle_qOjco6:hover .backButton_qOjco6 /* stream preview back button hover */,
+        .viewersIcon_Xa_Vtp:hover /* stream preview viewers icon */,
+        .pictureInPictureVideo_qOjco6 .controlIcon_K9Xq13:hover /* stream preview control icon */ {
+		color: var(--text-2);
+	}
+	.wrapper_lj7V-K a:link,
+	.wrapper_lj7V-K a:visited {
+		color: var(--text-2) !important;
+	}
+	.downloadHoverButtonIcon_BwHv05 /* video download button */,
+    .iconContainer_1uD6uZ>svg /* vc participants button icon */,
+    .selectedIcon_7NOr2f /* vc selected camera icon */,
+    .colorable_K9Xq13.primaryDark_K9Xq13 .centerIcon_K9Xq13 /* vc icon button */,
+    .colorable_K9Xq13.primaryDark_K9Xq13 /* vc icon button nub */,
+    .iconBadge_rwEpIL.base_lMvXrQ /* server vc badge */,
+    #app-mount .message_aTnRjo /* you have unsaved settings message */,
+    .friendRequestsButton_QwUPp6 .base_lMvXrQ /* inbox friend request number */,
+    .colorable_K9Xq13.primaryDark_K9Xq13, .colorable_K9Xq13.primaryDark_K9Xq13 .centerIcon_K9Xq13 /* vc buttons */,
+    .item_xyJHva.active_xyJHva /* settings items active */,
+    .interactive_zln_tS.interactiveSelected_zln_tS /* dms list items active */,
+    .controlIcon_FJ99sr:hover /* video play button hover */ {
+		color: var(--text-3);
+	}
+	.status_7NOr2f path[fill='var(--white)'],
+        .emptyChannelIcon_w6h4R2 path[fill='var(--white)'] /* channel start icon */ {
+		fill: var(--text-3);
+	}
+	.grabber_p3RiOL /* slider grabber (vc volume, settings, spotify plugin) */ {
+		background-color: var(--text-3);
+	}
+	.badge_4guu7- /* new text badge (right click on person in vc) */ {
+		color: var(--text-0);
+	}
+	.badge_4guu7-[style='background-color: var(--primary-500);'] /* vc stream quality badge */ {
+		background-color: var(--bg-2) !important;
+		--white-500: var(--text-3);
+	}
+	.qualityIndicatorFullQuality__be5Bx {
+		color: var(--text-3);
+	}
+
+	.unread_oJAkDB /* new unreads bar (channel list */,
+        .item_xyJHva /* settings items */,
+        .interactive_zln_tS /* dms list items */ {
+		color: var(--text-4);
+	}
+
+	.colorable_K9Xq13.white_K9Xq13 /* vc icon button nub when white */ {
+		background-color: var(--primary-130);
+		color: var(--bg-4);
+	}
+
+	.iconBadge_rwEpIL.isCurrentUserConnected_rwEpIL /* green vc badge when connected */ {
+		color: var(--text-0);
+	}
+
+	.lookOutlined_9OQtot.colorWhite_9OQtot /* outline buttons */ {
+		border-color: var(--text-5);
+		color: var(--text-3);
+	}
+
+	.container_g6VwXp /* user panel buttons */,
+        .numberBadge_lMvXrQ  /* unread number badge */,
+        .toolbar_ybUK7Z /* toolbar button strikethroughs */ {
+		--status-danger: var(--accent-new);
+	}
+
+	.container_g6VwXp .button_Y-8oZW.redGlow_Y-8oZW /* user panel button backgrounds*/ {
+		background-color: color-mix(in hsl, var(--accent-new), transparent 90%);
+	}
+	.container_g6VwXp .button_Y-8oZW.enabled_Y-8oZW.redGlow_Y-8oZW:hover /* user panel button backgrounds hover */ {
+		background-color: color-mix(in hsl, var(--accent-new), transparent 80%);
+	}
+
+	.divider_SY_P2T /* unread divider */ {
+		--divider-color: var(--accent-new);
+	}
+
+	.icon_M3qk4j > circle[fill="#C12A35"] /* server settings icon badge */ {
+		fill: var(--accent-new) !important;
+	}
+
+	.iconBadge_ybUK7Z /* icon badge */,
+        .mentionsBar_t1P8Sn /* new mention pill */,
+        .mention_oJAkDB /* server list new mention pill */ {
+		background-color: var(--accent-new);
+	}
+
+	.mention_oJAkDB:active {
+		background-color: color-mix(in hsl, var(--accent-new), black 10%);
+	}
+
+	.newMessagesBar_j9Vvzj /* unread bar */ {
+		background-color: var(--accent-3);
+	}
+	.barButtonAlt_j9Vvzj /* unread bar mark as read button */ {
+		--control-secondary-background-default: var(--accent-3);
+		--control-secondary-background-hover: var(--accent-4);
+	}
+
+	.colorable_K9Xq13.red_K9Xq13:hover /* vc disconnect button hover */ {
+		background-color: var(--red-4);
+	}
+	.button_Z0MHyc.dangerous_Z0MHyc:hover /* image attachment delete button hover in chat bar */ {
+		color: var(--red-4);
+	}
+	.contentWrapper_58b0l2 ::-webkit-scrollbar-thumb /* gif picker scrollbar */ {
+		background-color: var(--bg-1);
+	}
+
+	.circleIconButton_g8YUxD /* new server button */ {
+		color: var(--text-3);
+	}
+	.circleIconButton_g8YUxD:hover {
+		color: var(--bg-4);
+	}
+
+	.tooltipGrey_3_v8qp /* spotify plugin time tooltip */ {
+		color: var(--text-3);
+		background-color: var(--bg-3);
+	}
+
+	.textContentFooter_x1LvFB /* forum post image fade */ {
+		background: linear-gradient(0deg, var(--bg-4), transparent);
+	}
+
+	.result_H8nOze:after /* remove gif hover overlay */ {
+		display: none;
+	}
+	.result_H8nOze:hover /* gif hover */ {
+		outline: 2px solid var(--accent-2);
+	}
+
+	.reactionBtn_MmKct8.forceShow_MmKct8:hover /* fix add reaction button border hover */ {
+		border-color: var(--bg-2);
+	}
+
+	.flash_EajVQV[data-flash=true] /* reply message flash */ {
+		background: var(--background-message-highlight);
+	}
+
+	.flash_EajVQV[data-flash='true'] /* reply message flash */ {
+		background: var(--reply);
+	}
+
+	/* status indicators */
+	rect[fill="#84858d"] {
+		fill: var(--offline);
+	}
+	.status_PlwcO5[style="background-color: rgb(132, 133, 141);"] {
+		background-color: var(--offline) !important;
+	}
+	rect[fill='#45a366'],
+        path[fill='#45a366'] /* status activity icon */,
+        path[fill='var(--status-positive)'] /* status activity icon */,
+        .vc-platform-indicator > svg[fill="#45a366"] {
+		fill: var(--online);
+	}
+	.status_PlwcO5[style="background-color: rgb(69, 163, 102);"] {
+		background-color: var(--online) !important;
+	}
+	rect[fill="#ffc04e"],
+	.vc-platform-indicator > svg[fill="#ffc04e"] {
+		fill: var(--idle);
+	}
+	.status_PlwcO5[style="background-color: rgb(255, 192, 78);"] {
+		background-color: var(--idle) !important;
+	}
+	rect[fill="#da3e44"],
+	.vc-platform-indicator > svg[fill="#da3e44"] {
+		fill: var(--dnd);
+	}
+	.status_PlwcO5[style="background-color: rgb(218, 62, 68);"] {
+		background-color: var(--dnd) !important;
+	}
+	rect[fill="#9147ff"] {
+		fill: var(--streaming);
+	}
+	div[style="display: flex; justify-content: center; align-items: center; border-radius: 5px; background-color: rgb(69, 163, 102); height: 10px; width: 25px;"] {
+		background-color: var(--online) !important;
+	}
+
+	/* fix radio bar button colors */
+	.radioBar_jqZBm0[style="--radio-bar-accent-color: var(--yellow-360); padding: 10px;"] {
+		--radio-bar-accent-color: var(--yellow-2) !important;
+	}
+	.radioBar_jqZBm0[style="--radio-bar-accent-color: var(--green-360); padding: 10px;"] {
+		--radio-bar-accent-color: var(--green-2) !important;
+	}
+	.radioBar_jqZBm0[style="--radio-bar-accent-color: var(--red-400); padding: 10px;"] {
+		--radio-bar-accent-color: var(--red-2) !important;
+	}
+
+	#vc-spotify-player {
+		--vc-spotify-green: var(--accent-2);
+	}
+
+	.vcd-screen-picker-option-radio[data-checked="true"] .defaultColor_MMUIw6 {
+		color: var(--text-0);
+	}
+
+	.memberRowContainer_DC2Jmc.memberSelected_DC2Jmc td {
+		background: var(--bg-3);
+	}
+
+	:is(div, span, code, a)::selection,
+	.highlight {
+		background: var(--accent-3);
+		color: var(--text-0);
+	}
+
+	.switchIndicator_9AraPt {
+		transition: 0.2s ease;
+		border: 1px solid var(--border-light) !important;
+
+		/* Off state */
+		&[style^="opacity: 1; background-color: rgba(0, 0, 0, 0.12)"] {
+			background-color: var(--bg-3) !important;
+
+			.thumb_9AraPt > rect {
+				fill: var(--text-3) !important;
+			}
+		}
+
+		/* Default state */
+		&[style^="opacity: 1; background-color: rgb(88, 101, 242)"] {
+			background-color: var(--accent-3) !important;
+			border: 1px solid var(--button-border) !important;
+		}
+
+		/* Hovered state */
+		&[style^="opacity: 1; background-color: rgb(68, 82, 187)"] {
+			background-color: var(--accent-4) !important;
+		}
+
+		/* Disabled state */
+		&[style^="opacity: 0.5; background-color: rgb(88, 101, 242)"] {
+			background-color: var(--accent-3) !important;
+		}
+
+		/* Clicked state */
+		&:has(> svg:not([style="left: 1px;"])) {
+			&:has(rect:not([height="16"])) {
+				background-color: var(--accent-5) !important;
+			}
+
+			.thumb_9AraPt > svg path {
+				fill: var(--accent-2);
+			}
+		}
+
+		.thumb_9AraPt > rect {
+			transition: 0.2s ease;
+			fill: var(--bg-4) !important;
+		}
+	}
+
+	.selectedPill_T14dfz {
+		border-color: var(--accent-2) !important;
+	}
+
+	/* Follow channel footer */
+	.wrapper_ST_Y69 {
+		background-color: var(--bg-3);
+	}
+
+	/* VC popout background */
+	#app-mount .popout_9Aa-7R {
+		background-color: var(--bg-3);
+	}
+
+	.colorable_K9Xq13.primaryDark_K9Xq13.active_K9Xq13:not(.disabled_K9Xq13),
+	.colorable_K9Xq13.primaryDark_K9Xq13:hover:not(.disabled_K9Xq13) {
+		background-color: var(--bg-1);
+	}
+}
+
+/* dms-button.css */
+body {
+	--dms-icon-svg-url: url("https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg"); /* icon svg url. MUST BE A SVG. */
+	--dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
+	--dms-icon-color-before: var(--icon-subtle); /* normal icon color */
+	--dms-icon-color-after: var(
+		--white
+	); /* icon color when button is hovered/selected */
+	--dms-background-image-url: url(""); /* url of the background image */
+	--dms-background-image-size: cover; /* size of the background image (css background-size property) */
+	--dms-background-color: linear-gradient(
+		70deg,
+		var(--blue-2),
+		var(--purple-2),
+		var(--red-2)
+	); /* fixed color/gradient (css background property) */
+}
+
+@property --custom-dms-icon {
+	syntax: "off | hide | custom";
+	inherits: false;
+	initial-value: custom;
+}
+
+@container body style(--custom-dms-icon: off) {
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"] > .childWrapper_JJ-hgR {
+		color: var(--dms-icon-color-before);
+	}
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"]:hover
+		> .childWrapper_JJ-hgR,
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"].selected_JJ-hgR
+		> .childWrapper_JJ-hgR {
+		color: var(--dms-icon-color-after);
+	}
+}
+
+@container body style(--custom-dms-icon: custom) {
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"]
+		> .childWrapper_JJ-hgR
+		> svg {
+		display: none;
+	}
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"]
+		> .childWrapper_JJ-hgR::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 65%;
+		height: 65%;
+		background: var(--dms-icon-color-before);
+		mask-image: var(--dms-icon-svg-url);
+		mask-size: var(--dms-icon-svg-size);
+		mask-position: center;
+		mask-repeat: no-repeat;
+		transition: background-color 0.15s ease-out;
+	}
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"]:hover
+		> .childWrapper_JJ-hgR::before {
+		transform: rotate(0deg) scale(1);
+	}
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"]:hover
+		> .childWrapper_JJ-hgR::before,
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"].selected_JJ-hgR
+		> .childWrapper_JJ-hgR::before {
+		background: var(--dms-icon-color-after);
+		transform: rotate(-360deg) scale(0.8);
+	}
+
+	@container body style(--animations: on) {
+		.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"]
+			.childWrapper_JJ-hgR::before {
+			transition:
+				background-color 0.15s ease-out,
+				transform var(--dms-icon-svg-transition);
+		}
+	}
+}
+
+@container body style(--custom-dms-icon: hide) {
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"]
+		> .childWrapper_JJ-hgR
+		> svg {
+		display: none;
+	}
+}
+
+@property --custom-dms-background {
+	syntax: "off | image | color";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--custom-dms-background: image) {
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"] > .childWrapper_JJ-hgR {
+		background-image: var(--dms-background-image-url);
+		background-color: transparent !important;
+		background-size: var(--dms-background-image-size);
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+@container body style(--custom-dms-background: color) {
+	.wrapper_JJ-hgR[data-list-item-id="guildsnav___home"] > .childWrapper_JJ-hgR {
+		background: var(--dms-background-color);
+	}
+}
+
+/* top-bar.css */
+body {
+	--top-bar-height: 32px;
+	--custom-app-top-bar-height: var(--top-bar-height);
+}
+.refresh-title-bar-small {
+	--custom-app-top-bar-height: var(--top-bar-height);
+}
+
+@property --top-bar-button-position {
+	syntax: "off | hide | titlebar";
+	inherits: false;
+	initial-value: titlebar;
+}
+
+.platform-osx .wrapper_5dqHTG {
+	margin-top: max(0px, calc(36px - var(--top-bar-height)));
+}
+
+@container body style(--top-bar-button-position: hide) {
+	.trailing_3zSH5d > a[href="https://support.discord.com"],
+	.winButtons_3zSH5d::before {
+		display: none;
+	}
+}
+
+@container body style(--top-bar-button-position: titlebar) {
+	#app-mount {
+		--custom-channel-header-height: calc(
+			var(--guildbar-avatar-size) + var(--space-xs) + var(--border-thickness) *
+				2
+		);
+	}
+	.title_3zSH5d,
+	.trailing_3zSH5d > a[href="https://support.discord.com"] {
+		display: none;
+	}
+	.trailing_3zSH5d {
+		position: absolute;
+		top: calc(var(--top-bar-height) + 8px + var(--border-thickness));
+		right: calc(var(--gap) + var(--border-thickness));
+		gap: var(--space-xs);
+		z-index: 1000;
+		padding-right: var(--space-xs);
+		height: 32px;
+		transition:
+			transform 0.2s ease-in-out,
+			opacity 0.2s ease-in-out;
+	}
+	.popout_9Aa-7R .trailing_3zSH5d {
+		z-index: 1100;
+	}
+	/* Fix window controls overlapping certain modals */
+	#app-mount,
+	.modal__F9ieB {
+		--custom-viewport-padding: calc(
+			var(--space-40) + var(--custom-app-top-bar-height)
+		);
+	}
+	.layerContainer_VVADeK .carouselModal_7QK1F9 {
+		margin-top: var(--custom-viewport-padding);
+	}
+	/* Move window controls when mod view is open */
+	.base_pog62O:has(
+			> .content_pog62O
+				> .page_pog62O
+				> [style^="width"]
+				> :is(.guildSidebar_z_gUBg, .sidebarContainer_MLLsfk)
+		)
+		.trailing_3zSH5d {
+		right: calc(var(--gap) + var(--border-thickness) + 480px);
+	}
+	.page_pog62O div[style="width: 480px;"] {
+		min-width: 480px;
+	}
+	.winButtons_3zSH5d {
+		padding: 0;
+	}
+	.winButton_3zSH5d {
+		height: calc(var(--window-control-size) * 2);
+	}
+	.winButtons_3zSH5d::before {
+		height: 16px;
+		width: var(--space-xs);
+		box-sizing: border-box;
+		margin: 0;
+	}
+	.toolbar_ybUK7Z {
+		padding-right: var(--top-bar-right-margin);
+	}
+	/* Remove unused space when thread or VC chat is open */
+	.page_pog62O:has(> div > .chatLayerWrapper_FrbQJp)
+		.chat_z_gUBg.threadSidebarOpen_z_gUBg
+		.toolbar_ybUK7Z,
+	.video_hbKzX7.sidebarOpen_hbKzX7 .toolbar_ybUK7Z {
+		padding-right: 0;
+	}
+	.navBarContent_jHfUxk,
+	.headerBarContent_tSk_LE {
+		padding-right: var(--top-bar-right-margin);
+	}
+	.headerBar_Y0eJLL {
+		padding-right: calc(var(--top-bar-right-margin) + var(--space-sm));
+	}
+	.searchFloating_B1ffsk {
+		right: calc(var(--top-bar-right-margin) + var(--space-sm));
+	}
+	.inviteToolbar_zrUwGA {
+		padding-right: 0;
+	}
+	.chat_z_gUBg > .layerContainer_VVADeK {
+		z-index: 999;
+	}
+	.subtitleContainer_z_gUBg {
+		height: var(--custom-channel-header-height);
+	}
+	.title_z_gUBg.container_ybUK7Z {
+		min-height: 0;
+		height: auto;
+	}
+	.followButton_z_gUBg {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.base_pog62O:has(> .notice_Q02kKo) > .bar_3zSH5d > .trailing_3zSH5d {
+		top: calc(
+			var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness)
+		);
+	}
+
+	.base_pog62O:has(> .notice_6g5Jai) > .bar_3zSH5d > .trailing_3zSH5d {
+		top: calc(
+			var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness)
+		);
+	}
+
+	/* Fix header icons and window controls overlap */
+	.base_pog62O {
+		/* Supports up to 6 buttons */
+		&:has(
+			> .bar_3zSH5d
+				> .trailing_3zSH5d
+				> div:not(.winButtons_3zSH5d):nth-of-type(1)
+		) {
+			--button-count: 1;
+		}
+		&:has(
+			> .bar_3zSH5d
+				> .trailing_3zSH5d
+				> div:not(.winButtons_3zSH5d):nth-of-type(2)
+		) {
+			--button-count: 2;
+		}
+		&:has(
+			> .bar_3zSH5d
+				> .trailing_3zSH5d
+				> div:not(.winButtons_3zSH5d):nth-of-type(3)
+		) {
+			--button-count: 3;
+		}
+		&:has(
+			> .bar_3zSH5d
+				> .trailing_3zSH5d
+				> div:not(.winButtons_3zSH5d):nth-of-type(4)
+		) {
+			--button-count: 4;
+		}
+		&:has(
+			> .bar_3zSH5d
+				> .trailing_3zSH5d
+				> div:not(.winButtons_3zSH5d):nth-of-type(5)
+		) {
+			--button-count: 5;
+		}
+		&:has(
+			> .bar_3zSH5d
+				> .trailing_3zSH5d
+				> div:not(.winButtons_3zSH5d):nth-of-type(6)
+		) {
+			--button-count: 6;
+		}
+
+		&:has(> .bar_3zSH5d > .trailing_3zSH5d > .winButtons_3zSH5d) {
+			--top-bar-right-margin: calc(
+				32px * var(--button-count) + (var(--button-count) + 2) *
+					var(--space-xs) + 6 * var(--window-control-size) +
+					var(--window-controls-padding)
+			);
+		}
+
+		/* Revert icon sizing changes */
+		.trailing_3zSH5d {
+			> div:not(.winButtons_3zSH5d),
+			div.clickable_fErCLM {
+				width: 32px !important;
+				height: 32px !important;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				svg {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+	}
+	/* Mac / Vesktop users */
+	.base_pog62O {
+		--top-bar-right-margin: calc(
+			32px * var(--button-count) + var(--button-count) * var(--space-xs)
+		);
+	}
+	/* VC popout */
+	.popout_9Aa-7R:has(> .titleBar_9Aa-7R) {
+		--top-bar-right-margin: calc(
+			(var(--window-control-size) * 6) + var(--window-controls-padding) +
+				var(--space-xs)
+		);
+	}
+	/* Settings modal in portrait mode */
+	@media screen and (max-width: 1080px) {
+		#app-mount:has(
+			> .appAsidePanelWrapper_YRXZu0
+				> div
+				> .layerContainer_VVADeK
+				.modal__F9ieB
+		) {
+			.modal__F9ieB {
+				padding-top: 0;
+			}
+
+			.trailing_3zSH5d {
+				top: calc(8.5px + var(--border-thickness));
+				right: var(--border-thickness);
+			}
+
+			.contentHeader_3Rvb29 {
+				padding-right: calc(
+					(var(--window-control-size) * 6) + var(--window-controls-padding) +
+						var(--space-xs) * 2
+				);
+			}
+		}
+	}
+
+	/* Hide page seek arrows */
+	.bar_3zSH5d .backForwardButtons_nS9Yqn {
+		display: none;
+	}
+
+	/* Hide trailing in VC wrapper */
+	.base_pog62O,
+	.popout_9Aa-7R {
+		&:has(
+				:is(
+						& > .content_pog62O > .page_pog62O .chat_z_gUBg,
+						& > .content_9Aa-7R .root
+					)
+					> .video_hbKzX7:not(.sidebarOpen_hbKzX7)
+					.callContainer_hbKzX7
+					> .root_rTsZa_.idle_rTsZa_
+			)
+			.trailing_3zSH5d {
+			transform: translateY(-8px);
+			opacity: 0;
+
+			&:hover {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@property --top-bar-title-position {
+	syntax: "off | hide | left";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--top-bar-title-position: hide) {
+	.title_LnjVAX {
+		display: none;
+	}
+}
+
+@container body style(--top-bar-title-position: left) {
+	.title_3zSH5d {
+		padding-left: var(--gap);
+		justify-content: flex-start;
+	}
+	.title_LnjVAX {
+		gap: 4px;
+	}
+	/* Hide page seek arrows */
+	.bar_3zSH5d .backForwardButtons_nS9Yqn {
+		display: none;
+	}
+}
+
+@property --subtle-top-bar-title {
+	syntax: "off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--subtle-top-bar-title: on) {
+	.title_LnjVAX .icon_qqAqr1,
+	.title_LnjVAX > svg {
+		display: none;
+	}
+	.title_LnjVAX .text-sm\/medium_RAOoio {
+		line-height: 90%;
+		font-weight: 700;
+		color: var(--text-muted);
+	}
+}
+
+/* transparency-blur.css */
+@property --panel-blur {
+	syntax: "off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--panel-blur: on) {
+	#app-mount {
+		--panel-backdrop-filter: blur(var(--blur-amount));
+	}
+
+	.popover_DpHsW6.popover_DpHsW6 /* message hover quick action bar */,
+        .tooltip_3_v8qp /* tooltips */ {
+		background: var(--bg-floating);
+	}
+	.menu_M3qk4j /* context menus */,
+        .contentWrapper_58b0l2 /* emoji/gif panel */,
+        .root__KoJTP /* modals like invite */,
+        .outer_P1YEjQ.user-profile-popout:not(.custom-theme-background) /* small profile popup */,
+        .autocomplete_rg6La1 /* autocomplete */,
+        .container_cbVzxY /* search suggestions */,
+        .messagesPopoutWrap_6bgemo /* inbox */,
+        .popout_j5xNzb /* channel hover popout */,
+        .bar_t1P8Sn /* channel list new unreads bar */ {
+		background: var(--bg-floating);
+	}
+
+	.menu_M3qk4j::before {
+		content: "";
+		position: absolute;
+		backdrop-filter: var(--panel-backdrop-filter);
+		border-radius: 8px;
+		background: transparent;
+		width: 100%;
+		height: 100%;
+	}
+
+	.submenuPaddingContainer_M3qk4j > .menu_M3qk4j::before {
+		width: calc(100% - 16px);
+	}
+
+	.submenuPaddingContainer_nitlyF > .menu_M3qk4j::before {
+		width: calc(100% - 24px);
+	}
+}
+
+@property --transparency-tweaks {
+	syntax: "off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--transparency-tweaks: on) {
+	.children_ybUK7Z:after {
+		display: none;
+	}
+	.chatGradient_8AE1Qq {
+		display: none;
+	}
+	.form_z_gUBg {
+		margin-top: 0;
+	}
+}
+
+@property --remove-bg-layer {
+	syntax: "off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--remove-bg-layer: on) {
+	.bg_Fd0FEH {
+		background: transparent !important;
+	}
+}
+
+/* user-panel.css */
+@property --small-user-panel {
+	syntax: "off | on";
+	inherits: false;
+	initial-value: off;
+}
+
+@container body style(--small-user-panel: on) {
+	.panels_pog62O /* user panel */ {
+		right: 0;
+		left: unset;
+		width: calc(
+			var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
+		);
+	}
+	.guilds_pog62O /* server list */ {
+		margin-bottom: 0;
+	}
+}
+
+/* Extra spacing for CallTimer plugin */
+.connection_9U6LUN:has(
+	> .inner_9U6LUN .labelWrapper_4LJE6I > a .lineClamp1_MMUIw6 p
+) {
+	padding: calc(
+			var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 4px
+		)
+		0;
+}
+
+/* window-controls.css */
+body {
+	--window-control-size: 14px;
+	--window-controls-padding: calc(
+		var(--gap) - (var(--window-control-size) / 2) + 1px
+	);
+}
+
+.winButtons_3zSH5d {
+	padding-right: var(--window-controls-padding);
+}
+
+@property --custom-window-controls {
+	syntax: "off | on";
+	inherits: false;
+	initial-value: on;
+}
+
+@container body style(--custom-window-controls: on) {
+	.winButtons_3zSH5d {
+		gap: 0;
+	}
+	.winButton_3zSH5d > svg {
+		display: none;
+	}
+	.winButton_3zSH5d {
+		background: none !important;
+		width: calc(var(--window-control-size) * 2);
+		height: var(--custom-app-top-bar-height);
+	}
+	.winButton_3zSH5d::after {
+		display: block;
+		content: "";
+		height: var(--window-control-size);
+		width: var(--window-control-size);
+		border-radius: 50%;
+	}
+	.winButton_3zSH5d:hover::after {
+		filter: brightness(0.7);
+	}
+	.winButton_3zSH5d:active::after {
+		transform: scale(0.9);
+	}
+	.winButtonClose_3zSH5d::after {
+		background-color: var(--dnd) !important;
+	}
+	.winButtonMinMax_3zSH5d:nth-child(1)::after {
+		background-color: var(--idle) !important;
+	}
+	.winButtonMinMax_3zSH5d:nth-child(2)::after {
+		background-color: var(--online) !important;
+	}
+}
+
+@container body style(--custom-window-controls: off) and style(--top-bar-button-position: titlebar) {
+	.winButton_3zSH5d {
+		width: calc(var(--window-control-size) * 2);
+		height: calc(var(--window-control-size) * 2);
+	}
+	.winButtons_3zSH5d {
+		gap: 0;
+	}
+}
+
+/* ==========================================================================
+   RadialStatus 2.0.11 — ported to Discord's Nov 2026 CSS module hashes
+   Original: https://discordstyles.github.io/RadialStatus/RadialStatus.css
+   ========================================================================== */
+
+:root {
+	--rs-version: "2.0.11";
+}
+
+#app-mount .wrapper_XpIUHy {
+	border-radius: var(--rs-avatar-shape);
+}
+
+#app-mount .wrapper_XpIUHy svg:not(:root) {
+	overflow: visible;
+	contain: none;
+}
+
+#app-mount .wrapper_XpIUHy svg:not(:root) g[transform] {
+	transform: scale(1) !important;
+}
+
+#app-mount .wrapper_XpIUHy foreignObject {
+	-webkit-mask: none;
+	mask: none;
+}
+
+#app-mount .wrapper_XpIUHy img,
+#app-mount .wrapper_XpIUHy.avatar_XpIUHy {
+	border-radius: var(--rs-avatar-shape);
+}
+
+/* typing indicator dots (DM list) */
+#app-mount .wrapper_XpIUHy .dots_d8EjQE circle,
+#app-mount .wrapper_XpIUHy .dots__5ad89 circle {
+	cy: 22.25 !important;
+}
+
+#app-mount .wrapper_XpIUHy .dots_d8EjQE circle:nth-child(1),
+#app-mount .wrapper_XpIUHy .dots__5ad89 circle:nth-child(1) {
+	cx: 17 !important;
+}
+
+#app-mount .wrapper_XpIUHy .dots_d8EjQE circle:nth-child(2),
+#app-mount .wrapper_XpIUHy .dots__5ad89 circle:nth-child(2) {
+	cx: 23.25 !important;
+}
+
+#app-mount .wrapper_XpIUHy .dots_d8EjQE circle:nth-child(3),
+#app-mount .wrapper_XpIUHy .dots__5ad89 circle:nth-child(3) {
+	cx: 30.5 !important;
+}
+
+/* the coloured status rect — current clients render it in two different shapes */
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	x: 0;
+	y: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-mask: none;
+	mask: none;
+	display: block;
+	rx: var(--rs-avatar-shape);
+	ry: var(--rs-avatar-shape);
+	fill: transparent !important;
+	stroke-width: var(--rs-small-width);
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="16px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="16px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	width: 16px;
+	height: 16px;
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="20px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="20px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	width: 20px;
+	height: 20px;
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="24px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="24px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	width: 24px;
+	height: 24px;
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="32px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="32px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	width: 32px;
+	height: 32px;
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="40px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="40px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	width: 40px;
+	height: 40px;
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="48px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="48px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	width: 48px;
+	height: 48px;
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="80px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="80px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	width: 80px;
+	height: 80px;
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="120px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="120px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	width: 120px;
+	height: 120px;
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="80px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="80px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	stroke-width: var(--rs-medium-width);
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="120px"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style*="120px"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	stroke-width: var(--rs-large-width);
+}
+
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#23a55a"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#23a55a"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#40a258"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#40a258"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#43a25a"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#43a25a"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#45a366"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#45a366"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#57f287"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#57f287"] {
+	stroke: var(--rs-online-color);
+}
+
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#f0b232"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#f0b232"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#cc954c"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#cc954c"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#ca9654"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#ca9654"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#ffc04e"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#ffc04e"] {
+	stroke: var(--rs-idle-color);
+}
+
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#f23f43"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#f23f43"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#d83a41"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#d83a41"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#d83a42"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#d83a42"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#da3e44"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#da3e44"] {
+	stroke: var(--rs-dnd-color);
+}
+
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#80848e"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#80848e"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#84858d"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#84858d"] {
+	stroke: var(--rs-offline-color);
+}
+
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#82858f"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#82858f"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#82838b"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#82838b"] {
+	stroke: var(--rs-invisible-color);
+}
+
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[fill="#593695"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[fill="#593695"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"])[mask*="streaming"],
+#app-mount
+	.wrapper_XpIUHy
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect[mask*="streaming"] {
+	stroke: var(--rs-streaming-color);
+}
+
+/* avatar spacing */
+#app-mount .wrapper_XpIUHy[style*="80px"] img {
+	clip-path: inset(
+		calc(var(--rs-medium-spacing) + 1px) calc(var(--rs-medium-spacing) + 1px)
+			round var(--rs-avatar-shape)
+	);
+}
+
+#app-mount .wrapper_XpIUHy[style*="120px"] img {
+	clip-path: inset(
+		calc(var(--rs-large-spacing) + 1px) calc(var(--rs-large-spacing) + 1px)
+			round var(--rs-avatar-shape)
+	);
+}
+
+#app-mount
+	.wrapper_XpIUHy:not([style*="80px;"], [style*="120px;"], [style*="16px"])
+	> svg
+	> foreignObject:not(:only-child)
+	img {
+	clip-path: inset(
+		calc(var(--rs-small-spacing) + 1px) calc(var(--rs-small-spacing) + 1px)
+			round var(--rs-avatar-shape)
+	);
+}
+
+#app-mount
+	.wrapper_XpIUHy[style="width: 16px; height: 16px;"]
+	svg.mask_XpIUHy
+	> g
+	> rect.pointerEvents_XpIUHy:not([fill="transparent"]),
+#app-mount
+	.wrapper_XpIUHy[style="width: 16px; height: 16px;"]
+	svg.mask_XpIUHy
+	> g
+	> svg.cursorDefault_XpIUHy
+	> rect {
+	display: none;
+}
+
+#app-mount .wrapper_XpIUHy[style="width: 16px; height: 16px;"] img {
+	clip-path: none;
+}
+
+/* self speaking outline */
+#app-mount .avatarSpeakingOutline_ieJ4Sq,
+#app-mount .avatarSpeaking__44b0c {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border-radius: var(--rs-avatar-shape);
+	box-shadow:
+		inset 0 0 0 2px
+			var(--rs-self-speaking-colour, var(--rs-self-speaking-color, #57d39b)),
+		inset 0 0 0 3px var(--background-secondary);
+}
+
+/* mobile / typing avatars */
+#app-mount .message_SY_P2T .wrapper_XpIUHy foreignObject[mask*="mobile"],
+#app-mount .message__5126c .wrapper__44b0c foreignObject[mask*="mobile"] {
+	width: calc(100% + 3px);
+}
+
+#app-mount .message_SY_P2T .wrapper_XpIUHy rect[mask*="typing"],
+#app-mount .message__5126c .wrapper__44b0c rect[mask*="typing"] {
+	width: calc(100% - 9px);
+}
+
+/* offline avatars keep square clip */
+#app-mount .offline_Iy0c7A img,
+#app-mount .offline__5d473 img,
+#app-mount .memberOffline-2lN7gt img {
+	clip-path: none !important;
+}
+
+/* user info spacing */
+#app-mount .userInfo_jPuNMC .wrapper_XpIUHy,
+#app-mount .userInfo__0a06e .wrapper__44b0c {
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+/* mobile phone badge */
+#app-mount .wrapper_XpIUHy foreignObject[mask*="mobile"]:after {
+	content: "";
+	display: var(--rs-phone-visible, block);
+	-webkit-mask: url('data:image/svg+xml; utf-8,<svg aria-hidden="true" focusable="false" data-prefix="fas" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>')
+		center no-repeat;
+	mask: url('data:image/svg+xml; utf-8,<svg aria-hidden="true" focusable="false" data-prefix="fas" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path></svg>')
+		center no-repeat;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	background: var(--rs-phone-color, var(--rs-online-color));
+	z-index: 1;
+}
+
+#app-mount .wrapper_XpIUHy foreignObject[mask*="mobile"][width="24"]:after {
+	width: 10px;
+	height: 12px;
+	top: 30%;
+}
+
+#app-mount .wrapper_XpIUHy foreignObject[mask*="mobile"][width="32"]:after {
+	width: 10px;
+	height: 14px;
+	top: 30%;
+}
+
+#app-mount .wrapper_XpIUHy foreignObject[mask*="mobile"][width="80"]:after {
+	width: 14px;
+	height: 18px;
+}
+
+#app-mount .wrapper_XpIUHy foreignObject[mask*="mobile"][width="120"]:after {
+	width: 24px;
+	height: 20px;
+}
+
+#app-mount .wrapper_XpIUHy foreignObject[mask*="mobile"] + rect,
+#app-mount .wrapper_XpIUHy foreignObject[mask*="mobile"] + g > rect {
+	stroke: var(--rs-phone-color, var(--rs-online-color));
+}
+
+#app-mount
+	.wrapper_XpIUHy[style*="20px"]
+	foreignObject[mask*="svg-mask-avatar-status-round-20"] {
+	width: 25px;
+	height: 25px;
+}
+
+/* ==========================================================================
+   SettingsModal — mwittrien/BetterDiscordAddons (patched for Nov 2026 hashes)
+   ========================================================================== */
+/* --------------------------------------------------------------------------
+   Settings modal — Discord Nov 2026+ markup (the current client)
+   -------------------------------------------------------------------------- */
+#app-mount .modal__F9ieB:has(> .modalContent__F9ieB .container_NdjzJd) {
+	width: var(--settingswidth_v) !important;
+	height: var(--settingsheight_v) !important;
+	max-width: unset !important;
+	max-height: unset !important;
+	border-radius: 5px !important;
+	background: var(--settingsbackground_v) !important;
+	box-shadow: var(--elevation-high) !important;
+}
+
+#app-mount
+	.modal__F9ieB:has(> .modalContent__F9ieB .container_NdjzJd)
+	> .modalContent__F9ieB {
+	height: 100% !important;
+}
+
+/* --------------------------------------------------------------------------
+   Legacy markup — kept as a fallback for clients still on the older
+   .standardSidebarView / .layer_Fd0FEH settings DOM.
+   -------------------------------------------------------------------------- */
+:root {
+	--settingswidth: 960;
+	--settingsheight: 80;
+	--settingsbackground: transparent;
+
+	--settingswidth_v: min(
+		calc(1px * var(--settingswidth_s, var(--settingswidth))),
+		99vw
+	);
+	--settingsheight_v: min(
+		calc(1vh * var(--settingsheight_s, var(--settingsheight))),
+		99vh
+	);
+	--settingsbackground_v: var(
+		--settingsbackground_s,
+		var(--settingsbackground)
+	);
+}
+
+#app-mount .baseLayer_Fd0FEH {
+	opacity: 1 !important;
+	transform: unset !important;
+	will-change: unset !important;
+	visibility: unset !important;
+}
+#app-mount .stop-animations * {
+	transition-property: inherit !important;
+	animation: inherit !important;
+}
+#app-mount .layer_Fd0FEH.stop-animations:first-child::after,
+#app-mount .BA__layerContainer .BA__layer--hidden:first-child::after {
+	content: "" !important;
+	position: fixed !important;
+	background: rgb(0, 0, 0) !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0.85 !important;
+	z-index: 999 !important;
+	pointer-events: none !important;
+}
+
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH,
+#app-mount .BA__layerContainer ~ .BA__layerContainer {
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: var(--settingsbackground_v) !important;
+	border-radius: 5px !important;
+	box-shadow: var(--elevation-high) !important;
+	width: var(--settingswidth_v) !important;
+	height: var(--settingsheight_v) !important;
+	margin: auto !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	contain: unset !important;
+	z-index: 1000 !important;
+	--settingsiconsadditionalsize: var(--use-settingsicons, 0) *
+		(var(--settingsicons-size, 0px) + var(--settingsicons-gap, 0px));
+}
+#app-mount .BA__layerContainer ~ .BA__layerContainer > .layer_Fd0FEH {
+	position: unset !important;
+	padding: unset !important;
+	overflow: unset !important;
+	contain: unset !important;
+	height: 100% !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH > div,
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .standardSidebarView_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer > .layer_Fd0FEH > div,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.standardSidebarView_jnk11m {
+	position: static !important;
+	border-radius: unset !important;
+	width: 100% !important;
+	height: 100% !important;
+	margin: unset !important;
+	padding: unset !important;
+	overflow: hidden !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .sidebarRegion_jnk11m,
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .sidebarRegionScroller_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebarRegion_jnk11m,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.sidebarRegionScroller_jnk11m {
+	flex: 0 0 auto !important;
+	margin-top: 0 !important;
+	z-index: 3 !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .sidebar_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebar_jnk11m {
+	width: 218px !important;
+	padding: 20px 6px 20px 20px !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .contentColumnDefault_jnk11m,
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .contentColumnWide_jnk11m,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.contentColumnDefault_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .contentColumnWide_jnk11m {
+	padding: 20px 40px !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .contentRegionScroller_jnk11m,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.contentRegionScroller_jnk11m {
+	margin-top: 0 !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .sidebar_7NrAL2,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .sidebar_7NrAL2 {
+	height: var(--settingsheight_v) !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .standardSidebarView_jnk11m .editor,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.standardSidebarView_jnk11m
+	.editor {
+	height: calc(var(--settingsheight_v) - 120px) !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .toolsContainer_jnk11m,
+#app-mount .BA__layerContainer ~ .BA__layerContainer .toolsContainer_jnk11m {
+	position: fixed !important;
+	inset: 0 !important;
+	width: 100% !important;
+	max-width: unset !important;
+	height: 100% !important;
+	max-height: unset !important;
+	z-index: -1 !important;
+	padding-top: 0 !important;
+	opacity: 0 !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .toolsContainer_jnk11m .tools_jnk11m,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.toolsContainer_jnk11m
+	.tools_jnk11m {
+	width: 100% !important;
+	height: 100% !important;
+}
+#app-mount
+	.layer_Fd0FEH
+	~ .layer_Fd0FEH
+	.toolsContainer_jnk11m
+	.closeButton_e76OBR,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.toolsContainer_jnk11m
+	.closeButton_e76OBR {
+	border: none !important;
+	border-radius: 0 !important;
+	width: 100% !important;
+	max-width: unset !important;
+	height: 100% !important;
+	max-height: unset !important;
+	cursor: default !important;
+	flex: unset !important;
+	transition: unset !important;
+}
+#app-mount
+	.layer_Fd0FEH
+	~ .layer_Fd0FEH
+	.toolsContainer_jnk11m
+	.closeButton_e76OBR:hover,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.toolsContainer_jnk11m
+	.closeButton_e76OBR:hover {
+	transition: unset !important;
+	background: unset !important;
+}
+#app-mount
+	.layer_Fd0FEH
+	~ .layer_Fd0FEH
+	.toolsContainer_jnk11m
+	.closeButton_e76OBR
+	> svg,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.toolsContainer_jnk11m
+	.closeButton_e76OBR
+	> svg {
+	display: none !important;
+}
+#app-mount
+	> .appAsidePanelWrapper_YRXZu0
+	> .notAppAsidePanel_YRXZu0
+	.contentRegion_jnk11m
+	.toolsContainer_jnk11m
+	.container_e76OBR {
+	height: 100% !important;
+}
+#app-mount
+	> .appAsidePanelWrapper_YRXZu0
+	> .notAppAsidePanel_YRXZu0
+	.contentRegion_jnk11m
+	.toolsContainer_jnk11m
+	.keybind_e76OBR {
+	display: none !important;
+}
+#app-mount .layer_Fd0FEH ~ .layer_Fd0FEH .container_ybUK7Z.headerBar_ViLURN,
+#app-mount
+	.BA__layerContainer
+	~ .BA__layerContainer
+	.container_ybUK7Z.headerBar_ViLURN {
+	position: static !important;
+}
+
+#app-mount .root_oez3v3:not(:has(.introAnimation__33f0b)) {
+	position: fixed !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: var(--settingsbackground_v) !important;
+	border-radius: 5px !important;
+	box-shadow: var(--elevation-high) !important;
+	width: var(--settingswidth_v) !important;
+	height: var(--settingsheight_v) !important;
+	margin: auto !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	contain: unset !important;
+	z-index: 1000 !important;
+}
+#app-mount .root_oez3v3.enterDone_oez3v3 {
+	transform: unset !important;
+}
+#app-mount .layer_Fd0FEH > .shop_Mqg79R .container_e76OBR,
+#app-mount .layer_Fd0FEH > .shop_Mqg79R .closeButton_e76OBR {
+	position: fixed !important;
+	top: 0 !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	z-index: -1 !important;
+	background: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	width: 100% !important;
+	max-width: unset !important;
+	height: 100% !important;
+	max-height: unset !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	opacity: 0 !important;
+	cursor: default !important;
+	animation: unset !important;
+	transition: unset !important;
+}
+#app-mount .layer_Fd0FEH > .shop_Mqg79R .shopHomeLink_ViLURN,
+#app-mount .layer_Fd0FEH > .shop_Mqg79R [class*="tabs_"],
+#app-mount .layer_Fd0FEH > .shop_Mqg79R [class*="shopScroll_"] {
+	z-index: 2 !important;
+}
+
+/* ==========================================================================
+   HorizontalServerList — DiscordStyles, PR #107
+   https://github.com/DiscordStyles/HorizontalServerList/pull/107
+   ========================================================================== */
+
+:root {
+	--notices-height: 36px;
+	--serverlist-offset: var(--custom-guild-list-width);
+}
+
+.base_pog62O[data-fullscreen="false"] .content_pog62O {
+	margin-top: var(--serverlist-offset);
+	overflow: visible !important;
+}
+
+:fullscreen .content_pog62O {
+	margin: 0 !important;
+}
+
+.sidebar_pog62O {
+	border-radius: 0;
+	overflow: visible !important;
+}
+
+.guilds_pog62O {
+	transform-origin: top left;
+	rotate: -90deg;
+	height: 100vw !important;
+	bottom: unset;
+	position: absolute !important;
+	left: 0;
+}
+
+.guilds_pog62O .stack_TWWX0S {
+	flex-direction: var(--HSL-server-direction);
+	justify-content: var(--HSL-server-alignment);
+}
+
+.tree_5dqHTG {
+	padding-top: var(--HSL-top-padding, var(--size-sm));
+	justify-content: var(--HSL-server-alignment);
+}
+
+.wrapper_JJ-hgR,
+.folderPreview_RTMSuZ,
+.folderIconWrapper_RTMSuZ,
+.lowerBadge_hqZPsU,
+.upperBadge_hqZPsU {
+	rotate: 90deg;
+}
+
+.childWrapper_JJ-hgR {
+	rotate: 0deg;
+}
+
+[class^="notice_"] {
+	height: var(--notices-height);
+}
+
+[class^="notice_"] + .content_pog62O {
+	--serverlist-offset: calc(
+		var(--notices-height) + var(--custom-guild-list-width)
+	);
+}
+
+.container_pog62O > div[style]:not(.base_pog62O) {
+	width: 100vw !important;
+	height: var(--serverlist-offset) !important;
+	position: absolute;
+	top: calc(var(--serverlist-offset) + var(--custom-app-top-bar-height));
+	pointer-events: none;
+	z-index: 1;
+}
+
+.container_pog62O > div[style]:not(.base_pog62O) .guilds_pog62O {
+	pointer-events: all;
+}
+
+.container_pog62O
+	> div[style]:not(.base_pog62O)
+	+ .base_pog62O
+	.content_pog62O {
+	margin-top: calc(var(--serverlist-offset) * 2);
 }

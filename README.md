@@ -54,11 +54,15 @@
 ⚙️ **Settings Modal** - Clean modal windows for settings instead of sidebars  
 🔘 **Radial Status** - Beautiful circular status rings around avatars  
 📱 **Horizontal Server List** - Servers displayed at the top for better screen usage  
-🍎 **Apple Emojis** - Clean, modern Apple emoji replacements
+🍎 **Apple Emojis** - Clean, modern Apple emoji replacements  
+📦 **Single File** - every upstream theme is inlined, so the client loads one stylesheet instead of six  
+🎛️ **Easy Configuration** - one documented block of variables at the top of the file
 
 ## 📖 Information About This Theme
 
 This theme has been made with **my preference in mind** and features the best of dark aesthetics and modern functionality. It offers customization, documentation, support, and instructions for most modern clients. The theme is made with a purple-themed color palette, animations, and features from included themes — such as Radial Status for better visibility of other user's current status, a Settings Modal for a cleaner and more modern Discord settings interface with improved transparency and readability, a horizontal server list for better screen usage, and emoji replacement for a cleaner and more modern look.
+
+All of those upstream themes are **inlined into the single `midnight-ash.css` file**, so the client downloads one stylesheet instead of six. Only the Google Fonts (Figtree) and Apple emoji stylesheets are still imported.
 
 I have tried to keep the theme relatively small, simple, and clean for speedy load times on laptops and low-end PCs, and even phones, while maintaining easy use and modification of the theme through documentation, links, support, and issues.
 
@@ -76,6 +80,8 @@ https://theme.ash1421.com/midnight-ash.css
 #### 👋 Help Guide
 
 To download and install for most modern clients, copy the URL above and paste or type it into the required field, then load, toggle, reload, or restart to refresh the theme. For more help, please view the client-specific instructions.
+
+The theme is a single self-contained file: all upstream themes are inlined, so there are no extra theme requests to wait on.
 
 For file based installs please download the CSS file and move it to the required path.
 
@@ -168,33 +174,29 @@ Compatible with BetterDiscord, Equicord or Vencord installation methods.
 <details>
 <summary><h3>📊 Performance & Import Sizes 📦</h3></summary>
 
-> These results are approximate (~) and may change if upstream themes or `midnight-ash.css` are updated.
-> Load times measured via Discord DevTools Network tab with cache disabled.
+> Every upstream theme is **inlined** into `midnight-ash.css`, so the client makes **one** theme request instead of six.
+> The only remaining remote stylesheets are Google Fonts (Figtree) and the Apple emoji replacement.
+> Sizes are approximate (~) and may change when the theme or its upstreams are updated.
 
-| Import                  | Load Time | Transfer Size |
-| ----------------------- | --------- | ------------- |
-| `midnight-ash.css`      | ~42ms     | ~2.02 KB      |
-| `midnight-discord`      | ~54ms     | ~16.35 KB     |
-| `amoled-cord`           | ~44ms     | ~4.91 KB      |
-| `RadialStatus`          | ~42ms     | ~2.17 KB      |
-| `SettingsModal`         | ~44ms     | ~1.72 KB      |
-| `HorizontalServerList`  | ~44ms     | ~0.75 KB      |
-| `Apple Emojis`          | ~249ms    | ~0.53 KB      |
-| `Font Awesome Moon SVG` | ~123ms    | ~0.75 KB      |
-| **Total**               |           | **~29.20 KB** |
+| Request            | Transfer Size | Notes                                            |
+| ------------------ | ------------- | ------------------------------------------------ |
+| `midnight-ash.css` | ~21.5 KB      | gzipped — the whole theme in a single file        |
+| `Figtree`          | ~0.33 KB      | Google Fonts CSS (font files load separately)     |
+| `Apple Emojis`     | ~0.35 KB      | Emoji replacement CSS                             |
+| `Moon SVG`         | ~0.38 KB      | home / Direct Messages icon                       |
+| **Total CSS**      | **~22.5 KB**  | instead of ~24.4 KB across 6 separate stylesheets |
 
-> Sizes may change if upstream themes or `midnight-ash.css` are updated, therefore the sizes are approximate (~).
-> Sizes measured via a custom Node.js script against the full uncompressed and gzipped CSS files.
+Uncompressed breakdown of what is inside `midnight-ash.css` (~104.73 KB):
 
-| Import                 | Uncompressed   | Gzipped       |
-| ---------------------- | -------------- | ------------- |
-| `midnight-discord`     | ~79.01 KB      | ~15.86 KB     |
-| `amoled-cord`          | ~28.63 KB      | ~4.46 KB      |
-| `RadialStatus`         | ~8.33 KB       | ~1.91 KB      |
-| `SettingsModal`        | ~7.81 KB       | ~1.36 KB      |
-| `HorizontalServerList` | ~1.65 KB       | ~614 B        |
-| `Apple Emojis`         | ~1.34 KB       | ~343 B        |
-| **Total**              | **~126.76 KB** | **~24.40 KB** |
+| Section                | Uncompressed    | Gzipped   |
+| ---------------------- | --------------- | --------- |
+| Configuration (top)    | ~8.19 KB        | ~2.40 KB  |
+| `midnight-discord`     | ~72.60 KB       | ~15.86 KB |
+| `RadialStatus`         | ~12.88 KB       | ~2.07 KB  |
+| `SettingsModal`        | ~8.57 KB        | ~1.54 KB  |
+| `HorizontalServerList` | ~1.81 KB        | ~0.69 KB  |
+| Header + imports       | ~0.68 KB        | ~0.42 KB  |
+| **Total**              | **~104.73 KB**  | **~21.46 KB** |
 
 </details>
 
@@ -206,6 +208,8 @@ To change the accent color, also known as the main color, please use the followi
 
 To change anything listed below please open the css file you have downloaded in a text or code editor and edit the according options to the values you like or want.
 
+**Everything you normally want to change lives in the `MIDNIGHT-ASH CONFIGURATION` block at the very top of `midnight-ash.css`.** Every option there is a CSS custom property with an inline comment describing it. The rest of the file is the inlined upstream themes and normally does not need editing.
+
 **To change any options below is at your own risk and could cause the theme to break if not done correctly, please report issues if found and use documentation. You have been warned.**
 
 ---
@@ -214,6 +218,8 @@ To change anything listed below please open the css file you have downloaded in 
 <summary><h3>⚙️ Customization Options</h3></summary>
 
 ### Settings Modal
+
+Applies to Discord's current settings window (the floating modal introduced in the Nov 2026 client update).
 
 - `--settingswidth`: Width in pixels (default: 960)
 - `--settingsheight`: Height in vh (default: 80)
@@ -284,6 +290,8 @@ To change anything listed below please open the css file you have downloaded in 
 
 - `--custom-dms-icon`: Custom DMs icon (default: custom)
 - `--dms-icon-svg-url`: SVG URL for custom DMs icon (default: url("https://theme.ash1421.com/assets/svg/Font_Awesome_5_solid_moon.svg"))
+- `--dms-icon-color-before`: Icon colour when not selected (default: var(--text-4))
+- `--dms-icon-color-after`: Icon colour when hovered or selected (default: var(--white))
 
 Available icon variants, self-hosted at `theme.ash1421.com` — swap any of these into `--dms-icon-svg-url` to change the look:
 
@@ -368,7 +376,6 @@ It also incorporates components from other open-source projects under MIT or GPL
 | Component                              | Author                | License                                           |
 | -------------------------------------- | --------------------- | ------------------------------------------------- |
 | Midnight Discord Theme                 | refact0r              | [MIT](./ORIGINAL_LICENSES/LICENSE_refact0r.md)    |
-| AMOLED-Cord                            | LuckFire              | [MIT](./ORIGINAL_LICENSES/LICENSE_LuckFire.md)    |
 | Settings Modal / Emoji Replace         | DevilBro              | [GPL v2](./ORIGINAL_LICENSES/LICENSE_DevilBro.md) |
 | Radial Status / Horizontal Server List | Gibbu / DiscordStyles | [MIT](./ORIGINAL_LICENSES/LICENSE_Gibbu.md)       |
 
@@ -391,7 +398,6 @@ The only things that have been modified from the license files is the names of t
 ## 🙏 Credits
 
 - **Midnight Theme** - [@refact0r](https://github.com/refact0r)
-- **AMOLED-Cord** - [@LuckFire](https://github.com/LuckFire)
 - **Settings Modal** - [@DevilBro](https://github.com/mwittrien)
 - **Radial Status** - [@Gibbu](https://github.com/DiscordStyles)
 - **Horizontal Server List** - [@Gibbu](https://github.com/DiscordStyles)
