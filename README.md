@@ -97,7 +97,7 @@ Using the latest version could help with optimizations and other features that h
 
 #### ⭐ Dorion - **Recommended Client**
 
-Website: https://dorion.spikehd.dev/
+Website: https://spikehd.dev/projects/dorion/
 GitHub: https://github.com/SpikeHD/Dorion
 
 Dorion is a lightweight alternative Discord client that runs Discord inside your operating system's built-in webview. It ships with **Shelter** and can optionally load **Vencord** or **Equicord**, so you can use this theme either through Dorion's own theme loader or through the Vencord/Equicord theme settings.

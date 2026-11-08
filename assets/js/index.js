@@ -1,21 +1,21 @@
 // Animated title
-const staticPart = "🌙 Midnight-Ash | ";
-const text = "Discord Theme";
+// const staticPart = "🌙 Midnight-Ash | ";
+// const text = "Discord Theme";
 
-let index = text.length;
-let direction = -1;
+// let index = text.length;
+// let direction = -1;
 
-setInterval(() => {
-	document.title = staticPart + text.substring(0, index);
+// setInterval(() => {
+// 	document.title = staticPart + text.substring(0, index);
 
-	if (index === 0) {
-		direction = 1;
-	} else if (index === text.length) {
-		direction = -1;
-	}
+// 	if (index === 0) {
+// 		direction = 1;
+// 	} else if (index === text.length) {
+// 		direction = -1;
+// 	}
 
-	index += direction;
-}, 200);
+// 	index += direction;
+// }, 200);
 
 // Copy URL function
 function copyUrl() {
