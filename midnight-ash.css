@@ -187,9 +187,10 @@ html:root {
 	--purple-5: oklch(55% 0.11 310deg);
 
 	/* ---------- Settings modal ------------------------------------------- */
-	--settingswidth: 960; /* width in px */
+	--settingswidth: 1400; /* width in px */
 	--settingsheight: 80; /* height in vh */
 	--settingsbackground: transparent; /* modal background colour */
+	--settingsradius: 16px; /* corner radius of the settings modal */
 
 	/* ---------- Radial Status rings -------------------------------------- */
 	--rs-small-spacing: 2px; /* gap between avatar and ring */
@@ -2215,8 +2216,8 @@ body {
 }
 
 @container body style(--top-bar-button-position: hide) {
-	.trailing_3zSH5d > a[href="https://support.discord.com"],
-	.winButtons_3zSH5d::before {
+	[class*="trailing_"] > a[href="https://support.discord.com"],
+	[class*="winButtons_"]::before {
 		display: none;
 	}
 }
@@ -2229,10 +2230,10 @@ body {
 		);
 	}
 	.title_3zSH5d,
-	.trailing_3zSH5d > a[href="https://support.discord.com"] {
+	[class*="trailing_"] > a[href="https://support.discord.com"] {
 		display: none;
 	}
-	.trailing_3zSH5d {
+	[class*="trailing_"] {
 		position: absolute;
 		top: calc(var(--top-bar-height) + 8px + var(--border-thickness));
 		right: calc(var(--gap) + var(--border-thickness));
@@ -2244,7 +2245,7 @@ body {
 			transform 0.2s ease-in-out,
 			opacity 0.2s ease-in-out;
 	}
-	.popout_9Aa-7R .trailing_3zSH5d {
+	.popout_9Aa-7R [class*="trailing_"] {
 		z-index: 1100;
 	}
 	/* Fix window controls overlapping certain modals */
@@ -2264,19 +2265,19 @@ body {
 				> [style^="width"]
 				> :is(.guildSidebar_z_gUBg, .sidebarContainer_MLLsfk)
 		)
-		.trailing_3zSH5d {
+		[class*="trailing_"] {
 		right: calc(var(--gap) + var(--border-thickness) + 480px);
 	}
 	.page_pog62O div[style="width: 480px;"] {
 		min-width: 480px;
 	}
-	.winButtons_3zSH5d {
+	[class*="winButtons_"] {
 		padding: 0;
 	}
-	.winButton_3zSH5d {
+	[class*="winButton_"] {
 		height: calc(var(--window-control-size) * 2);
 	}
-	.winButtons_3zSH5d::before {
+	[class*="winButtons_"]::before {
 		height: 16px;
 		width: var(--space-xs);
 		box-sizing: border-box;
@@ -2319,13 +2320,13 @@ body {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
-	.base_pog62O:has(> .notice_Q02kKo) > .bar_3zSH5d > .trailing_3zSH5d {
+	.base_pog62O:has(> .notice_Q02kKo) > [class*="bar_"] > [class*="trailing_"] {
 		top: calc(
 			var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness)
 		);
 	}
 
-	.base_pog62O:has(> .notice_6g5Jai) > .bar_3zSH5d > .trailing_3zSH5d {
+	.base_pog62O:has(> .notice_6g5Jai) > [class*="bar_"] > [class*="trailing_"] {
 		top: calc(
 			var(--top-bar-height) + 8px + 40px + var(--gap) + var(--border-thickness)
 		);
@@ -2335,49 +2336,49 @@ body {
 	.base_pog62O {
 		/* Supports up to 6 buttons */
 		&:has(
-			> .bar_3zSH5d
-				> .trailing_3zSH5d
-				> div:not(.winButtons_3zSH5d):nth-of-type(1)
+			> [class*="bar_"]
+				> [class*="trailing_"]
+				> div:not([class*="winButtons_"]):nth-of-type(1)
 		) {
 			--button-count: 1;
 		}
 		&:has(
-			> .bar_3zSH5d
-				> .trailing_3zSH5d
-				> div:not(.winButtons_3zSH5d):nth-of-type(2)
+			> [class*="bar_"]
+				> [class*="trailing_"]
+				> div:not([class*="winButtons_"]):nth-of-type(2)
 		) {
 			--button-count: 2;
 		}
 		&:has(
-			> .bar_3zSH5d
-				> .trailing_3zSH5d
-				> div:not(.winButtons_3zSH5d):nth-of-type(3)
+			> [class*="bar_"]
+				> [class*="trailing_"]
+				> div:not([class*="winButtons_"]):nth-of-type(3)
 		) {
 			--button-count: 3;
 		}
 		&:has(
-			> .bar_3zSH5d
-				> .trailing_3zSH5d
-				> div:not(.winButtons_3zSH5d):nth-of-type(4)
+			> [class*="bar_"]
+				> [class*="trailing_"]
+				> div:not([class*="winButtons_"]):nth-of-type(4)
 		) {
 			--button-count: 4;
 		}
 		&:has(
-			> .bar_3zSH5d
-				> .trailing_3zSH5d
-				> div:not(.winButtons_3zSH5d):nth-of-type(5)
+			> [class*="bar_"]
+				> [class*="trailing_"]
+				> div:not([class*="winButtons_"]):nth-of-type(5)
 		) {
 			--button-count: 5;
 		}
 		&:has(
-			> .bar_3zSH5d
-				> .trailing_3zSH5d
-				> div:not(.winButtons_3zSH5d):nth-of-type(6)
+			> [class*="bar_"]
+				> [class*="trailing_"]
+				> div:not([class*="winButtons_"]):nth-of-type(6)
 		) {
 			--button-count: 6;
 		}
 
-		&:has(> .bar_3zSH5d > .trailing_3zSH5d > .winButtons_3zSH5d) {
+		&:has(> [class*="bar_"] > [class*="trailing_"] > [class*="winButtons_"]) {
 			--top-bar-right-margin: calc(
 				32px * var(--button-count) + (var(--button-count) + 2) *
 					var(--space-xs) + 6 * var(--window-control-size) +
@@ -2386,8 +2387,8 @@ body {
 		}
 
 		/* Revert icon sizing changes */
-		.trailing_3zSH5d {
-			> div:not(.winButtons_3zSH5d),
+		[class*="trailing_"] {
+			> div:not([class*="winButtons_"]),
 			div.clickable_fErCLM {
 				width: 32px !important;
 				height: 32px !important;
@@ -2427,7 +2428,7 @@ body {
 				padding-top: 0;
 			}
 
-			.trailing_3zSH5d {
+			[class*="trailing_"] {
 				top: calc(8.5px + var(--border-thickness));
 				right: var(--border-thickness);
 			}
@@ -2442,7 +2443,7 @@ body {
 	}
 
 	/* Hide page seek arrows */
-	.bar_3zSH5d .backForwardButtons_nS9Yqn {
+	[class*="bar_"] .backForwardButtons_nS9Yqn {
 		display: none;
 	}
 
@@ -2458,7 +2459,7 @@ body {
 					.callContainer_hbKzX7
 					> .root_rTsZa_.idle_rTsZa_
 			)
-			.trailing_3zSH5d {
+			[class*="trailing_"] {
 			transform: translateY(-8px);
 			opacity: 0;
 
@@ -2491,7 +2492,7 @@ body {
 		gap: 4px;
 	}
 	/* Hide page seek arrows */
-	.bar_3zSH5d .backForwardButtons_nS9Yqn {
+	[class*="bar_"] .backForwardButtons_nS9Yqn {
 		display: none;
 	}
 }
@@ -2629,7 +2630,7 @@ body {
 	);
 }
 
-.winButtons_3zSH5d {
+[class*="winButtons_"] {
 	padding-right: var(--window-controls-padding);
 }
 
@@ -2640,48 +2641,109 @@ body {
 }
 
 @container body style(--custom-window-controls: on) {
-	.winButtons_3zSH5d {
+	[class*="winButtons_"] {
 		gap: 0;
 	}
-	.winButton_3zSH5d > svg {
+	[class*="winButton_"] > svg {
 		display: none;
 	}
-	.winButton_3zSH5d {
+	[class*="winButton_"] {
 		background: none !important;
 		width: calc(var(--window-control-size) * 2);
 		height: var(--custom-app-top-bar-height);
 	}
-	.winButton_3zSH5d::after {
+	[class*="winButton_"]::after {
 		display: block;
 		content: "";
 		height: var(--window-control-size);
 		width: var(--window-control-size);
 		border-radius: 50%;
 	}
-	.winButton_3zSH5d:hover::after {
+	[class*="winButton_"]:hover::after {
 		filter: brightness(0.7);
 	}
-	.winButton_3zSH5d:active::after {
+	[class*="winButton_"]:active::after {
 		transform: scale(0.9);
 	}
-	.winButtonClose_3zSH5d::after {
+	[class*="winButtonClose_"]::after {
 		background-color: var(--dnd) !important;
 	}
-	.winButtonMinMax_3zSH5d:nth-child(1)::after {
+	[class*="winButtonMinMax_"]:nth-child(1)::after {
 		background-color: var(--idle) !important;
 	}
-	.winButtonMinMax_3zSH5d:nth-child(2)::after {
+	[class*="winButtonMinMax_"]:nth-child(2)::after {
 		background-color: var(--online) !important;
 	}
 }
 
 @container body style(--custom-window-controls: off) and style(--top-bar-button-position: titlebar) {
-	.winButton_3zSH5d {
+	[class*="winButton_"] {
 		width: calc(var(--window-control-size) * 2);
 		height: calc(var(--window-control-size) * 2);
 	}
-	.winButtons_3zSH5d {
+	[class*="winButtons_"] {
 		gap: 0;
+	}
+}
+
+/* --------------------------------------------------------------------------
+   Dorion — custom titlebar window controls (Shelter titlebar plugin)
+   Dorion draws its own window buttons (.topmin / .topmax / .topclose) instead
+   of Discord's .winButton_* elements, so they need their own rules.
+   -------------------------------------------------------------------------- */
+@container body style(--custom-window-controls: on) {
+	.topright {
+		gap: 0;
+	}
+
+	.topright .topmin > svg,
+	.topright .topmax > svg,
+	.topright .topclose > svg {
+		display: none !important;
+	}
+
+	.topright .topmin,
+	.topright .topmax,
+	.topright .topclose {
+		background: none !important;
+		width: calc(var(--window-control-size) * 2) !important;
+		height: calc(var(--window-control-size) * 2) !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.topright .topmin::after,
+	.topright .topmax::after,
+	.topright .topclose::after {
+		display: block;
+		content: "";
+		height: var(--window-control-size);
+		width: var(--window-control-size);
+		border-radius: 50%;
+	}
+
+	.topright .topmin::after {
+		background-color: var(--idle) !important;
+	}
+
+	.topright .topmax::after {
+		background-color: var(--online) !important;
+	}
+
+	.topright .topclose::after {
+		background-color: var(--dnd) !important;
+	}
+
+	.topright .topmin:hover::after,
+	.topright .topmax:hover::after,
+	.topright .topclose:hover::after {
+		filter: brightness(0.7);
+	}
+
+	.topright .topmin:active::after,
+	.topright .topmax:active::after,
+	.topright .topclose:active::after {
+		transform: scale(0.9);
 	}
 }
 
@@ -3282,7 +3344,7 @@ body {
 	height: var(--settingsheight_v) !important;
 	max-width: unset !important;
 	max-height: unset !important;
-	border-radius: 5px !important;
+	border-radius: var(--settingsradius) !important;
 	background: var(--settingsbackground_v) !important;
 	box-shadow: var(--elevation-high) !important;
 }
@@ -3298,9 +3360,10 @@ body {
    .standardSidebarView / .layer_Fd0FEH settings DOM.
    -------------------------------------------------------------------------- */
 :root {
-	--settingswidth: 960;
+	--settingswidth: 1400;
 	--settingsheight: 80;
 	--settingsbackground: transparent;
+	--settingsradius: 16px;
 
 	--settingswidth_v: min(
 		calc(1px * var(--settingswidth_s, var(--settingswidth))),
@@ -3350,7 +3413,7 @@ body {
 	bottom: 0 !important;
 	left: 0 !important;
 	background: var(--settingsbackground_v) !important;
-	border-radius: 5px !important;
+	border-radius: var(--settingsradius) !important;
 	box-shadow: var(--elevation-high) !important;
 	width: var(--settingswidth_v) !important;
 	height: var(--settingsheight_v) !important;
@@ -3527,7 +3590,7 @@ body {
 	bottom: 0 !important;
 	left: 0 !important;
 	background: var(--settingsbackground_v) !important;
-	border-radius: 5px !important;
+	border-radius: var(--settingsradius) !important;
 	box-shadow: var(--elevation-high) !important;
 	width: var(--settingswidth_v) !important;
 	height: var(--settingsheight_v) !important;

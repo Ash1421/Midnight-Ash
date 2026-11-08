@@ -95,7 +95,25 @@ Using the latest version could help with optimizations and other features that h
 
 ### Recommended Clients
 
-#### ⭐ Equicord - **Recommended Client**
+#### ⭐ Dorion - **Recommended Client**
+
+Website: https://dorion.spikehd.dev/
+GitHub: https://github.com/SpikeHD/Dorion
+
+Dorion is a lightweight alternative Discord client that runs Discord inside your operating system's built-in webview. It ships with **Shelter** and can optionally load **Vencord** or **Equicord**, so you can use this theme either through Dorion's own theme loader or through the Vencord/Equicord theme settings.
+
+1. Install Dorion from the [latest release](https://github.com/SpikeHD/Dorion/releases/latest)
+2. Open Dorion settings → `Themes`
+3. Click `Install Theme from Link` and paste the URL above
+4. Reload the theme or restart Dorion
+
+Or drop the `midnight-ash.css` file into your Dorion themes folder:
+
+- **Windows:** `C:/Users/%USERNAME%/dorion/themes/`
+- **Linux:** `~/.config/dorion/themes/`
+- **macOS:** `~/Library/Application Support/dorion/themes/`
+
+#### 🎯 **Equicord**
 
 Website: https://equicord.org/
 GitHub: https://github.com/Equicord/Equicord
@@ -134,6 +152,15 @@ GitHub: https://github.com/BetterDiscord/BetterDiscord
 
 <details>
 <summary><h3>💻 Other Clients</h3></summary>
+
+#### 📦 **Shelter** (Runtime for Dorion)
+
+Website: https://github.com/uwu/Shelter
+GitHub: https://github.com/uwu/Shelter
+
+Shelter is the lightweight webview runtime that powers Dorion. It's not a standalone Discord client, but it's the engine underneath. You don't install Shelter directly — install **Dorion** instead, which bundles Shelter and adds the theme/plugin UI.
+
+If you're building a custom client or want to understand the stack: Dorion → Shelter → system webview → Discord web app.
 
 #### 🔌 **Replugged**
 
@@ -376,6 +403,7 @@ It also incorporates components from other open-source projects under MIT or GPL
 | Component                              | Author                | License                                           |
 | -------------------------------------- | --------------------- | ------------------------------------------------- |
 | Midnight Discord Theme                 | refact0r              | [MIT](./ORIGINAL_LICENSES/LICENSE_refact0r.md)    |
+| AMOLED-Cord                            | LuckFire              | [MIT](./ORIGINAL_LICENSES/LICENSE_LuckFire.md)    |
 | Settings Modal / Emoji Replace         | DevilBro              | [GPL v2](./ORIGINAL_LICENSES/LICENSE_DevilBro.md) |
 | Radial Status / Horizontal Server List | Gibbu / DiscordStyles | [MIT](./ORIGINAL_LICENSES/LICENSE_Gibbu.md)       |
 
@@ -398,6 +426,7 @@ The only things that have been modified from the license files is the names of t
 ## 🙏 Credits
 
 - **Midnight Theme** - [@refact0r](https://github.com/refact0r)
+- **AMOLED-Cord** - [@LuckFire](https://github.com/LuckFire)
 - **Settings Modal** - [@DevilBro](https://github.com/mwittrien)
 - **Radial Status** - [@Gibbu](https://github.com/DiscordStyles)
 - **Horizontal Server List** - [@Gibbu](https://github.com/DiscordStyles)
@@ -453,6 +482,8 @@ The only things that have been modified from the license files is the names of t
 </table>
 
 ---
+
+<div align="center">
 
 **Made with 💜 by [@Ash1421](https://github.com/Ash1421), for the Discord community.**
 

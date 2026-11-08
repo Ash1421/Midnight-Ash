@@ -442,7 +442,22 @@ h1 {
 	background: var(--surface);
 }
 .client-icon {
+	width: 28px;
+	height: 28px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
 	font-size: 1.3rem;
+}
+.client-icon img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
+}
+.client-icon .client-logo-invert {
+	filter: invert(1);
 }
 .client-name {
 	font-size: 0.85rem;
