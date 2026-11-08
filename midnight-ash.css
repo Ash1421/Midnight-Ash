@@ -1,8 +1,8 @@
 /**
  * @name Midnight-Ash
  * @description Midnight-AMOLED theme with Settings Modal, Radial Status, Horizontal Server List, and Apple Emojis.
- * @author Ash1421 - V8.3.0
- * @version 8.3.0
+ * @author Ash1421 - V8.3.1
+ * @version 8.3.1
  * @website https://ash1421.com
  * @source https://github.com/Ash1421/Midnight-Ash
  * @authorId 616485235982467085
@@ -208,7 +208,7 @@ html:root {
 	--rs-invisible-color: #747f8d;
 	--rs-self-speaking-color: var(--green-4);
 	--rs-phone-color: var(--rs-online-color);
-	--rs-phone-visible: block; /* block | none - phone badge on avatars */
+	--rs-phone-visible: none; /* block | none - phone badge on avatars */
 
 	/* ---------- Horizontal Server List ----------------------------------- */
 	--HSL-server-direction: column; /* column | column-reverse */
